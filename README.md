@@ -1,3 +1,6 @@
+# GEPAcheGPT
+Implementation of ChessGPT neural network with GEPA prompt optimization. Cloned adam's repo which is described below
+
 **Overview**
 
 There has recently been some buzz about the ability of GPT-3.5-turbo-instruct's chess playing ability. I wanted to take a more rigourous look and created this repo. With it, you can play two models against each other, whether that's LLM vs Stockfish, LLM vs LLM, or Stockfish vs Stockfish. The primary goal is to test and record the performance of these players against one another in various configurations. Illegal moves, resignations, and game states are all tracked and recorded for later analysis. Per move, a model gets 5 illegal moves before forced resignation of the round.
@@ -98,3 +101,4 @@ Stockfish provides this estimate of [Stockfish level to ELO](https://github.com/
 ```
 
 It's difficult to make an exact comparison with my results due to differences in hardware and run time, but this can give a ballpark estimate. Stockfish ELO estimates were obtained with 120 seconds of run time, while I used 0.1 seconds. From my testing at lower Stockfish skill levels, 0.01 seconds vs 1 second makes relatively little difference.
+
