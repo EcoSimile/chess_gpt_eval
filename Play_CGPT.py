@@ -1,15 +1,21 @@
 #!/usr/bin/env python3
 
 import argparse
+import os
 import sys
 from typing import List, Optional, Tuple
+
+ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
+if ROOT_DIR not in sys.path:
+    sys.path.insert(0, ROOT_DIR)
+os.chdir(ROOT_DIR)
 
 import chess
 
 from nanogpt.nanogpt_module import NanoGptPlayer
 from play_vs_chessgptCommandLine import GPTPlayer, LegalMoveResponse, get_legal_move
 
-PROMPT_PATH = "gpt_inputs/prompt.txt"
+PROMPT_PATH = os.path.join(ROOT_DIR, "gpt_inputs", "prompt.txt")
 DEFAULT_NANOGPT_MODEL = "lichess_200k_bins_16layers_ckpt_with_optimizer.pt"
 
 
