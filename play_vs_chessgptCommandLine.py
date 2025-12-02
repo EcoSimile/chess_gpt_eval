@@ -18,18 +18,18 @@ from typing import Optional, Tuple, List
 from dataclasses import dataclass
 
 
-# Custom board formatting so black is shown at the bottom with clear file labels.
-FILE_LABELS = "A B C D E F G H"
+# Custom board formatting so black is shown at the bottom with mirrored file labels.
+FILE_LABELS = "H G F E D C B A"
 
 
 def format_board_black_bottom(board: chess.Board) -> str:
-    """Render the board with rank 1 at the top so black appears at the bottom."""
+    """Render the board with columns mirrored to show black perspective."""
     rows: List[str] = []
     header = "  " + FILE_LABELS
     rows.append(header)
     for rank in range(1, 9):
         pieces: List[str] = []
-        for file_idx in range(8):
+        for file_idx in range(7, -1, -1):
             square = chess.square(file_idx, rank - 1)
             piece = board.piece_at(square)
             pieces.append(piece.symbol() if piece else ".")
