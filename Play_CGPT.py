@@ -97,6 +97,7 @@ class ChessGptUciEngine:
         self.uci_history: List[str] = []
         self.pgn_tokens: List[str] = []  # e.g., ["1. e4 d6", "2. d4 c5"]
         self.game_state = self.prompt_prefix
+        self.fen_only_context = False  # True when we only have a FEN and partial moves, not full game history
         self._opening_cache: Optional[Dict[str, Tuple[List[str], List[str]]]] = None
 
     def _load_prompt(self) -> str:
@@ -113,9 +114,24 @@ class ChessGptUciEngine:
         self._refresh_game_state()
         # Don't delete history file here; some GUIs send 'ucinewgame' before replaying moves
 
+    def _legal_moves_san(self) -> str:
+        legal_san: List[str] = []
+        for m in self.board.legal_moves:
+            try:
+                legal_san.append(self.board.san(m))
+            except Exception:
+                continue
+        return " ".join(legal_san)
+
     def _refresh_game_state(self):
         moves_text = " " + " ".join(self.pgn_tokens) if self.pgn_tokens else ""
-        self.game_state = self.prompt_prefix + moves_text
+        base = self.prompt_prefix
+        if self.fen_only_context:
+            # Append a SAN move list hint using only tokens in the NanoGPT vocabulary
+            hint = self._legal_moves_san()
+            if hint:
+                base += f"; {hint} ;\n\n"
+        self.game_state = base + moves_text
 
     def _configure_prompt_for_fen(self, fen: Optional[str]):
         if fen:
@@ -124,6 +140,7 @@ class ChessGptUciEngine:
         else:
             self.prompt_prefix = self.base_prompt
         self.active_fen = fen
+        self.fen_only_context = False
         if not self.pgn_tokens:
             self.game_state = self.prompt_prefix
 
@@ -133,6 +150,7 @@ class ChessGptUciEngine:
         self.uci_history = []
         self.pgn_tokens = []
         self.board.set_fen(fen)
+        self.fen_only_context = True
         self._refresh_game_state()
 
     def _prompt_fullmove_number(self, board: Optional[chess.Board] = None) -> int:
@@ -196,6 +214,7 @@ class ChessGptUciEngine:
                 # Ensure prompt reflects any persisted fen context
                 if self.active_fen:
                     self._configure_prompt_for_fen(self.active_fen)
+                self.fen_only_context = bool(self.active_fen)
         else:
             # startpos case: rebuild from scratch
             self.board.reset()
@@ -204,6 +223,7 @@ class ChessGptUciEngine:
             self.prompt_prefix = self.base_prompt
             self.uci_history = []
             self.pgn_tokens = []
+            self.fen_only_context = False
             self._refresh_game_state()
 
         # At this point, either we've resumed history into self.board/self.pgn_tokens
@@ -352,6 +372,7 @@ class ChessGptUciEngine:
                 )
             else:
                 message = "model failed to return a move"
+
             log_failure(
                 message,
                 self.board.copy(),
