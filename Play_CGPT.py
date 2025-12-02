@@ -252,6 +252,8 @@ class ChessGptUciEngine:
         if current_pair:
             self.pgn_tokens.append(current_pair)
 
+        # If we have PGN tokens from the supplied moves, prefer them over a FEN-only hint
+        self.fen_only_context = not bool(self.pgn_tokens)
         # Rebuild game_state from tokens
         self._refresh_game_state()
         self._persist_history()
