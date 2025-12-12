@@ -24,6 +24,9 @@ DEFAULT_ENGINE_CMD = [
 ]
 DEFAULT_LOG_PATH = "/home/chriskar/chess_gpt_eval/logs/pychess_traffic.log"
 DEFAULT_FAILURE_LOG_PATH = "/home/chriskar/chess_gpt_eval/logs/uci_failures.log"
+DEFAULT_POSITION_LOG_PATH = (
+    "/home/chriskar/chess_gpt_eval/logs/uci_logger/position_summary.log"
+)
 DEFAULT_FAILED_GAME_LOG_PATH = "/home/chriskar/chess_gpt_eval/logs/uci_logger/failed_games.log"
 DEFAULT_ENGINE_VERSION = ENGINE_VERSION
 DEFAULT_ENGINE_NAME = "ChessGPT Logger"
@@ -54,6 +57,7 @@ class UciLoggingProxy:
         engine_author: str,
         spoof_handshake: bool = True,
         failure_log_path: str = DEFAULT_FAILURE_LOG_PATH,
+        position_log_path: str = DEFAULT_POSITION_LOG_PATH,
         failed_game_log_path: str = DEFAULT_FAILED_GAME_LOG_PATH,
         engine_version: str = DEFAULT_ENGINE_VERSION,
         illegal_san_threshold: int = 3,
@@ -61,6 +65,7 @@ class UciLoggingProxy:
         self.engine_cmd: List[str] = list(engine_cmd)
         self.log_path = log_path
         self.failure_log_path = failure_log_path
+        self.position_log_path = position_log_path
         self.failed_game_log_path = failed_game_log_path
         self.engine_version = engine_version
         self.engine_name = engine_name
@@ -319,6 +324,8 @@ class UciLoggingProxy:
         applied_moves: List[str],
         san_moves: List[str],
     ) -> None:
+        if not self.position_log_path:
+            return
         base_fen = base_board.fen() if base_board else "<unknown>"
         final_fen = final_board.fen() if final_board else "<unknown>"
         msg = (
@@ -327,7 +334,7 @@ class UciLoggingProxy:
             f"uci_moves={' '.join(applied_moves) if applied_moves else '<none>'} "
             f"san_moves={' '.join(san_moves) if san_moves else '<none>'}"
         )
-        log_line(self.failure_log_path, "###", msg)
+        log_line(self.position_log_path, "###", msg)
 
     def _emit_fallback_move(self, reason: str) -> bool:
         with self.board_lock:
@@ -415,6 +422,11 @@ def parse_args() -> argparse.Namespace:
         help="Supplemental log used for illegal move diagnostics",
     )
     parser.add_argument(
+        "--position-log",
+        default=DEFAULT_POSITION_LOG_PATH,
+        help="Log used for position summaries (set empty to disable)",
+    )
+    parser.add_argument(
         "--failed-game-log",
         default=DEFAULT_FAILED_GAME_LOG_PATH,
         help="File that stores transcripts of failed games",
@@ -454,6 +466,7 @@ def main() -> None:
         engine_cmd=args.engine_cmd,
         log_path=args.log_path,
         failure_log_path=args.failure_log,
+        position_log_path=args.position_log,
         failed_game_log_path=args.failed_game_log,
         engine_version=args.engine_version,
         engine_name=args.engine_name,
