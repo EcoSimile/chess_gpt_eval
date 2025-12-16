@@ -265,21 +265,18 @@ def record_results(
         if "-" in result:
             player_one_score = result.split("-")[0]
             player_two_score = result.split("-")[1]
-        elif result == "*":  # Draw due to hitting max moves
-            player_one_score = 1 / 2
-            player_two_score = 1 / 2
+        elif result == "*":  # Unresolved (e.g., max moves) -> leave result blank for clarity
+            result = ""
+            player_one_score = -1e10
+            player_two_score = -1e10
         else:
             player_one_score = -1e10
             player_two_score = -1e10
-    # Ensure numeric scores for downstream calculations
-    try:
-        player_one_score = float(player_one_score)
-    except Exception:
-        player_one_score = -1e10
-    try:
-        player_two_score = float(player_two_score)
-    except Exception:
-        player_two_score = -1e10
+    # Ensure numeric scores for downstream calculations, handling 1/2 strings
+    p1 = parse_score(str(player_one_score))
+    p2 = parse_score(str(player_two_score))
+    player_one_score = p1 if p1 is not None else -1e10
+    player_two_score = p2 if p2 is not None else -1e10
 
     info_dict = {
         "game_id": unique_game_id,
@@ -422,7 +419,7 @@ def get_legal_move(
             return LegalMoveResponse(
                 move_san=None,
                 move_uci=None,
-                attempts=attempt,
+                attempts=max_attempts,  # count as max consecutive illegals for logging/stats
                 is_resignation=False,
                 is_illegal_move=True,
             )
@@ -625,6 +622,7 @@ def play_game(
             player_one_illegal_moves += illegal_moves_one
             if illegal_moves_one != 0:
                 player_one_legal_moves -= 1
+                illegal_moves += illegal_moves_one
             if (
                 board.is_game_over()
                 or player_one_resignation
@@ -641,6 +639,7 @@ def play_game(
             player_two_illegal_moves += illegal_moves_two
             if illegal_moves_two != 0:
                 player_two_legal_moves -= 1
+                illegal_moves += illegal_moves_two
             if (
                 board.is_game_over()
                 or player_two_resignation
@@ -733,18 +732,23 @@ STOCKFISH_ELO_TABLE = {
     18: 3170.3,
     19: 3191.1,
 }
-recording_file = (
-    "logs/lichess_200k_bins_16layers_vs_stockfish_level_1.csv"  # fallback when RUN_FOR_ANALYSIS is False
+recording_file = os.environ.get(
+    "RECORDING_FILE",
+    "logs/lichess_200k_bins_16layers_vs_stockfish_level_1_2s.csv",  # fallback when RUN_FOR_ANALYSIS is False
 )
-player_one_recording_name = "lichess_200k_bins_16layers"
-player_two_recording_name = "stockfish_level_1_0p1s"
+player_one_recording_name = os.environ.get(
+    "PLAYER_ONE_RECORDING_NAME", "lichess_200k_bins_16layers"
+)
+player_two_recording_name = os.environ.get(
+    "PLAYER_TWO_RECORDING_NAME", "stockfish_level_1_2s"
+)
 if __name__ == "__main__":
     num_games = 200
     player_one = NanoGptPlayer(
         model_name="lichess_200k_bins_16layers_ckpt_with_optimizer.pt"
     )
-    # Stockfish level 1 with 0.1s per move
-    player_two = StockfishPlayer(skill_level=1, play_time=0.1)
+    # Stockfish level 1 with 2 seconds per move
+    player_two = StockfishPlayer(skill_level=1, play_time=2.0)
 
     play_game(player_one, player_two, num_games)
 
