@@ -87,26 +87,15 @@ class StockfishPlayer(Player):
         else:
             raise OSError("Unsupported operating system")
 
-    def __init__(
-        self,
-        skill_level: int,
-        play_time: float,
-        uci_elo: Optional[int] = None,
-        total_time_ms: Optional[int] = None,
-        increment_ms: int = 0,
-    ):
+    def __init__(self, skill_level: int, play_time: float):
         self._skill_level = skill_level
         self._play_time = play_time
-        self._uci_elo = uci_elo
-        self._total_time_ms = total_time_ms
-        self._increment_ms = increment_ms
         self._engine = None  # kept for reference to the original API usage
         # If getting started, you need to run brew install stockfish
         stockfish_path = StockfishPlayer.get_stockfish_path()
         # Original chess.engine.SimpleEngine approach (left commented because it hangs on this setup):
         # self._engine = chess.engine.SimpleEngine.popen_uci(stockfish_path)
         self._proc = self._start_uci_engine(stockfish_path)
-        self._clock_ms = {"white": total_time_ms, "black": total_time_ms}
 
     def _start_uci_engine(self, stockfish_path: str) -> subprocess.Popen:
         proc = subprocess.Popen(
@@ -119,15 +108,9 @@ class StockfishPlayer(Player):
         # UCI handshake
         self._send(proc, "uci")
         self._read_until(proc, "uciok", timeout=5)
-        # Configure strength
-        if self._uci_elo is not None:
-            # UCI_LimitStrength caps Elo between 1320 and 3190 on this build.
-            capped_elo = max(1320, min(3190, int(self._uci_elo)))
-            self._send(proc, "setoption name UCI_LimitStrength value true")
-            self._send(proc, f"setoption name UCI_Elo value {capped_elo}")
-        else:
-            skill = max(0, min(20, self._skill_level))
-            self._send(proc, f"setoption name Skill Level value {skill}")
+        # Configure strength via Skill Level
+        skill = max(0, min(20, self._skill_level))
+        self._send(proc, f"setoption name Skill Level value {skill}")
         return proc
 
     def _send(self, proc: subprocess.Popen, line: str):
@@ -148,7 +131,7 @@ class StockfishPlayer(Player):
             if time.time() - start > timeout:
                 raise TimeoutError(f"Timed out waiting for {token}, last line: {line.strip()}")
 
-    def _read_bestmove(self, proc: subprocess.Popen, timeout: float = 20.0) -> Optional[str]:
+    def _read_bestmove(self, proc: subprocess.Popen, timeout: float = 10.0) -> Optional[str]:
         start = time.time()
         while True:
             if proc.stdout is None:
@@ -173,31 +156,10 @@ class StockfishPlayer(Player):
         if self._proc is None:
             return None
 
-        use_clock = self._total_time_ms is not None
-        move_start = time.time()
-
         # Set position and request a move.
         try:
             self._send(self._proc, f"position fen {board.fen()}")
-            try:
-                self._send(self._proc, "stop")
-                self._send(self._proc, "isready")
-                self._read_until(self._proc, "readyok", timeout=5)
-            except TimeoutError as te:
-                print(f"Stockfish ready timeout (continuing): {te}")
-            if use_clock:
-                # Determine remaining time for side to move.
-                side = "white" if board.turn == chess.WHITE else "black"
-                other = "black" if side == "white" else "white"
-                wtime = self._clock_ms.get("white") or 1
-                btime = self._clock_ms.get("black") or 1
-                winc = self._increment_ms
-                binc = self._increment_ms
-                self._send(
-                    self._proc,
-                    f"go wtime {wtime} btime {btime} winc {winc} binc {binc}",
-                )
-            elif self._skill_level < 0:
+            if self._skill_level < 0:
                 # Lowest strength equivalent: one-node search
                 self._send(self._proc, "go nodes 1")
             else:
@@ -211,39 +173,21 @@ class StockfishPlayer(Player):
             print(f"Stockfish error: {e}")
             return None
 
-        move_time_ms = int((time.time() - move_start) * 1000)
-        if use_clock:
-            side = "white" if board.turn == chess.WHITE else "black"
-            # Deduct spent time and add increment for the side to move.
-            if self._clock_ms.get(side) is not None:
-                self._clock_ms[side] = max(0, self._clock_ms[side] - move_time_ms + self._increment_ms)
-
         if not uci_move or uci_move == "(none)":
             return None
 
         try:
             move_obj = chess.Move.from_uci(uci_move)
             if move_obj not in board.legal_moves:
-                print(
-                    f"Stockfish returned illegal move {uci_move} for FEN {board.fen()}; choosing random legal move."
-                )
-                legal_moves = list(board.legal_moves)
-                if not legal_moves:
-                    return None
-                move_obj = random.choice(legal_moves)
+                print(f"Stockfish returned illegal move {uci_move} for FEN {board.fen()}; skipping move.")
+                return None
             return board.san(move_obj)
         except Exception as e:
             print(f"Failed to parse Stockfish move {uci_move}: {e}")
             return None
 
     def get_config(self) -> dict:
-        return {
-            "skill_level": self._skill_level,
-            "uci_elo": self._uci_elo,
-            "play_time": self._play_time,
-            "total_time_ms": self._total_time_ms,
-            "increment_ms": self._increment_ms,
-        }
+        return {"skill_level": self._skill_level, "play_time": self._play_time}
 
     def close(self):
         if self._engine is not None:
@@ -256,9 +200,7 @@ class StockfishPlayer(Player):
                 pass
 
     def reset_clock(self):
-        if self._total_time_ms is not None:
-            self._clock_ms = {"white": self._total_time_ms, "black": self._total_time_ms}
-        self._send(self._proc, "ucinewgame")
+        pass
 
 
 def get_gpt_response(game_state: str, model: str, temperature: float) -> Optional[str]:
@@ -408,10 +350,7 @@ def get_player_titles_and_time(
         player_one_title = player_one_config["model"]
         player_one_time = None
     else:
-        if player_one_config.get("uci_elo") is not None:
-            player_one_title = f"Stockfish Elo {player_one_config['uci_elo']}"
-        else:
-            player_one_title = f"Stockfish {player_one_config['skill_level']}"
+        player_one_title = f"Stockfish {player_one_config['skill_level']}"
         player_one_time = player_one_config["play_time"]
 
     # For player two
@@ -419,10 +358,7 @@ def get_player_titles_and_time(
         player_two_title = player_two_config["model"]
         player_two_time = None
     else:
-        if player_two_config.get("uci_elo") is not None:
-            player_two_title = f"Stockfish Elo {player_two_config['uci_elo']}"
-        else:
-            player_two_title = f"Stockfish {player_two_config['skill_level']}"
+        player_two_title = f"Stockfish {player_two_config['skill_level']}"
         player_two_time = player_two_config["play_time"]
 
     return (player_one_title, player_two_title, player_one_time, player_two_time)
@@ -598,9 +534,7 @@ def play_game(
     anchor_rating = None
     if isinstance(player_two, StockfishPlayer):
         cfg = player_two.get_config()
-        anchor_rating = cfg.get("uci_elo")
-        if anchor_rating is None:
-            anchor_rating = STOCKFISH_ELO_TABLE.get(cfg["skill_level"])
+        anchor_rating = STOCKFISH_ELO_TABLE.get(cfg["skill_level"])
     p1_cfg, p2_cfg, p1_time, p2_time = get_player_titles_and_time(player_one, player_two)
     print(
         f"Starting match: {p1_cfg} (t={p1_time}) vs {p2_cfg} (t={p2_time}) for {max_games} games; MAX_MOVES={MAX_MOVES}"
@@ -611,8 +545,6 @@ def play_game(
         with open("gpt_inputs/prompt.txt", "r") as f:
             game_state = f.read()
         board = chess.Board()
-        if isinstance(player_two, StockfishPlayer):
-            player_two.reset_clock()
 
         if randomize_opening_moves is not None:
             game_state, board = initialize_game_with_random_moves(
@@ -775,14 +707,8 @@ if __name__ == "__main__":
     player_one = NanoGptPlayer(
         model_name="lichess_200k_bins_16layers_ckpt_with_optimizer.pt"
     )
-    # Use UCI_Elo time control: 60s main time with 0.6s increment, NanoGPT with a 10s per-move safety timeout.
-    player_two = StockfishPlayer(
-        skill_level=1,
-        play_time=0.1,
-        uci_elo=1468,
-        total_time_ms=60_000,
-        increment_ms=600,
-    )
+    # Stockfish level 1 with 0.1s per move
+    player_two = StockfishPlayer(skill_level=1, play_time=0.1)
 
     play_game(player_one, player_two, num_games)
 
