@@ -306,16 +306,7 @@ def record_results(
         "illegal_moves": illegal_moves,
     }
 
-    if RUN_FOR_ANALYSIS:
-        csv_file_path = (
-            f"logs/{player_one_recording_name}_vs_{player_two_recording_name}"
-        )
-        csv_file_path = csv_file_path.replace(
-            ".", "_"
-        )  # filenames can't have periods in them. Useful for e.g. gpt-3.5 models
-        csv_file_path += ".csv"
-    else:
-        csv_file_path = recording_file
+    csv_file_path = get_recording_path()
 
     # Determine if we need to write headers (in case the file doesn't exist yet)
     write_headers = not os.path.exists(csv_file_path)
@@ -337,6 +328,28 @@ def generate_unique_game_id() -> str:
     timestamp = int(time.time())
     random_num = random.randint(1000, 9999)  # 4-digit random number
     return f"{timestamp}-{random_num}"
+
+
+def get_recording_path() -> str:
+    if RUN_FOR_ANALYSIS:
+        csv_file_path = f"logs/{player_one_recording_name}_vs_{player_two_recording_name}"
+        csv_file_path = csv_file_path.replace(
+            ".", "_"
+        )  # filenames can't have periods in them. Useful for e.g. gpt-3.5 models
+        csv_file_path += ".csv"
+    else:
+        csv_file_path = recording_file
+    return csv_file_path
+
+
+def parse_score(val: str) -> Optional[float]:
+    try:
+        return float(val)
+    except Exception:
+        cleaned = val.strip()
+        if cleaned in {"1/2", ".5", "0.5"}:
+            return 0.5
+    return None
 
 
 def get_player_titles_and_time(
@@ -535,12 +548,35 @@ def play_game(
     if isinstance(player_two, StockfishPlayer):
         cfg = player_two.get_config()
         anchor_rating = STOCKFISH_ELO_TABLE.get(cfg["skill_level"])
+    valid_games = 0
+
+    # Resume from existing log if present.
+    csv_path = get_recording_path()
+    if os.path.exists(csv_path):
+        with open(csv_path) as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                val = parse_score(row.get("player_one_score", ""))
+                if val is None or not (0.0 <= val <= 1.0):
+                    continue
+                cumulative_p1_score += val
+                valid_games += 1
+        if valid_games > 0:
+            running_p = cumulative_p1_score / valid_games
+            if anchor_rating is not None:
+                p_clamped = min(max(running_p, 1e-6), 1 - 1e-6)
+                delta = -400 * math.log10(1 / p_clamped - 1)
+                elo_estimate = anchor_rating + delta
+                print(
+                    f"Resuming Elo from {valid_games} prior game(s) in {csv_path}: score {running_p:.3f}, Elo {elo_estimate:.1f} vs anchor {anchor_rating}"
+                )
+            else:
+                print(f"Resuming score from {valid_games} prior game(s) in {csv_path}: {running_p:.3f}")
     p1_cfg, p2_cfg, p1_time, p2_time = get_player_titles_and_time(player_one, player_two)
     print(
         f"Starting match: {p1_cfg} (t={p1_time}) vs {p2_cfg} (t={p2_time}) for {max_games} games; MAX_MOVES={MAX_MOVES}"
     )
 
-    valid_games = 0
     for game_idx in range(max_games):  # Play max_games games
         with open("gpt_inputs/prompt.txt", "r") as f:
             game_state = f.read()
