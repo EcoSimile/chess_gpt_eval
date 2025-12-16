@@ -7,7 +7,8 @@ import time
 import platform
 import subprocess
 import math
-# chatgpt said to add this to be able to access the stockfish i install on fedora
+import fcntl
+#added this to be able to access the stockfish i install on fedora
 import os, shutil
 import chess.engine
 
@@ -308,14 +309,20 @@ def record_results(
     # Determine if we need to write headers (in case the file doesn't exist yet)
     write_headers = not os.path.exists(csv_file_path)
 
-    # Append the results to the CSV file
-    with open(csv_file_path, "a", newline="") as csv_file:
-        writer = csv.DictWriter(csv_file, fieldnames=info_dict.keys())
-        if write_headers:
-            writer.writeheader()
-        writer.writerow(info_dict)
+    # Append the results to the CSV file with a file lock to support parallel runs.
+    lock_path = csv_file_path + ".lock"
+    with open(lock_path, "w") as lock_file:
+        fcntl.flock(lock_file, fcntl.LOCK_EX)
+        with open(csv_file_path, "a", newline="") as csv_file:
+            writer = csv.DictWriter(csv_file, fieldnames=info_dict.keys())
+            if write_headers:
+                writer.writeheader()
+            writer.writerow(info_dict)
+        fcntl.flock(lock_file, fcntl.LOCK_UN)
 
-    with open("game.txt", "w") as f:
+    # Write game transcript to a process-specific file to avoid collisions.
+    game_txt = f"game.txt.{os.getpid()}"
+    with open(game_txt, "w") as f:
         f.write(game_state)
 
     # Return scores for downstream Elo calculation.
