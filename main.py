@@ -38,6 +38,7 @@ class LegalMoveResponse:
     attempts: int = 0
     is_resignation: bool = False
     is_illegal_move: bool = False
+    is_timeout: bool = False
 
 
 # Define base Player class
@@ -240,6 +241,8 @@ def record_results(
     player_two_failed_to_find_legal_move: bool,
     total_moves: int,
     illegal_moves: int,
+    player_one_timeout: bool = False,
+    player_two_timeout: bool = False,
 ):
     unique_game_id = generate_unique_game_id()
 
@@ -426,9 +429,10 @@ def get_legal_move(
             return LegalMoveResponse(
                 move_san=None,
                 move_uci=None,
-                attempts=max_attempts,  # count as max consecutive illegals for logging/stats
+                attempts=1,  # count a timeout as a single failed attempt
                 is_resignation=False,
                 is_illegal_move=True,
+                is_timeout=True,
             )
 
         # Sometimes when GPT thinks it's the end of the game, it will just output the result
@@ -474,7 +478,7 @@ def get_legal_move(
 
 def play_turn(
     player: Player, board: chess.Board, game_state: str, player_one: bool
-) -> Tuple[str, bool, bool, int]:
+) -> Tuple[str, bool, bool, int, bool]:
     max_move_time = None
     if player_one and isinstance(player, NanoGptPlayer):
         max_move_time = 30.0  # fail fast if NanoGPT hangs
@@ -484,11 +488,15 @@ def play_turn(
     move_uci = result.move_uci
     resignation = result.is_resignation
     failed_to_find_legal_move = result.is_illegal_move
+    timed_out = result.is_timeout
 
     if resignation:
         print(f"{player} resigned with result: {board.result()}")
     elif failed_to_find_legal_move:
-        print(f"Game over: 5 consecutive illegal moves from {player}")
+        if timed_out:
+            print(f"Game over: timeout from {player}")
+        else:
+            print(f"Game over: 5 consecutive illegal moves from {player}")
     elif move_san is None or move_uci is None:
         print(f"Game over: {player} failed to find a legal move")
     else:
@@ -496,7 +504,7 @@ def play_turn(
         game_state += move_san
         print(move_san, end=" ")
 
-    return game_state, resignation, failed_to_find_legal_move, illegal_moves
+    return game_state, resignation, failed_to_find_legal_move, illegal_moves, timed_out
 
 
 def initialize_game_with_random_moves(
@@ -599,6 +607,8 @@ def play_game(
         player_two_resignation = False
         player_one_failed_to_find_legal_move = False
         player_two_failed_to_find_legal_move = False
+        player_one_timeout = False
+        player_two_timeout = False
         start_time = time.time()
         print(f"\n--- Game {game_idx + 1}/{max_games} ---")
 
@@ -625,11 +635,14 @@ def play_game(
                 player_one_resignation,
                 player_one_failed_to_find_legal_move,
                 illegal_moves_one,
+                timeout_one,
             ) = play_turn(player_one, board, game_state, player_one=True)
             player_one_illegal_moves += illegal_moves_one
             if illegal_moves_one != 0:
                 player_one_legal_moves -= 1
                 illegal_moves += illegal_moves_one
+            if timeout_one:
+                player_one_timeout = True
             if (
                 board.is_game_over()
                 or player_one_resignation
@@ -642,11 +655,14 @@ def play_game(
                 player_two_resignation,
                 player_two_failed_to_find_legal_move,
                 illegal_moves_two,
+                timeout_two,
             ) = play_turn(player_two, board, game_state, player_one=False)
             player_two_illegal_moves += illegal_moves_two
             if illegal_moves_two != 0:
                 player_two_legal_moves -= 1
                 illegal_moves += illegal_moves_two
+            if timeout_two:
+                player_two_timeout = True
             if (
                 board.is_game_over()
                 or player_two_resignation
@@ -681,6 +697,8 @@ def play_game(
             player_two_failed_to_find_legal_move,
             total_moves,
             illegal_moves,
+            player_one_timeout,
+            player_two_timeout,
         )
         if 0.0 <= p1_score <= 1.0:
             cumulative_p1_score += p1_score
@@ -750,7 +768,7 @@ player_two_recording_name = os.environ.get(
     "PLAYER_TWO_RECORDING_NAME", "stockfish_level_1_2s"
 )
 if __name__ == "__main__":
-    num_games = 200
+    num_games = 71
     player_one = NanoGptPlayer(
         model_name="lichess_200k_bins_16layers_ckpt_with_optimizer.pt"
     )
