@@ -550,6 +550,7 @@ def play_game(
     player_two: Player,
     max_games: int = 10,
     randomize_opening_moves: Optional[int] = None,
+    alternate_colors: bool = True,
 ):
     # NOTE: I'm being very particular with game_state formatting because I want to match the PGN notation exactly
     # It looks like this: 1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 etc. HOWEVER, GPT prompts should not end with a trailing whitespace
@@ -594,15 +595,21 @@ def play_game(
             game_state = f.read()
         board = chess.Board()
 
+        if alternate_colors and game_idx % 2 == 1:
+            white_player, black_player = player_two, player_one
+        else:
+            white_player, black_player = player_one, player_two
+        primary_is_white = white_player is player_one
+
         if randomize_opening_moves is not None:
             game_state, board = initialize_game_with_random_moves(
                 board, game_state, randomize_opening_moves
             )
 
-        player_one_illegal_moves = 0
-        player_two_illegal_moves = 0
-        player_one_legal_moves = 0
-        player_two_legal_moves = 0
+        white_illegal_moves = 0
+        black_illegal_moves = 0
+        white_legal_moves = 0
+        black_legal_moves = 0
         player_one_resignation = False
         player_two_resignation = False
         player_one_failed_to_find_legal_move = False
@@ -621,8 +628,8 @@ def play_game(
             current_move_num = str(board.fullmove_number) + "."
             total_moves += 1
             # I increment legal moves here so player_two isn't penalized for the game ending before its turn
-            player_one_legal_moves += 1
-            player_two_legal_moves += 1
+            white_legal_moves += 1
+            black_legal_moves += 1
 
             # this if statement may be overkill, just trying to get format to exactly match PGN notation
             if board.fullmove_number != 1:
@@ -636,10 +643,10 @@ def play_game(
                 player_one_failed_to_find_legal_move,
                 illegal_moves_one,
                 timeout_one,
-            ) = play_turn(player_one, board, game_state, player_one=True)
-            player_one_illegal_moves += illegal_moves_one
+            ) = play_turn(white_player, board, game_state, player_one=True)
+            white_illegal_moves += illegal_moves_one
             if illegal_moves_one != 0:
-                player_one_legal_moves -= 1
+                white_legal_moves -= 1
                 illegal_moves += illegal_moves_one
             if timeout_one:
                 player_one_timeout = True
@@ -656,10 +663,10 @@ def play_game(
                 player_two_failed_to_find_legal_move,
                 illegal_moves_two,
                 timeout_two,
-            ) = play_turn(player_two, board, game_state, player_one=False)
-            player_two_illegal_moves += illegal_moves_two
+            ) = play_turn(black_player, board, game_state, player_one=False)
+            black_illegal_moves += illegal_moves_two
             if illegal_moves_two != 0:
-                player_two_legal_moves -= 1
+                black_legal_moves -= 1
                 illegal_moves += illegal_moves_two
             if timeout_two:
                 player_two_timeout = True
@@ -681,15 +688,15 @@ def play_game(
         print(f"Result: {board.result()}")
         print(board)
         print()
-        p1_score, _ = record_results(
+        white_score, black_score = record_results(
             board,
-            player_one,
-            player_two,
+            white_player,
+            black_player,
             game_state,
-            player_one_illegal_moves,
-            player_two_illegal_moves,
-            player_one_legal_moves,
-            player_two_legal_moves,
+            white_illegal_moves,
+            black_illegal_moves,
+            white_legal_moves,
+            black_legal_moves,
             total_time,
             player_one_resignation,
             player_two_resignation,
@@ -700,6 +707,7 @@ def play_game(
             player_one_timeout,
             player_two_timeout,
         )
+        p1_score = white_score if primary_is_white else black_score
         if 0.0 <= p1_score <= 1.0:
             cumulative_p1_score += p1_score
             valid_games += 1
@@ -768,7 +776,7 @@ player_two_recording_name = os.environ.get(
     "PLAYER_TWO_RECORDING_NAME", "stockfish_level_1_2s"
 )
 if __name__ == "__main__":
-    num_games = 71
+    num_games = 35
     player_one = NanoGptPlayer(
         model_name="lichess_200k_bins_16layers_ckpt_with_optimizer.pt"
     )
