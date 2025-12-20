@@ -225,10 +225,11 @@ def get_move_from_gpt_response(response: Optional[str]) -> Optional[str]:
     return first_move
 
 
-def record_results(
+def build_result_info(
     board: chess.Board,
     player_one: Player,
     player_two: Player,
+    primary_is_white: bool,
     game_state: str,
     player_one_illegal_moves: int,
     player_two_illegal_moves: int,
@@ -282,6 +283,24 @@ def record_results(
     player_one_score = p1 if p1 is not None else -1e10
     player_two_score = p2 if p2 is not None else -1e10
 
+    # Map the score/flags to the primary (NanoGPT) player regardless of color.
+    if primary_is_white:
+        primary_player = player_one_title
+        primary_score = player_one_score
+        primary_illegal_moves = player_one_illegal_moves
+        primary_legal_moves = player_one_legal_moves
+        primary_timeout = player_one_timeout
+        primary_resignation = player_one_resignation
+        primary_failed = player_one_failed_to_find_legal_move
+    else:
+        primary_player = player_two_title
+        primary_score = player_two_score
+        primary_illegal_moves = player_two_illegal_moves
+        primary_legal_moves = player_two_legal_moves
+        primary_timeout = player_two_timeout
+        primary_resignation = player_two_resignation
+        primary_failed = player_two_failed_to_find_legal_move
+
     info_dict = {
         "game_id": unique_game_id,
         "transcript": game_state,
@@ -292,6 +311,13 @@ def record_results(
         "player_two_time": player_two_time,
         "player_one_score": player_one_score,
         "player_two_score": player_two_score,
+        "primary_player": primary_player,
+        "primary_player_score": primary_score,
+        "primary_player_illegal_moves": primary_illegal_moves,
+        "primary_player_legal_moves": primary_legal_moves,
+        "primary_player_timeout": primary_timeout,
+        "primary_player_resignation": primary_resignation,
+        "primary_player_failed_to_find_legal_move": primary_failed,
         "player_one_illegal_moves": player_one_illegal_moves,
         "player_two_illegal_moves": player_two_illegal_moves,
         "player_one_legal_moves": player_one_legal_moves,
@@ -306,13 +332,12 @@ def record_results(
         "total_moves": total_moves,
         "illegal_moves": illegal_moves,
     }
+    return player_one_score, player_two_score, info_dict
 
+
+def write_result_row(info_dict: dict):
     csv_file_path = get_recording_path()
-
-    # Determine if we need to write headers (in case the file doesn't exist yet)
     write_headers = not os.path.exists(csv_file_path)
-
-    # Append the results to the CSV file with a file lock to support parallel runs.
     lock_path = csv_file_path + ".lock"
     with open(lock_path, "w") as lock_file:
         fcntl.flock(lock_file, fcntl.LOCK_EX)
@@ -326,10 +351,52 @@ def record_results(
     # Write game transcript to a process-specific file to avoid collisions.
     game_txt = f"game.txt.{os.getpid()}"
     with open(game_txt, "w") as f:
-        f.write(game_state)
+        f.write(info_dict["transcript"])
 
-    # Return scores for downstream Elo calculation.
-    return player_one_score, player_two_score
+
+def record_results(
+    board: chess.Board,
+    player_one: Player,
+    player_two: Player,
+    primary_is_white: bool,
+    game_state: str,
+    player_one_illegal_moves: int,
+    player_two_illegal_moves: int,
+    player_one_legal_moves: int,
+    player_two_legal_moves: int,
+    total_time: float,
+    player_one_resignation: bool,
+    player_two_resignation: bool,
+    player_one_failed_to_find_legal_move: bool,
+    player_two_failed_to_find_legal_move: bool,
+    total_moves: int,
+    illegal_moves: int,
+    player_one_timeout: bool = False,
+    player_two_timeout: bool = False,
+):
+    # Backward-compatible wrapper: build info and write immediately.
+    p1, p2, info = build_result_info(
+        board,
+        player_one,
+        player_two,
+        primary_is_white,
+        game_state,
+        player_one_illegal_moves,
+        player_two_illegal_moves,
+        player_one_legal_moves,
+        player_two_legal_moves,
+        total_time,
+        player_one_resignation,
+        player_two_resignation,
+        player_one_failed_to_find_legal_move,
+        player_two_failed_to_find_legal_move,
+        total_moves,
+        illegal_moves,
+        player_one_timeout,
+        player_two_timeout,
+    )
+    write_result_row(info)
+    return p1, p2
 
 def generate_unique_game_id() -> str:
     timestamp = int(time.time())
@@ -569,7 +636,9 @@ def play_game(
         with open(csv_path) as f:
             reader = csv.DictReader(f)
             for row in reader:
-                val = parse_score(row.get("player_one_score", ""))
+                # Prefer the primary-player score if present; fall back to player_one_score for backward compatibility.
+                key = "primary_player_score" if "primary_player_score" in row else "player_one_score"
+                val = parse_score(row.get(key, ""))
                 if val is None or not (0.0 <= val <= 1.0):
                     continue
                 cumulative_p1_score += val
@@ -688,10 +757,11 @@ def play_game(
         print(f"Result: {board.result()}")
         print(board)
         print()
-        white_score, black_score = record_results(
+        white_score, black_score, info = build_result_info(
             board,
             white_player,
             black_player,
+            primary_is_white,
             game_state,
             white_illegal_moves,
             black_illegal_moves,
@@ -716,6 +786,7 @@ def play_game(
                 p_clamped = min(max(running_p, 1e-6), 1 - 1e-6)
                 delta = -400 * math.log10(1 / p_clamped - 1)
                 elo_estimate = anchor_rating + delta
+                info["primary_player_elo"] = elo_estimate
                 print(
                     f"Running score: {running_p:.3f} over {valid_games} valid game(s) | Elo vs Stockfish anchor {anchor_rating}: {elo_estimate:.1f}"
                 )
@@ -723,6 +794,7 @@ def play_game(
                 print(f"Running score: {running_p:.3f} over {valid_games} valid game(s)")
         else:
             print(f"Skipping Elo update for game {game_idx + 1}: invalid score {p1_score}")
+        write_result_row(info)
         print(
             f"Finished game {game_idx + 1}/{max_games} | elapsed this game: {total_time:.2f}s | total run so far: {time.time() - run_start_time:.2f}s"
         )
@@ -767,21 +839,23 @@ STOCKFISH_ELO_TABLE = {
 }
 recording_file = os.environ.get(
     "RECORDING_FILE",
-    "logs/lichess_200k_bins_16layers_vs_stockfish_level_1_2s.csv",  # fallback when RUN_FOR_ANALYSIS is False
+    "logs/lichess_200k_bins_16layers_vs_stockfish_level_2_2s.csv",  # fallback when RUN_FOR_ANALYSIS is False
 )
 player_one_recording_name = os.environ.get(
-    "PLAYER_ONE_RECORDING_NAME", "lichess_200k_bins_16layers"
+    "PLAYER_ONE_RECORDING_NAME", "CGPT_run1"
 )
 player_two_recording_name = os.environ.get(
-    "PLAYER_TWO_RECORDING_NAME", "stockfish_level_1_2s"
+    "PLAYER_TWO_RECORDING_NAME", "stockfish_level_2_2s"
 )
 if __name__ == "__main__":
-    num_games = 35
+    num_games = 70
     player_one = NanoGptPlayer(
         model_name="lichess_200k_bins_16layers_ckpt_with_optimizer.pt"
     )
-    # Stockfish level 1 with 2 seconds per move
-    player_two = StockfishPlayer(skill_level=1, play_time=2.0)
+    # Fixed Stockfish level/time for this run
+    stockfish_skill = 2
+    stockfish_time = 2.0
+    player_two = StockfishPlayer(skill_level=stockfish_skill, play_time=stockfish_time)
 
     play_game(player_one, player_two, num_games)
 
