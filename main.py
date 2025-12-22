@@ -839,21 +839,21 @@ STOCKFISH_ELO_TABLE = {
 }
 recording_file = os.environ.get(
     "RECORDING_FILE",
-    "logs/lichess_200k_bins_16layers_vs_stockfish_level_2_2s.csv",  # fallback when RUN_FOR_ANALYSIS is False
+    "logs/lichess_200k_bins_16layers_vs_stockfish_level_4_2s.csv",  # fallback when RUN_FOR_ANALYSIS is False
 )
 player_one_recording_name = os.environ.get(
     "PLAYER_ONE_RECORDING_NAME", "CGPT_run1"
 )
 player_two_recording_name = os.environ.get(
-    "PLAYER_TWO_RECORDING_NAME", "stockfish_level_2_2s"
+    "PLAYER_TWO_RECORDING_NAME", "stockfish_level_4_2s"
 )
 if __name__ == "__main__":
     num_games = 70
     player_one = NanoGptPlayer(
         model_name="lichess_200k_bins_16layers_ckpt_with_optimizer.pt"
     )
-    # Fixed Stockfish level/time for this run
-    stockfish_skill = 2
+    # Fixed Stockfish level/time for this run (overridable via env)
+    stockfish_skill = int(os.environ.get("STOCKFISH_SKILL", 4))
     stockfish_time = 2.0
     player_two = StockfishPlayer(skill_level=stockfish_skill, play_time=stockfish_time)
 
