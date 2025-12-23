@@ -205,6 +205,18 @@ class StockfishPlayer(Player):
         pass
 
 
+def describe_player(player: Player) -> Tuple[str, Optional[float]]:
+    cfg = player.get_config()
+    if "model" in cfg:  # GPT / NanoGPT side
+        model = cfg.get("model", "ChessGPT")
+        base = os.path.basename(str(model))
+        if base.endswith(".pt"):
+            base = base[:-3]
+        return f"ChessGPT ({base})", None
+    skill = cfg.get("skill_level", "?")
+    return f"Stockfish level {skill}", cfg.get("play_time")
+
+
 def get_gpt_response(game_state: str, model: str, temperature: float) -> Optional[str]:
     import gpt_query
 
@@ -429,19 +441,6 @@ def parse_score(val: str) -> Optional[float]:
 def get_player_titles_and_time(
     player_one: Player, player_two: Player
 ) -> Tuple[str, str, Optional[float], Optional[float]]:
-    def describe_player(p: Player):
-        cfg = p.get_config()
-        if "model" in cfg:  # GPT / NanoGPT side
-            model = cfg.get("model", "ChessGPT")
-            # If it's a path, strip directory/extension for readability.
-            base = os.path.basename(str(model))
-            if base.endswith(".pt"):
-                base = base[:-3]
-            return f"ChessGPT ({base})", None
-        # Stockfish side
-        skill = cfg.get("skill_level", "?")
-        return f"Stockfish level {skill}", cfg.get("play_time")
-
     p1_title, p1_time = describe_player(player_one)
     p2_title, p2_time = describe_player(player_two)
 
@@ -657,8 +656,6 @@ def play_game(
     )
 
     for game_idx in range(max_games):  # Play max_games games
-        with open("gpt_inputs/prompt.txt", "r") as f:
-            game_state = f.read()
         board = chess.Board()
 
         if alternate_colors and game_idx % 2 == 1:
@@ -666,6 +663,11 @@ def play_game(
         else:
             white_player, black_player = player_one, player_two
         primary_is_white = white_player is player_one
+
+        # Build PGN headers with the actual player titles for this game.
+        white_title, _ = describe_player(white_player)
+        black_title, _ = describe_player(black_player)
+        game_state = f'[White "{white_title}"]\n[Black "{black_title}"]\n\n'
 
         if randomize_opening_moves is not None:
             game_state, board = initialize_game_with_random_moves(
