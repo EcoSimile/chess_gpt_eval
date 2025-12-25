@@ -1,0 +1,4 @@
+[White "ChessGPT (lichess_200k_bins_16layers_ckpt_with_optimizer)"]
+[Black "Stockfish level 0"]
+
+1. e4 c5 2. Nf3 a6 3. d4 e6 4. d5 d6 5. c4 exd5 6. exd5 g6 7. Bd3 Qe7+ 8. Be3 Bg4 9. O-O Bg7 10. Re1 Nd7 11. Bg5 f6 12. Rxe7+ Nxe7 13. Be3 Ne5 14. Be2 Nxf3+ 15. Bxf3 h5 16. Bxg4 Rd8 17. Be6 Nf5 18. Bxf5 gxf5 19. Qf3 f4 20. Qxf4 f5 21. Qxf5 Bxb2 22. Qe6+ Kf8 23. Bh6+ Rxh6 24. Qxh6+ Bg7 25. Qf4+ Bf6 26. Qxf6+ Kg8 27. Qxd8+ Kg7 28. Qxd6 b5 29. Qxc5 bxc4 30. Qxc4 Kh7 31. Qxa6 Kh8 32. Qe6 h4 33. d6 h3 34. d7 Kh7 35. d8=Q Kg7 36. Qdd7+ Kh8 37. Qee8#
