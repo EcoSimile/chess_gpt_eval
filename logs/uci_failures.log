@@ -10754,3 +10754,3242 @@ Transcript:
 ========================================
 
 2025-12-26T22:52:14 !!! reason=backend returned bestmove 0000; last_position=position fen 4R3/p4p2/6pk/7p/2PQ1P2/2P2N1P/P4P2/1R4K1 w - - 4 28; board_at_go=4R3/p4p2/6pk/7p/2PQ1P2/2P2N1P/P4P2/1R4K1 w - - 4 28; latest_board=4R3/p4p2/6pk/7p/2PQ1P2/2P2N1P/P4P2/1R4K1 w - - 4 28; last_go=<none>
+2025-12-28T21:32:12 !!! reason=Engine reported illegal SAN from backend; last_position=position fen rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2; board_at_go=rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2; latest_board=rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2; last_go=go infinite
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: e4
+  2: e4
+  3: e4
+  4: e4
+  5: b3
+Side to move: black
+FEN: rnbqkbnr/pp1ppppp/8/2p5/4P3/2N5/PPPP1PPP/R1BQKBNR b KQkq - 1 2
+Transcript length (chars): 213
+Transcript tokens: 40
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"]
+
+; Nh6 Nf6 Qc7 Qb6 Qa5 Nc6 Na6 h6 g6 f6 e6 d6 b6 a6 c4 h5 g5 f5 e5 d5 b5 a5 ;
+
+ 2. Nc3
+========================================
+
+2025-12-28T21:32:22 !!! reason=Engine reported illegal SAN from backend; last_position=position fen rnbqkbnr/pp1ppppp/8/2p5/4P3/2N5/PPPP1PPP/R1BQKBNR b KQkq - 1 2; board_at_go=rnbqkbnr/pp1ppppp/8/2p5/4P3/2N5/PPPP1PPP/R1BQKBNR b KQkq - 1 2; latest_board=rnbqkbnr/pp1ppppp/8/2p5/4P3/2N5/PPPP1PPP/R1BQKBNR b KQkq - 1 2; last_go=go infinite
+2025-12-28T21:32:22 !!! reason=backend returned bestmove 0000; last_position=position fen rnbqkbnr/pp1ppppp/8/2p5/4P3/2N5/PPPP1PPP/R1BQKBNR b KQkq - 1 2; board_at_go=rnbqkbnr/pp1ppppp/8/2p5/4P3/2N5/PPPP1PPP/R1BQKBNR b KQkq - 1 2; latest_board=rnbqkbnr/pp1ppppp/8/2p5/4P3/2N5/PPPP1PPP/R1BQKBNR b KQkq - 1 2; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 15
+  2: 1
+  3: 15
+  4: 15
+  5: 15
+Side to move: white
+FEN: r1bqk1nr/pp2ppbp/2np2p1/2p5/2B1PP2/2N2N2/PPPP2PP/R1BQK2R w KQkq - 2 6
+Transcript length (chars): 290
+Transcript tokens: 56
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "r1bqk1nr/pp2ppbp/2np2p1/2p5/2B1PP2/2N2N2/PPPP2PP/R1BQK2R w KQkq - 2 6"]
+
+; Bxf7+ Be6 Ba6 Bd5 Bb5 Bd3 Bb3 Be2 Bf1 Ng5 Ne5 Nh4 Nd4 Ng1 Nd5 Nb5 Na4 Ne2 Nb1 Rg1 Rf1 Kf2 Ke2 Kf1 Qe2 Rb1 O-O f5 e5 h3 g3 d3 b3 a3 h4 g4 d4 b4 a4 ;
+
+ 6.
+========================================
+
+2025-12-28T21:32:38 !!! reason=backend returned bestmove 0000; last_position=position fen r1bqk1nr/pp2ppbp/2np2p1/2p5/2B1PP2/2N2N2/PPPP2PP/R1BQK2R w KQkq - 2 6; board_at_go=r1bqk1nr/pp2ppbp/2np2p1/2p5/2B1PP2/2N2N2/PPPP2PP/R1BQK2R w KQkq - 2 6; latest_board=r1bqk1nr/pp2ppbp/2np2p1/2p5/2B1PP2/2N2N2/PPPP2PP/R1BQK2R w KQkq - 2 6; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 16
+  2: 16
+  3: 13
+  4: e3
+  5: d4
+Side to move: black
+FEN: r1bqk1nr/pp2ppbp/2np2p1/2p5/2B1PP2/2N2N2/PPPP2PP/R1BQ1RK1 b kq - 3 6
+Transcript length (chars): 279
+Transcript tokens: 53
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "r1bqk1nr/pp2ppbp/2np2p1/2p5/2B1PP2/2N2N2/PPPP2PP/R1BQ1RK1 b kq - 3 6"]
+
+; Nh6 Nf6 Kf8 Kd7 Qd7 Qc7 Qb6 Qa5 Bd7 Be6 Bf5 Bg4 Bh3 Rb8 Bf8 Bh6 Bf6 Be5 Bd4+ Bxc3 Nb8 Ne5 Na5 Nd4 Nb4 h6 f6 e6 b6 a6 g5 d5 h5 f5 e5 b5 a5 ;
+========================================
+
+2025-12-28T21:32:53 !!! reason=Engine reported illegal SAN from backend; last_position=position fen r1bqk1nr/pp2ppbp/2np2p1/2p5/2B1PP2/2N2N2/PPPP2PP/R1BQ1RK1 b kq - 3 6; board_at_go=r1bqk1nr/pp2ppbp/2np2p1/2p5/2B1PP2/2N2N2/PPPP2PP/R1BQ1RK1 b kq - 3 6; latest_board=r1bqk1nr/pp2ppbp/2np2p1/2p5/2B1PP2/2N2N2/PPPP2PP/R1BQ1RK1 b kq - 3 6; last_go=go infinite
+2025-12-28T21:32:53 !!! reason=backend returned bestmove 0000; last_position=position fen r1bqk1nr/pp2ppbp/2np2p1/2p5/2B1PP2/2N2N2/PPPP2PP/R1BQ1RK1 b kq - 3 6; board_at_go=r1bqk1nr/pp2ppbp/2np2p1/2p5/2B1PP2/2N2N2/PPPP2PP/R1BQ1RK1 b kq - 3 6; latest_board=r1bqk1nr/pp2ppbp/2np2p1/2p5/2B1PP2/2N2N2/PPPP2PP/R1BQ1RK1 b kq - 3 6; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 16
+  2: 16
+  3: 16
+  4: 1d6
+  5: e4
+Side to move: black
+FEN: r1bqk1nr/pp3pbp/2npp1p1/2p5/2B1PP2/2NP1N2/PPP3PP/R1BQ1RK1 b kq - 0 7
+Transcript length (chars): 290
+Transcript tokens: 55
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "r1bqk1nr/pp3pbp/2npp1p1/2p5/2B1PP2/2NP1N2/PPP3PP/R1BQ1RK1 b kq - 0 7"]
+
+; Nge7 Nh6 Nf6 Kf8 Ke7 Kd7 Qe7 Qd7 Qc7 Qf6 Qb6 Qg5 Qa5 Qh4 Bd7 Rb8 Bf8 Bh6 Bf6 Be5 Bd4+ Bxc3 Nb8 Nce7 Ne5 Na5 Nd4 Nb4 h6 f6 b6 a6 g5 e5 d5 h5 f5 b5 a5 ;
+========================================
+
+2025-12-28T21:37:04 !!! reason=Engine reported illegal SAN from backend; last_position=position fen r1bqk1nr/pp3pbp/2npp1p1/2p5/2B1PP2/2NP1N2/PPP3PP/R1BQ1RK1 b kq - 0 7; board_at_go=r1bqk1nr/pp3pbp/2npp1p1/2p5/2B1PP2/2NP1N2/PPP3PP/R1BQ1RK1 b kq - 0 7; latest_board=r1bqk1nr/pp3pbp/2npp1p1/2p5/2B1PP2/2NP1N2/PPP3PP/R1BQ1RK1 b kq - 0 7; last_go=go infinite
+2025-12-28T21:37:04 !!! reason=backend returned bestmove 0000; last_position=position fen r1bqk1nr/pp3pbp/2npp1p1/2p5/2B1PP2/2NP1N2/PPP3PP/R1BQ1RK1 b kq - 0 7; board_at_go=r1bqk1nr/pp3pbp/2npp1p1/2p5/2B1PP2/2NP1N2/PPP3PP/R1BQ1RK1 b kq - 0 7; latest_board=r1bqk1nr/pp3pbp/2npp1p1/2p5/2B1PP2/2NP1N2/PPP3PP/R1BQ1RK1 b kq - 0 7; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 15
+  2: 15
+  3: 15
+  4: 15
+  5: 15
+Side to move: white
+FEN: r1bqk2r/pp2npbp/2npp1p1/2p5/2B1PP2/2NP1N2/PPP3PP/R1BQ1RK1 w kq - 1 8
+Transcript length (chars): 281
+Transcript tokens: 54
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "r1bqk2r/pp2npbp/2npp1p1/2p5/2B1PP2/2NP1N2/PPP3PP/R1BQ1RK1 w kq - 1 8"]
+
+; Bxe6 Ba6 Bd5 Bb5 Bb3 Ng5 Ne5 Nh4 Nd4 Nd2 Ne1 Nd5 Nb5 Na4 Ne2 Nb1 Kf2 Kh1 Rf2 Re1 Qe2 Qd2 Qe1 Be3 Bd2 Rb1 f5 e5 d4 h3 g3 b3 a3 h4 g4 b4 a4 ;
+
+ 8.
+========================================
+
+2025-12-28T21:37:19 !!! reason=backend returned bestmove 0000; last_position=position fen r1bqk2r/pp2npbp/2npp1p1/2p5/2B1PP2/2NP1N2/PPP3PP/R1BQ1RK1 w kq - 1 8; board_at_go=r1bqk2r/pp2npbp/2npp1p1/2p5/2B1PP2/2NP1N2/PPP3PP/R1BQ1RK1 w kq - 1 8; latest_board=r1bqk2r/pp2npbp/2npp1p1/2p5/2B1PP2/2NP1N2/PPP3PP/R1BQ1RK1 w kq - 1 8; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 15
+  2: 15
+  3: 15
+  4: 15
+  5: 15
+Side to move: white
+FEN: r1bqk2r/pp2npb1/2npp1pp/2p5/2B1PP2/2NP1N2/PPPB2PP/R2Q1RK1 w kq - 0 9
+Transcript length (chars): 289
+Transcript tokens: 56
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "r1bqk2r/pp2npb1/2npp1pp/2p5/2B1PP2/2NP1N2/PPPB2PP/R2Q1RK1 w kq - 0 9"]
+
+; Bxe6 Ba6 Bd5 Bb5 Bb3 Ng5 Ne5 Nh4 Nd4 Ne1 Nd5 Nb5 Na4 Ne2 Nb1 Be3 Be1 Bc1 Kf2 Kh1 Rf2 Re1 Qe2 Qe1 Qc1 Qb1 Rc1 Rb1 f5 e5 d4 h3 g3 b3 a3 h4 g4 b4 a4 ;
+
+ 9.
+========================================
+
+2025-12-28T21:37:34 !!! reason=backend returned bestmove 0000; last_position=position fen r1bqk2r/pp2npb1/2npp1pp/2p5/2B1PP2/2NP1N2/PPPB2PP/R2Q1RK1 w kq - 0 9; board_at_go=r1bqk2r/pp2npb1/2npp1pp/2p5/2B1PP2/2NP1N2/PPPB2PP/R2Q1RK1 w kq - 0 9; latest_board=r1bqk2r/pp2npb1/2npp1pp/2p5/2B1PP2/2NP1N2/PPPB2PP/R2Q1RK1 w kq - 0 9; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 16
+  2: 16
+  3: 16
+  4: 16
+  5: 16
+Side to move: black
+FEN: r1bqk2r/pp2npb1/2npp1pp/2p5/2B1PP2/P1NP1N2/1PPB2PP/R2Q1RK1 b kq - 0 9
+Transcript length (chars): 274
+Transcript tokens: 51
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "r1bqk2r/pp2npb1/2npp1pp/2p5/2B1PP2/P1NP1N2/1PPB2PP/R2Q1RK1 b kq - 0 9"]
+
+; Rg8 Rf8 Rh7 Kf8 Kd7 Qd7 Qc7 Qb6 Qa5 Bd7 Rb8 Bf8 Bf6 Be5 Bd4+ Bxc3 Ng8 Nf5 Nd5 Nb8 Ne5 Na5 Nd4 Nb4 O-O f6 b6 a6 h5 g5 e5 d5 f5 b5 a5 ;
+========================================
+
+2025-12-28T21:38:17 !!! reason=backend returned bestmove 0000; last_position=position fen r1bqk2r/pp2npb1/2npp1pp/2p5/2B1PP2/P1NP1N2/1PPB2PP/R2Q1RK1 b kq - 0 9; board_at_go=r1bqk2r/pp2npb1/2npp1pp/2p5/2B1PP2/P1NP1N2/1PPB2PP/R2Q1RK1 b kq - 0 9; latest_board=r1bqk2r/pp2npb1/2npp1pp/2p5/2B1PP2/P1NP1N2/1PPB2PP/R2Q1RK1 b kq - 0 9; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 16
+  2: 16
+  3: 16
+  4: 16
+  5: 16
+Side to move: black
+FEN: r1bqk2r/pp2npb1/2npp1pp/2p5/2B1PP2/P1NP1N2/1PPB2PP/R2Q1RK1 b kq - 0 9
+Transcript length (chars): 274
+Transcript tokens: 51
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "r1bqk2r/pp2npb1/2npp1pp/2p5/2B1PP2/P1NP1N2/1PPB2PP/R2Q1RK1 b kq - 0 9"]
+
+; Rg8 Rf8 Rh7 Kf8 Kd7 Qd7 Qc7 Qb6 Qa5 Bd7 Rb8 Bf8 Bf6 Be5 Bd4+ Bxc3 Ng8 Nf5 Nd5 Nb8 Ne5 Na5 Nd4 Nb4 O-O f6 b6 a6 h5 g5 e5 d5 f5 b5 a5 ;
+========================================
+
+2025-12-28T21:38:32 !!! reason=backend returned bestmove 0000; last_position=position fen r1bqk2r/pp2npb1/2npp1pp/2p5/2B1PP2/P1NP1N2/1PPB2PP/R2Q1RK1 b kq - 0 9; board_at_go=r1bqk2r/pp2npb1/2npp1pp/2p5/2B1PP2/P1NP1N2/1PPB2PP/R2Q1RK1 b kq - 0 9; latest_board=r1bqk2r/pp2npb1/2npp1pp/2p5/2B1PP2/P1NP1N2/1PPB2PP/R2Q1RK1 b kq - 0 9; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 15
+  2: 15
+  3: 15
+  4: 15
+  5: 15
+Side to move: white
+FEN: r2qk2r/pp1bnpb1/2npp1pp/2p5/2B1PP2/P1NP1N2/1PPB2PP/R2Q1RK1 w kq - 1 10
+Transcript length (chars): 301
+Transcript tokens: 58
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "r2qk2r/pp1bnpb1/2npp1pp/2p5/2B1PP2/P1NP1N2/1PPB2PP/R2Q1RK1 w kq - 1 10"]
+
+; Bxe6 Ba6 Bd5 Bb5 Bb3 Ba2 Ng5 Ne5 Nh4 Nd4 Ne1 Nd5 Nb5 Na4 Ne2 Na2 Nb1 Be3 Be1 Bc1 Kf2 Kh1 Rf2 Re1 Qe2 Qe1 Qc1 Qb1 Ra2 Rc1 Rb1 f5 e5 d4 a4 h3 g3 b3 h4 g4 b4 ;
+
+ 10.
+========================================
+
+2025-12-28T21:38:50 !!! reason=backend returned bestmove 0000; last_position=position fen r2qk2r/pp1bnpb1/2npp1pp/2p5/2B1PP2/P1NP1N2/1PPB2PP/R2Q1RK1 w kq - 1 10; board_at_go=r2qk2r/pp1bnpb1/2npp1pp/2p5/2B1PP2/P1NP1N2/1PPB2PP/R2Q1RK1 w kq - 1 10; latest_board=r2qk2r/pp1bnpb1/2npp1pp/2p5/2B1PP2/P1NP1N2/1PPB2PP/R2Q1RK1 w kq - 1 10; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 15
+  2: 15
+  3: 15
+  4: 15
+  5: 15
+Side to move: white
+FEN: 1r1qk2r/pp1bnpb1/2npp1pp/2p5/2B1PP2/P1NP1N2/1PPB2PP/1R1Q1RK1 w k - 3 11
+Transcript length (chars): 290
+Transcript tokens: 55
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "1r1qk2r/pp1bnpb1/2npp1pp/2p5/2B1PP2/P1NP1N2/1PPB2PP/1R1Q1RK1 w k - 3 11"]
+
+; Bxe6 Ba6 Bd5 Bb5 Bb3 Ba2 Ng5 Ne5 Nh4 Nd4 Ne1 Nd5 Nb5 Na4 Ne2 Na2 Be3 Be1 Bc1 Kf2 Kh1 Rf2 Re1 Qe2 Qe1 Qc1 Rc1 Ra1 f5 e5 d4 a4 h3 g3 b3 h4 g4 b4 ;
+
+ 11.
+========================================
+
+2025-12-28T21:39:05 !!! reason=backend returned bestmove 0000; last_position=position fen 1r1qk2r/pp1bnpb1/2npp1pp/2p5/2B1PP2/P1NP1N2/1PPB2PP/1R1Q1RK1 w k - 3 11; board_at_go=1r1qk2r/pp1bnpb1/2npp1pp/2p5/2B1PP2/P1NP1N2/1PPB2PP/1R1Q1RK1 w k - 3 11; latest_board=1r1qk2r/pp1bnpb1/2npp1pp/2p5/2B1PP2/P1NP1N2/1PPB2PP/1R1Q1RK1 w k - 3 11; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 15
+  2: 15
+  3: 15
+  4: 15
+  5: 15
+Side to move: white
+FEN: 1r1q1rk1/pp1bnpb1/2npp1pp/2p5/2B1PP2/P1NP1N2/1PPB2PP/1R2QRK1 w - - 5 12
+Transcript length (chars): 302
+Transcript tokens: 58
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "1r1q1rk1/pp1bnpb1/2npp1pp/2p5/2B1PP2/P1NP1N2/1PPB2PP/1R2QRK1 w - - 5 12"]
+
+; Bxe6 Ba6 Bd5 Bb5 Bb3 Ba2 Ng5 Ne5 Nh4 Nd4 Nd5 Nb5 Na4 Ne2 Na2 Nd1 Be3 Bc1 Kf2 Kh1 Rf2 Qh4 Qg3 Qe3 Qf2 Qe2 Qd1 Qc1 Rd1 Rc1 Ra1 f5 e5 d4 a4 h3 g3 b3 h4 g4 b4 ;
+
+ 12.
+========================================
+
+2025-12-28T21:39:22 !!! reason=backend returned bestmove 0000; last_position=position fen 1r1q1rk1/pp1bnpb1/2npp1pp/2p5/2B1PP2/P1NP1N2/1PPB2PP/1R2QRK1 w - - 5 12; board_at_go=1r1q1rk1/pp1bnpb1/2npp1pp/2p5/2B1PP2/P1NP1N2/1PPB2PP/1R2QRK1 w - - 5 12; latest_board=1r1q1rk1/pp1bnpb1/2npp1pp/2p5/2B1PP2/P1NP1N2/1PPB2PP/1R2QRK1 w - - 5 12; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 15
+  2: 15
+  3: 15
+  4: 15
+  5: 15
+Side to move: white
+FEN: 1r1q1r1k/pp1bnpb1/2npp1pp/2p5/2B1PP2/P1NPBN2/1PP3PP/1R2QRK1 w - - 7 13
+Transcript length (chars): 318
+Transcript tokens: 62
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "1r1q1r1k/pp1bnpb1/2npp1pp/2p5/2B1PP2/P1NPBN2/1PP3PP/1R2QRK1 w - - 7 13"]
+
+; Bxe6 Ba6 Bd5 Bb5 Bb3 Ba2 Ng5 Ne5 Nh4 Nd4 Nd2 Bxc5 Bd4 Bf2 Bd2 Bc1 Nd5 Nb5 Na4 Ne2 Na2 Nd1 Kf2 Kh1 Rf2 Qh4 Qg3 Qf2 Qe2 Qd2 Qd1 Qc1 Rd1 Rc1 Ra1 f5 e5 d4 a4 h3 g3 b3 h4 g4 b4 ;
+
+ 13.
+========================================
+
+2025-12-28T21:39:40 !!! reason=backend returned bestmove 0000; last_position=position fen 1r1q1r1k/pp1bnpb1/2npp1pp/2p5/2B1PP2/P1NPBN2/1PP3PP/1R2QRK1 w - - 7 13; board_at_go=1r1q1r1k/pp1bnpb1/2npp1pp/2p5/2B1PP2/P1NPBN2/1PP3PP/1R2QRK1 w - - 7 13; latest_board=1r1q1r1k/pp1bnpb1/2npp1pp/2p5/2B1PP2/P1NPBN2/1PP3PP/1R2QRK1 w - - 7 13; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 16e6
+  2: 16e6
+  3: 16e6
+  4: 16e6
+  5: 16e6
+Side to move: black
+FEN: 1r1q1r1k/pp1bnpb1/2npp1pp/1Np5/2B1PP2/P2PBN2/1PP3PP/1R2QRK1 b - - 8 13
+Transcript length (chars): 275
+Transcript tokens: 51
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "1r1q1r1k/pp1bnpb1/2npp1pp/1Np5/2B1PP2/P2PBN2/1PP3PP/1R2QRK1 b - - 8 13"]
+
+; Kg8 Kh7 Rg8 Re8 Qe8 Qc8 Qc7 Qb6 Qa5 Rc8 Ra8 Bf6 Be5 Bd4 Bc3 Bxb2 Ng8 Nc8 Nf5 Nd5 Be8 Bc8 Ne5 Na5 Nd4 Nb4 f6 b6 a6 h5 g5 e5 d5 f5 a5 ;
+========================================
+
+2025-12-28T21:40:37 !!! reason=backend returned bestmove 0000; last_position=position fen 1r1q1r1k/pp1bnpb1/2npp1pp/1Np5/2B1PP2/P2PBN2/1PP3PP/1R2QRK1 b - - 8 13; board_at_go=1r1q1r1k/pp1bnpb1/2npp1pp/1Np5/2B1PP2/P2PBN2/1PP3PP/1R2QRK1 b - - 8 13; latest_board=1r1q1r1k/pp1bnpb1/2npp1pp/1Np5/2B1PP2/P2PBN2/1PP3PP/1R2QRK1 b - - 8 13; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 16e6
+  2: 16e6
+  3: 16e6
+  4: e4
+  5: 16
+Side to move: black
+FEN: 1r1q1r1k/pp1bnpb1/2npp1pp/1Np5/2B1PP2/P2PBN2/1PP3PP/1R2QRK1 b - - 8 13
+Transcript length (chars): 275
+Transcript tokens: 51
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "1r1q1r1k/pp1bnpb1/2npp1pp/1Np5/2B1PP2/P2PBN2/1PP3PP/1R2QRK1 b - - 8 13"]
+
+; Kg8 Kh7 Rg8 Re8 Qe8 Qc8 Qc7 Qb6 Qa5 Rc8 Ra8 Bf6 Be5 Bd4 Bc3 Bxb2 Ng8 Nc8 Nf5 Nd5 Be8 Bc8 Ne5 Na5 Nd4 Nb4 f6 b6 a6 h5 g5 e5 d5 f5 a5 ;
+========================================
+
+2025-12-28T21:40:51 !!! reason=Engine reported illegal SAN from backend; last_position=position fen 1r1q1r1k/pp1bnpb1/2npp1pp/1Np5/2B1PP2/P2PBN2/1PP3PP/1R2QRK1 b - - 8 13; board_at_go=1r1q1r1k/pp1bnpb1/2npp1pp/1Np5/2B1PP2/P2PBN2/1PP3PP/1R2QRK1 b - - 8 13; latest_board=1r1q1r1k/pp1bnpb1/2npp1pp/1Np5/2B1PP2/P2PBN2/1PP3PP/1R2QRK1 b - - 8 13; last_go=go infinite
+2025-12-28T21:40:51 !!! reason=backend returned bestmove 0000; last_position=position fen 1r1q1r1k/pp1bnpb1/2npp1pp/1Np5/2B1PP2/P2PBN2/1PP3PP/1R2QRK1 b - - 8 13; board_at_go=1r1q1r1k/pp1bnpb1/2npp1pp/1Np5/2B1PP2/P2PBN2/1PP3PP/1R2QRK1 b - - 8 13; latest_board=1r1q1r1k/pp1bnpb1/2npp1pp/1Np5/2B1PP2/P2PBN2/1PP3PP/1R2QRK1 b - - 8 13; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 1
+  2: 1
+  3: 1
+  4: 1
+  5: 1
+Side to move: white
+FEN: 1r1qbr1k/1p2npb1/p1npp1pp/1Np5/2BPPP2/P3BN2/1PP3PP/1R2QRK1 w - - 0 15
+Transcript length (chars): 317
+Transcript tokens: 62
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "1r1qbr1k/1p2npb1/p1npp1pp/1Np5/2BPPP2/P3BN2/1PP3PP/1R2QRK1 w - - 0 15"]
+
+; Nc7 Na7 Nxd6 Nc3 Bxe6 Bd5 Bd3 Bb3 Be2 Ba2 Ng5 Ne5 Nh4 Nd2 Bf2 Bd2 Bc1 Kf2 Kh1 Rf2 Qa5 Qh4 Qb4 Qg3 Qc3 Qf2 Qe2 Qd2 Qd1 Qc1 Rd1 Rc1 Ra1 dxc5 f5 e5 d5 a4 h3 g3 c3 b3 h4 g4 b4 ;
+
+ 15.
+========================================
+
+2025-12-28T21:41:10 !!! reason=backend returned bestmove 0000; last_position=position fen 1r1qbr1k/1p2npb1/p1npp1pp/1Np5/2BPPP2/P3BN2/1PP3PP/1R2QRK1 w - - 0 15; board_at_go=1r1qbr1k/1p2npb1/p1npp1pp/1Np5/2BPPP2/P3BN2/1PP3PP/1R2QRK1 w - - 0 15; latest_board=1r1qbr1k/1p2npb1/p1npp1pp/1Np5/2BPPP2/P3BN2/1PP3PP/1R2QRK1 w - - 0 15; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 16
+  2: 16
+  3: 16
+  4: 16
+  5: 16
+Side to move: black
+FEN: 1r1qbr1k/1p2npb1/p1npp1pp/1NpP4/2B1PP2/P3BN2/1PP3PP/1R2QRK1 b - - 0 15
+Transcript length (chars): 276
+Transcript tokens: 50
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "1r1qbr1k/1p2npb1/p1npp1pp/1NpP4/2B1PP2/P3BN2/1PP3PP/1R2QRK1 b - - 0 15"]
+
+; Kg8 Kh7 Rg8 Bd7 Qc8 Qd7 Qc7 Qb6 Qa5 Rc8 Ra8 Bf6 Be5 Bd4 Bc3 Bxb2 Ng8 Nc8 Nf5 Nxd5 Na7 Ne5 Na5 Nd4 Nb4 exd5 axb5 f6 b6 h5 g5 e5 a5 f5 ;
+========================================
+
+2025-12-28T21:41:24 !!! reason=backend returned bestmove 0000; last_position=position fen 1r1qbr1k/1p2npb1/p1npp1pp/1NpP4/2B1PP2/P3BN2/1PP3PP/1R2QRK1 b - - 0 15; board_at_go=1r1qbr1k/1p2npb1/p1npp1pp/1NpP4/2B1PP2/P3BN2/1PP3PP/1R2QRK1 b - - 0 15; latest_board=1r1qbr1k/1p2npb1/p1npp1pp/1NpP4/2B1PP2/P3BN2/1PP3PP/1R2QRK1 b - - 0 15; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 1
+  2: 1
+  3: 1
+  4: 1
+  5: 1
+Side to move: white
+FEN: 1r1qbr1k/1p2npb1/2Ppp1pp/2p5/2p1PP2/P3BN2/1PP3PP/1R2QRK1 w - - 0 17
+Transcript length (chars): 286
+Transcript tokens: 55
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "1r1qbr1k/1p2npb1/2Ppp1pp/2p5/2p1PP2/P3BN2/1PP3PP/1R2QRK1 w - - 0 17"]
+
+; Ng5 Ne5 Nh4 Nd4 Nd2 Bxc5 Bd4 Bf2 Bd2 Bc1 Kf2 Kh1 Rf2 Qa5 Qh4 Qb4 Qg3 Qc3 Qf2 Qe2 Qd2 Qd1 Qc1 Rd1 Rc1 Ra1 cxb7 c7 f5 e5 a4 h3 g3 c3 b3 h4 g4 b4 ;
+
+ 17.
+========================================
+
+2025-12-28T21:41:39 !!! reason=backend returned bestmove 0000; last_position=position fen 1r1qbr1k/1p2npb1/2Ppp1pp/2p5/2p1PP2/P3BN2/1PP3PP/1R2QRK1 w - - 0 17; board_at_go=1r1qbr1k/1p2npb1/2Ppp1pp/2p5/2p1PP2/P3BN2/1PP3PP/1R2QRK1 w - - 0 17; latest_board=1r1qbr1k/1p2npb1/2Ppp1pp/2p5/2p1PP2/P3BN2/1PP3PP/1R2QRK1 w - - 0 17; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 15
+  2: 15
+  3: 15
+  4: 15
+  5: 15
+Side to move: white
+FEN: 3qbr1k/1r2npb1/3pp1pp/2p5/2p1PP2/P3BN2/1PP3PP/1R2QRK1 w - - 0 18
+Transcript length (chars): 275
+Transcript tokens: 53
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "3qbr1k/1r2npb1/3pp1pp/2p5/2p1PP2/P3BN2/1PP3PP/1R2QRK1 w - - 0 18"]
+
+; Ng5 Ne5 Nh4 Nd4 Nd2 Bxc5 Bd4 Bf2 Bd2 Bc1 Kf2 Kh1 Rf2 Qa5 Qh4 Qb4 Qg3 Qc3 Qf2 Qe2 Qd2 Qd1 Qc1 Rd1 Rc1 Ra1 f5 e5 a4 h3 g3 c3 b3 h4 g4 b4 ;
+
+ 18.
+========================================
+
+2025-12-28T21:41:54 !!! reason=backend returned bestmove 0000; last_position=position fen 3qbr1k/1r2npb1/3pp1pp/2p5/2p1PP2/P3BN2/1PP3PP/1R2QRK1 w - - 0 18; board_at_go=3qbr1k/1r2npb1/3pp1pp/2p5/2p1PP2/P3BN2/1PP3PP/1R2QRK1 w - - 0 18; latest_board=3qbr1k/1r2npb1/3pp1pp/2p5/2p1PP2/P3BN2/1PP3PP/1R2QRK1 w - - 0 18; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 16
+  2: 16
+  3: 16
+  4: 16
+  5: 14
+Side to move: black
+FEN: 3qbr1k/1r2npb1/3pp1pp/2p5/2p1PP2/P3B3/1PPN2PP/1R2QRK1 b - - 1 18
+Transcript length (chars): 292
+Transcript tokens: 56
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "3qbr1k/1r2npb1/3pp1pp/2p5/2p1PP2/P3B3/1PPN2PP/1R2QRK1 b - - 1 18"]
+
+; Kg8 Kh7 Rg8 Bd7 Bc6 Bb5 Ba4 Qc8 Qb8 Qa8 Qd7 Qc7 Qb6 Qa5 Bf6 Be5 Bd4 Bc3 Bxb2 Ng8 Nc8 Nc6 Nf5 Nd5 Rb8 Rd7 Rc7 Ra7 Rb6 Rb5 Rb4 Rb3 Rxb2 f6 h5 g5 e5 d5 c3 f5 ;
+========================================
+
+2025-12-28T21:42:10 !!! reason=backend returned bestmove 0000; last_position=position fen 3qbr1k/1r2npb1/3pp1pp/2p5/2p1PP2/P3B3/1PPN2PP/1R2QRK1 b - - 1 18; board_at_go=3qbr1k/1r2npb1/3pp1pp/2p5/2p1PP2/P3B3/1PPN2PP/1R2QRK1 b - - 1 18; latest_board=3qbr1k/1r2npb1/3pp1pp/2p5/2p1PP2/P3B3/1PPN2PP/1R2QRK1 b - - 1 18; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 15
+  2: 15
+  3: 15
+  4: 15
+  5: 15
+Side to move: white
+FEN: 4br1k/1rq1npb1/3pp1pp/2p5/2p1PP2/P3B3/1PPN2PP/1R2QRK1 w - - 2 19
+Transcript length (chars): 248
+Transcript tokens: 46
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "4br1k/1rq1npb1/3pp1pp/2p5/2p1PP2/P3B3/1PPN2PP/1R2QRK1 w - - 2 19"]
+
+; Bxc5 Bd4 Bf2 Nxc4 Nf3 Nb3 Kf2 Kh1 Rf3 Rf2 Qh4 Qg3 Qf2 Qe2 Qd1 Qc1 Rd1 Rc1 Ra1 f5 e5 a4 h3 g3 c3 b3 h4 g4 b4 ;
+
+ 19.
+========================================
+
+2025-12-28T21:42:22 !!! reason=backend returned bestmove 0000; last_position=position fen 4br1k/1rq1npb1/3pp1pp/2p5/2p1PP2/P3B3/1PPN2PP/1R2QRK1 w - - 2 19; board_at_go=4br1k/1rq1npb1/3pp1pp/2p5/2p1PP2/P3B3/1PPN2PP/1R2QRK1 w - - 2 19; latest_board=4br1k/1rq1npb1/3pp1pp/2p5/2p1PP2/P3B3/1PPN2PP/1R2QRK1 w - - 2 19; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 1
+  2: 1
+  3: 1
+  4: 1
+  5: 1
+Side to move: white
+FEN: 4br2/1rq1npbk/3pp1pp/2p5/2N1PP2/P3B3/1PP3PP/1R2QRK1 w - - 1 20
+Transcript length (chars): 278
+Transcript tokens: 54
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "4br2/1rq1npbk/3pp1pp/2p5/2N1PP2/P3B3/1PP3PP/1R2QRK1 w - - 1 20"]
+
+; Nxd6 Nb6 Ne5 Na5 Nd2 Bxc5 Bd4 Bf2 Bd2 Bc1 Kf2 Kh1 Rf3 Rf2 Qa5 Qh4 Qb4 Qg3 Qc3 Qf2 Qe2 Qd2 Qd1 Qc1 Rd1 Rc1 Ra1 f5 e5 a4 h3 g3 c3 b3 h4 g4 b4 ;
+
+ 20.
+========================================
+
+2025-12-28T21:42:37 !!! reason=backend returned bestmove 0000; last_position=position fen 4br2/1rq1npbk/3pp1pp/2p5/2N1PP2/P3B3/1PP3PP/1R2QRK1 w - - 1 20; board_at_go=4br2/1rq1npbk/3pp1pp/2p5/2N1PP2/P3B3/1PP3PP/1R2QRK1 w - - 1 20; latest_board=4br2/1rq1npbk/3pp1pp/2p5/2N1PP2/P3B3/1PP3PP/1R2QRK1 w - - 1 20; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: Nc4
+  2: QRb5
+  3: QRb6
+  4: QQQNf5
+  5: Bb5
+Side to move: white
+FEN: 4br2/1rq1n1bk/3pp1pp/2p2p2/2N1PP1Q/P3B3/1PP3PP/1R3RK1 w - - 0 21
+Transcript length (chars): 304
+Transcript tokens: 57
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "4br2/1rq1n1bk/3pp1pp/2p2p2/2N1PP1Q/P3B3/1PP3PP/1R3RK1 w - - 0 21"]
+
+; Qxe7 Qxh6+ Qf6 Qh5 Qg5 Qg4 Qh3 Qg3 Qf2 Qe1 Nxd6 Nb6 Ne5 Na5 Nd2 Bxc5 Bd4 Bf2 Bd2 Bc1 Kf2 Kh1 Rf3 Rf2 Rfe1 Rfd1 Rfc1 Rbe1 Rbd1 Rbc1 Ra1 exf5 e5 a4 h3 g3 c3 b3 g4 b4 ;
+
+ 21.
+========================================
+
+2025-12-28T21:42:55 !!! reason=Engine reported illegal SAN from backend; last_position=position fen 4br2/1rq1n1bk/3pp1pp/2p2p2/2N1PP1Q/P3B3/1PP3PP/1R3RK1 w - - 0 21; board_at_go=4br2/1rq1n1bk/3pp1pp/2p2p2/2N1PP1Q/P3B3/1PP3PP/1R3RK1 w - - 0 21; latest_board=4br2/1rq1n1bk/3pp1pp/2p2p2/2N1PP1Q/P3B3/1PP3PP/1R3RK1 w - - 0 21; last_go=go infinite
+2025-12-28T21:42:55 !!! reason=backend returned bestmove 0000; last_position=position fen 4br2/1rq1n1bk/3pp1pp/2p2p2/2N1PP1Q/P3B3/1PP3PP/1R3RK1 w - - 0 21; board_at_go=4br2/1rq1n1bk/3pp1pp/2p2p2/2N1PP1Q/P3B3/1PP3PP/1R3RK1 w - - 0 21; latest_board=4br2/1rq1n1bk/3pp1pp/2p2p2/2N1PP1Q/P3B3/1PP3PP/1R3RK1 w - - 0 21; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 14a5
+  2: 14a5
+  3: 14c5
+  4: 14a5
+  5: 14a5
+Side to move: white
+FEN: 2n1br2/1r4bk/2qpp1pp/2p1Pp2/2N2P1Q/P3B3/1PP3PP/1R1R2K1 w - - 3 23
+Transcript length (chars): 306
+Transcript tokens: 58
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "2n1br2/1r4bk/2qpp1pp/2p1Pp2/2N2P1Q/P3B3/1PP3PP/1R1R2K1 w - - 3 23"]
+
+; Qd8 Qe7 Qxh6+ Qf6 Qh5 Qg5 Qg4 Qh3 Qg3 Qf2 Qe1 Nxd6 Nb6 Na5 Nd2 Bxc5 Bd4 Bf2 Bd2 Bc1 Kf2 Kh1 Kf1 Rxd6 Rd5 Rd4 Rd3 Rd2 Rf1 Re1 Rdc1 Rbc1 Ra1 exd6 a4 h3 g3 c3 b3 g4 b4 ;
+
+ 23.
+========================================
+
+2025-12-28T21:43:12 !!! reason=backend returned bestmove 0000; last_position=position fen 2n1br2/1r4bk/2qpp1pp/2p1Pp2/2N2P1Q/P3B3/1PP3PP/1R1R2K1 w - - 3 23; board_at_go=2n1br2/1r4bk/2qpp1pp/2p1Pp2/2N2P1Q/P3B3/1PP3PP/1R1R2K1 w - - 3 23; latest_board=2n1br2/1r4bk/2qpp1pp/2p1Pp2/2N2P1Q/P3B3/1PP3PP/1R1R2K1 w - - 3 23; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 15c5
+  2: 15c5
+  3: 15c5
+  4: 15
+  5: 15c6
+Side to move: white
+FEN: 4br2/1r4bk/2qnp1pp/2p1Pp2/5P1Q/P3B3/1PP3PP/1R1R2K1 w - - 0 24
+Transcript length (chars): 288
+Transcript tokens: 55
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "4br2/1r4bk/2qnp1pp/2p1Pp2/5P1Q/P3B3/1PP3PP/1R1R2K1 w - - 0 24"]
+
+; Qd8 Qe7 Qxh6+ Qf6 Qh5 Qg5 Qg4 Qh3 Qg3 Qf2 Qe1 Bxc5 Bd4 Bf2 Bd2 Bc1 Kf2 Kh1 Kf1 Rxd6 Rd5 Rd4 Rd3 Rd2 Rf1 Re1 Rdc1 Rbc1 Ra1 exd6 a4 h3 g3 c3 b3 g4 c4 b4 ;
+
+ 24.
+========================================
+
+2025-12-28T21:43:28 !!! reason=backend returned bestmove 0000; last_position=position fen 4br2/1r4bk/2qnp1pp/2p1Pp2/5P1Q/P3B3/1PP3PP/1R1R2K1 w - - 0 24; board_at_go=4br2/1r4bk/2qnp1pp/2p1Pp2/5P1Q/P3B3/1PP3PP/1R1R2K1 w - - 0 24; latest_board=4br2/1r4bk/2qnp1pp/2p1Pp2/5P1Q/P3B3/1PP3PP/1R1R2K1 w - - 0 24; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 15
+  2: 15
+  3: 15
+  4: 15+
+  5: 15
+Side to move: white
+FEN: 4br2/1r4bk/3Rp1pp/2p1Pp2/q4P1Q/P3B3/1PP3PP/1R4K1 w - - 1 25
+Transcript length (chars): 302
+Transcript tokens: 59
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "4br2/1r4bk/3Rp1pp/2p1Pp2/q4P1Q/P3B3/1PP3PP/1R4K1 w - - 1 25"]
+
+; Rd8 Rd7 Rxe6 Rc6 Rb6 Ra6 Rd5 Rd4 Rd3 Rd2 Rdd1 Qd8 Qe7 Qxh6+ Qf6 Qh5 Qg5 Qg4 Qh3 Qg3 Qf2 Qe1 Bxc5 Bd4 Bf2 Bd2 Bc1 Kf2 Kh1 Kf1 Rf1 Re1 Rbd1 Rc1 Ra1 h3 g3 c3 b3 g4 c4 b4 ;
+
+ 25.
+========================================
+
+2025-12-28T21:43:46 !!! reason=backend returned bestmove 0000; last_position=position fen 4br2/1r4bk/3Rp1pp/2p1Pp2/q4P1Q/P3B3/1PP3PP/1R4K1 w - - 1 25; board_at_go=4br2/1r4bk/3Rp1pp/2p1Pp2/q4P1Q/P3B3/1PP3PP/1R4K1 w - - 1 25; latest_board=4br2/1r4bk/3Rp1pp/2p1Pp2/q4P1Q/P3B3/1PP3PP/1R4K1 w - - 1 25; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 14
+  2: 16
+  3: 14
+  4: 14
+  5: 13e6
+Side to move: black
+FEN: 4br2/1r4bk/3Rp1pp/2p1Pp2/q4P1Q/P1P1B3/1P4PP/1R4K1 b - - 0 25
+Transcript length (chars): 309
+Transcript tokens: 59
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "4br2/1r4bk/3Rp1pp/2p1Pp2/q4P1Q/P1P1B3/1P4PP/1R4K1 b - - 0 25"]
+
+; Rh8 Rg8 Rff7 Rf6 Bf7 Bd7 Bc6 Bb5 Kh8 Kg8 Bh8 Bf6 Bxe5 Rb8 Rbf7 Re7 Rd7 Rc7 Ra7 Rb6 Rb5 Rb4 Rb3 Rxb2 Qa8 Qd7 Qa7 Qc6 Qa6 Qb5 Qa5 Qxf4 Qe4 Qd4 Qc4 Qb4 Qb3 Qxa3 Qc2 Qd1+ h5 g5 c4 ;
+========================================
+
+2025-12-28T21:44:46 !!! reason=backend returned bestmove 0000; last_position=position fen 4br2/1r4bk/3Rp1pp/2p1Pp2/q4P1Q/P1P1B3/1P4PP/1R4K1 b - - 0 25; board_at_go=4br2/1r4bk/3Rp1pp/2p1Pp2/q4P1Q/P1P1B3/1P4PP/1R4K1 b - - 0 25; latest_board=4br2/1r4bk/3Rp1pp/2p1Pp2/q4P1Q/P1P1B3/1P4PP/1R4K1 b - - 0 25; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 14
+  2: 14
+  3: 16
+  4: 14
+  5: 14
+Side to move: black
+FEN: 4br2/1r4bk/3Rp1pp/2p1Pp2/q4P1Q/P1P1B3/1P4PP/1R4K1 b - - 0 25
+Transcript length (chars): 309
+Transcript tokens: 59
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "4br2/1r4bk/3Rp1pp/2p1Pp2/q4P1Q/P1P1B3/1P4PP/1R4K1 b - - 0 25"]
+
+; Rh8 Rg8 Rff7 Rf6 Bf7 Bd7 Bc6 Bb5 Kh8 Kg8 Bh8 Bf6 Bxe5 Rb8 Rbf7 Re7 Rd7 Rc7 Ra7 Rb6 Rb5 Rb4 Rb3 Rxb2 Qa8 Qd7 Qa7 Qc6 Qa6 Qb5 Qa5 Qxf4 Qe4 Qd4 Qc4 Qb4 Qb3 Qxa3 Qc2 Qd1+ h5 g5 c4 ;
+========================================
+
+2025-12-28T21:45:05 !!! reason=backend returned bestmove 0000; last_position=position fen 4br2/1r4bk/3Rp1pp/2p1Pp2/q4P1Q/P1P1B3/1P4PP/1R4K1 b - - 0 25; board_at_go=4br2/1r4bk/3Rp1pp/2p1Pp2/q4P1Q/P1P1B3/1P4PP/1R4K1 b - - 0 25; latest_board=4br2/1r4bk/3Rp1pp/2p1Pp2/q4P1Q/P1P1B3/1P4PP/1R4K1 b - - 0 25; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 15
+  2: 15
+  3: 15
+  4: 15
+  5: 15
+Side to move: white
+FEN: 4br2/1r4bk/3Rp1pp/2p1Pp2/4qP1Q/P1P1B3/1P4PP/1R4K1 w - - 1 26
+Transcript length (chars): 303
+Transcript tokens: 59
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "4br2/1r4bk/3Rp1pp/2p1Pp2/4qP1Q/P1P1B3/1P4PP/1R4K1 w - - 1 26"]
+
+; Rd8 Rd7 Rxe6 Rc6 Rb6 Ra6 Rd5 Rd4 Rd3 Rd2 Rdd1 Qd8 Qe7 Qxh6+ Qf6 Qh5 Qg5 Qg4 Qh3 Qg3 Qf2 Qe1 Bxc5 Bd4 Bf2 Bd2 Bc1 Kf2 Kh1 Kf1 Rf1 Re1 Rbd1 Rc1 Ra1 c4 a4 h3 g3 b3 g4 b4 ;
+
+ 26.
+========================================
+
+2025-12-28T21:45:24 !!! reason=backend returned bestmove 0000; last_position=position fen 4br2/1r4bk/3Rp1pp/2p1Pp2/4qP1Q/P1P1B3/1P4PP/1R4K1 w - - 1 26; board_at_go=4br2/1r4bk/3Rp1pp/2p1Pp2/4qP1Q/P1P1B3/1P4PP/1R4K1 w - - 1 26; latest_board=4br2/1r4bk/3Rp1pp/2p1Pp2/4qP1Q/P1P1B3/1P4PP/1R4K1 w - - 1 26; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 14
+  2: 14
+  3: 14
+  4: 14
+  5: 14c5
+Side to move: black
+FEN: 4br2/1r4bk/3Rp1pp/2p1Pp2/4qP2/P1P1B3/1P4PP/1R2Q1K1 b - - 2 26
+Transcript length (chars): 310
+Transcript tokens: 58
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "4br2/1r4bk/3Rp1pp/2p1Pp2/4qP2/P1P1B3/1P4PP/1R2Q1K1 b - - 2 26"]
+
+; Rh8 Rg8 Rff7 Rf6 Bf7 Bd7 Bc6 Bb5 Ba4 Kh8 Kg8 Bh8 Bf6 Bxe5 Rb8 Rbf7 Re7 Rd7 Rc7 Ra7 Rb6 Rb5 Rb4 Rb3 Rxb2 Qc6 Qxe5 Qd5 Qxf4 Qd4 Qc4 Qb4 Qa4 Qf3 Qxe3+ Qd3 Qxg2+ Qc2 Qxb1 h5 g5 c4 ;
+========================================
+
+2025-12-28T21:45:49 !!! reason=backend returned bestmove 0000; last_position=position fen 4br2/1r4bk/3Rp1pp/2p1Pp2/4qP2/P1P1B3/1P4PP/1R2Q1K1 b - - 2 26; board_at_go=4br2/1r4bk/3Rp1pp/2p1Pp2/4qP2/P1P1B3/1P4PP/1R2Q1K1 b - - 2 26; latest_board=4br2/1r4bk/3Rp1pp/2p1Pp2/4qP2/P1P1B3/1P4PP/1R2Q1K1 b - - 2 26; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 14
+  2: 14
+  3: 14
+  4: 14
+  5: 14
+Side to move: black
+FEN: 4br2/1r4bk/3Rp1pp/2p1Pp2/4qP2/P1P1B3/1P4PP/1R2Q1K1 b - - 2 26
+Transcript length (chars): 310
+Transcript tokens: 58
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "4br2/1r4bk/3Rp1pp/2p1Pp2/4qP2/P1P1B3/1P4PP/1R2Q1K1 b - - 2 26"]
+
+; Rh8 Rg8 Rff7 Rf6 Bf7 Bd7 Bc6 Bb5 Ba4 Kh8 Kg8 Bh8 Bf6 Bxe5 Rb8 Rbf7 Re7 Rd7 Rc7 Ra7 Rb6 Rb5 Rb4 Rb3 Rxb2 Qc6 Qxe5 Qd5 Qxf4 Qd4 Qc4 Qb4 Qa4 Qf3 Qxe3+ Qd3 Qxg2+ Qc2 Qxb1 h5 g5 c4 ;
+========================================
+
+2025-12-28T21:46:08 !!! reason=backend returned bestmove 0000; last_position=position fen 4br2/1r4bk/3Rp1pp/2p1Pp2/4qP2/P1P1B3/1P4PP/1R2Q1K1 b - - 2 26; board_at_go=4br2/1r4bk/3Rp1pp/2p1Pp2/4qP2/P1P1B3/1P4PP/1R2Q1K1 b - - 2 26; latest_board=4br2/1r4bk/3Rp1pp/2p1Pp2/4qP2/P1P1B3/1P4PP/1R2Q1K1 b - - 2 26; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 15
+  2: 15
+  3: 15
+  4: 15
+  5: 15
+Side to move: white
+FEN: 5r2/1r4bk/2bRp1pp/2p1Pp2/4qP2/P1P1B3/1P4PP/1R2Q1K1 w - - 3 27
+Transcript length (chars): 278
+Transcript tokens: 53
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "5r2/1r4bk/2bRp1pp/2p1Pp2/4qP2/P1P1B3/1P4PP/1R2Q1K1 w - - 3 27"]
+
+; Rd8 Rd7 Rxe6 Rxc6 Rd5 Rd4 Rd3 Rd2 Rdd1 Bxc5 Bd4 Bf2 Bd2 Bc1 Kf2 Kh1 Kf1 Qh4 Qg3 Qf2 Qe2 Qd2 Qf1 Qd1 Qc1 Rbd1 Rc1 Ra1 c4 a4 h3 g3 b3 h4 g4 b4 ;
+
+ 27.
+========================================
+
+2025-12-28T21:46:23 !!! reason=backend returned bestmove 0000; last_position=position fen 5r2/1r4bk/2bRp1pp/2p1Pp2/4qP2/P1P1B3/1P4PP/1R2Q1K1 w - - 3 27; board_at_go=5r2/1r4bk/2bRp1pp/2p1Pp2/4qP2/P1P1B3/1P4PP/1R2Q1K1 w - - 3 27; latest_board=5r2/1r4bk/2bRp1pp/2p1Pp2/4qP2/P1P1B3/1P4PP/1R2Q1K1 w - - 3 27; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 16
+  2: 16
+  3: e4
+  4: 1d6
+  5: Nc3
+Side to move: black
+FEN: 5r2/1r4bk/2b1p1pp/2p1Pp2/4qP2/P1P1B3/1P1R2PP/1R2Q1K1 b - - 4 27
+Transcript length (chars): 330
+Transcript tokens: 62
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "5r2/1r4bk/2b1p1pp/2p1Pp2/4qP2/P1P1B3/1P1R2PP/1R2Q1K1 b - - 4 27"]
+
+; Rh8 Rg8 Re8 Rd8 Rc8 Rfb8 Ra8 Rff7 Rf6 Kh8 Kg8 Bh8 Bf6 Bxe5 Rbb8 Rbf7 Re7 Rd7 Rc7 Ra7 Rb6 Rb5 Rb4 Rb3 Rxb2 Be8 Bd7 Bd5 Bb5 Ba4 Qxe5 Qd5 Qxf4 Qd4 Qc4 Qb4 Qa4 Qf3 Qxe3+ Qd3 Qxg2+ Qc2 Qxb1 h5 g5 c4 ;
+========================================
+
+2025-12-28T21:46:44 !!! reason=Engine reported illegal SAN from backend; last_position=position fen 5r2/1r4bk/2b1p1pp/2p1Pp2/4qP2/P1P1B3/1P1R2PP/1R2Q1K1 b - - 4 27; board_at_go=5r2/1r4bk/2b1p1pp/2p1Pp2/4qP2/P1P1B3/1P1R2PP/1R2Q1K1 b - - 4 27; latest_board=5r2/1r4bk/2b1p1pp/2p1Pp2/4qP2/P1P1B3/1P1R2PP/1R2Q1K1 b - - 4 27; last_go=go infinite
+2025-12-28T21:46:44 !!! reason=backend returned bestmove 0000; last_position=position fen 5r2/1r4bk/2b1p1pp/2p1Pp2/4qP2/P1P1B3/1P1R2PP/1R2Q1K1 b - - 4 27; board_at_go=5r2/1r4bk/2b1p1pp/2p1Pp2/4qP2/P1P1B3/1P1R2PP/1R2Q1K1 b - - 4 27; latest_board=5r2/1r4bk/2b1p1pp/2p1Pp2/4qP2/P1P1B3/1P1R2PP/1R2Q1K1 b - - 4 27; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 15
+  2: 15
+  3: 15
+  4: 15
+  5: 15
+Side to move: white
+FEN: 3r1b2/1r5k/2b1p1pp/2p1Pp2/4qP2/P1P1B3/1P3RPP/1R2Q1K1 w - - 7 29
+Transcript length (chars): 240
+Transcript tokens: 44
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "3r1b2/1r5k/2b1p1pp/2p1Pp2/4qP2/P1P1B3/1P3RPP/1R2Q1K1 w - - 7 29"]
+
+; Bxc5 Bd4 Bd2 Bc1 Rf3 Re2 Rd2 Rc2 Rf1 Kh1 Kf1 Qe2 Qd2 Qf1 Qd1 Qc1 Rd1 Rc1 Ra1 c4 a4 h3 g3 b3 h4 g4 b4 ;
+
+ 29.
+========================================
+
+2025-12-28T21:46:56 !!! reason=backend returned bestmove 0000; last_position=position fen 3r1b2/1r5k/2b1p1pp/2p1Pp2/4qP2/P1P1B3/1P3RPP/1R2Q1K1 w - - 7 29; board_at_go=3r1b2/1r5k/2b1p1pp/2p1Pp2/4qP2/P1P1B3/1P3RPP/1R2Q1K1 w - - 7 29; latest_board=3r1b2/1r5k/2b1p1pp/2p1Pp2/4qP2/P1P1B3/1P3RPP/1R2Q1K1 w - - 7 29; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 13e5
+  2: 13e5
+  3: 14d5
+  4: 14c5
+  5: 14e5
+Side to move: black
+FEN: 3r1b2/1r5k/2b1p1pp/2p1Pp2/1P2qP2/P1P1B3/5RPP/1R2Q1K1 b - - 0 29
+Transcript length (chars): 338
+Transcript tokens: 64
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "3r1b2/1r5k/2b1p1pp/2p1Pp2/1P2qP2/P1P1B3/5RPP/1R2Q1K1 b - - 0 29"]
+
+; Bg7 Be7 Bd6 Re8 Rc8 Rdb8 Ra8 Rdd7 Rd6 Rd5 Rd4 Rd3 Rd2 Rd1 Kh8 Kg8 Kg7 Rbb8 Rg7 Rf7 Re7 Rbd7 Rc7 Ra7 Rb6 Rb5 Rxb4 Be8 Bd7 Bd5 Bb5 Ba4 Qxe5 Qd5 Qxf4 Qd4 Qc4 Qxb4 Qf3 Qxe3 Qd3 Qxg2+ Qc2 Qxb1 cxb4 h5 g5 c4 ;
+========================================
+
+2025-12-28T21:48:13 !!! reason=backend returned bestmove 0000; last_position=position fen 3r1b2/1r5k/2b1p1pp/2p1Pp2/1P2qP2/P1P1B3/5RPP/1R2Q1K1 b - - 0 29; board_at_go=3r1b2/1r5k/2b1p1pp/2p1Pp2/1P2qP2/P1P1B3/5RPP/1R2Q1K1 b - - 0 29; latest_board=3r1b2/1r5k/2b1p1pp/2p1Pp2/1P2qP2/P1P1B3/5RPP/1R2Q1K1 b - - 0 29; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 13e5
+  2: 14d5
+  3: 13e5
+  4: 13e5
+  5: 13b5
+Side to move: black
+FEN: 3r1b2/1r5k/2b1p1pp/2p1Pp2/1P2qP2/P1P1B3/5RPP/1R2Q1K1 b - - 0 29
+Transcript length (chars): 338
+Transcript tokens: 64
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "3r1b2/1r5k/2b1p1pp/2p1Pp2/1P2qP2/P1P1B3/5RPP/1R2Q1K1 b - - 0 29"]
+
+; Bg7 Be7 Bd6 Re8 Rc8 Rdb8 Ra8 Rdd7 Rd6 Rd5 Rd4 Rd3 Rd2 Rd1 Kh8 Kg8 Kg7 Rbb8 Rg7 Rf7 Re7 Rbd7 Rc7 Ra7 Rb6 Rb5 Rxb4 Be8 Bd7 Bd5 Bb5 Ba4 Qxe5 Qd5 Qxf4 Qd4 Qc4 Qxb4 Qf3 Qxe3 Qd3 Qxg2+ Qc2 Qxb1 cxb4 h5 g5 c4 ;
+========================================
+
+2025-12-28T21:48:34 !!! reason=backend returned bestmove 0000; last_position=position fen 3r1b2/1r5k/2b1p1pp/2p1Pp2/1P2qP2/P1P1B3/5RPP/1R2Q1K1 b - - 0 29; board_at_go=3r1b2/1r5k/2b1p1pp/2p1Pp2/1P2qP2/P1P1B3/5RPP/1R2Q1K1 b - - 0 29; latest_board=3r1b2/1r5k/2b1p1pp/2p1Pp2/1P2qP2/P1P1B3/5RPP/1R2Q1K1 b - - 0 29; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: Nf3
+  2: Nf3
+  3: Nc3
+  4: Nd3
+  5: 1d6
+Side to move: white
+FEN: 5b2/1r5k/2b1p1pp/2p1Pp2/1P2qP2/P1PrB3/5RPP/1R2Q1K1 w - - 1 30
+Transcript length (chars): 258
+Transcript tokens: 48
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "5b2/1r5k/2b1p1pp/2p1Pp2/1P2qP2/P1PrB3/5RPP/1R2Q1K1 w - - 1 30"]
+
+; Bxc5 Bd4 Bd2 Bc1 Rf3 Re2 Rd2 Rc2 Rfb2 Ra2 Rf1 Kh1 Kf1 Qe2 Qd2 Qf1 Qd1 Qc1 Rb3 Rbb2 Rd1 Rc1 Ra1 bxc5 b5 c4 a4 h3 g3 h4 g4 ;
+
+ 30.
+========================================
+
+2025-12-28T21:48:47 !!! reason=Engine reported illegal SAN from backend; last_position=position fen 5b2/1r5k/2b1p1pp/2p1Pp2/1P2qP2/P1PrB3/5RPP/1R2Q1K1 w - - 1 30; board_at_go=5b2/1r5k/2b1p1pp/2p1Pp2/1P2qP2/P1PrB3/5RPP/1R2Q1K1 w - - 1 30; latest_board=5b2/1r5k/2b1p1pp/2p1Pp2/1P2qP2/P1PrB3/5RPP/1R2Q1K1 w - - 1 30; last_go=go infinite
+2025-12-28T21:48:47 !!! reason=backend returned bestmove 0000; last_position=position fen 5b2/1r5k/2b1p1pp/2p1Pp2/1P2qP2/P1PrB3/5RPP/1R2Q1K1 w - - 1 30; board_at_go=5b2/1r5k/2b1p1pp/2p1Pp2/1P2qP2/P1PrB3/5RPP/1R2Q1K1 w - - 1 30; latest_board=5b2/1r5k/2b1p1pp/2p1Pp2/1P2qP2/P1PrB3/5RPP/1R2Q1K1 w - - 1 30; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 13e5
+  2: 14d5
+  3: 13e5
+  4: 13e6
+  5: 14d6
+Side to move: black
+FEN: 5b2/1r5k/2b1p1pp/2B1Pp2/1P2qP2/P1Pr4/5RPP/1R2Q1K1 b - - 0 30
+Transcript length (chars): 331
+Transcript tokens: 63
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "5b2/1r5k/2b1p1pp/2B1Pp2/1P2qP2/P1Pr4/5RPP/1R2Q1K1 b - - 0 30"]
+
+; Bg7 Be7 Bd6 Bxc5 Kh8 Kg8 Kg7 Rb8 Rg7 Rf7 Re7 Rbd7 Rc7 Ra7 Rb6 Rb5 Rxb4 Be8 Bd7 Bd5 Bb5 Ba4 Qxe5 Qd5 Qxf4 Qd4 Qc4 Qxb4 Qf3 Qe3 Qxg2+ Qe2 Qxe1+ Rd8 Rdd7 Rd6 Rd5 Rd4 Rh3 Rg3 Rf3 Re3 Rxc3 Rd2 Rd1 h5 g5 ;
+========================================
+
+2025-12-28T21:49:48 !!! reason=backend returned bestmove 0000; last_position=position fen 5b2/1r5k/2b1p1pp/2B1Pp2/1P2qP2/P1Pr4/5RPP/1R2Q1K1 b - - 0 30; board_at_go=5b2/1r5k/2b1p1pp/2B1Pp2/1P2qP2/P1Pr4/5RPP/1R2Q1K1 b - - 0 30; latest_board=5b2/1r5k/2b1p1pp/2B1Pp2/1P2qP2/P1Pr4/5RPP/1R2Q1K1 b - - 0 30; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 13e5
+  2: 13e5
+  3: 14d5
+  4: 14d6
+  5: 14d5
+Side to move: black
+FEN: 5b2/1r5k/2b1p1pp/2B1Pp2/1P2qP2/P1Pr4/5RPP/1R2Q1K1 b - - 0 30
+Transcript length (chars): 331
+Transcript tokens: 63
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "5b2/1r5k/2b1p1pp/2B1Pp2/1P2qP2/P1Pr4/5RPP/1R2Q1K1 b - - 0 30"]
+
+; Bg7 Be7 Bd6 Bxc5 Kh8 Kg8 Kg7 Rb8 Rg7 Rf7 Re7 Rbd7 Rc7 Ra7 Rb6 Rb5 Rxb4 Be8 Bd7 Bd5 Bb5 Ba4 Qxe5 Qd5 Qxf4 Qd4 Qc4 Qxb4 Qf3 Qe3 Qxg2+ Qe2 Qxe1+ Rd8 Rdd7 Rd6 Rd5 Rd4 Rh3 Rg3 Rf3 Re3 Rxc3 Rd2 Rd1 h5 g5 ;
+========================================
+
+2025-12-28T21:50:08 !!! reason=backend returned bestmove 0000; last_position=position fen 5b2/1r5k/2b1p1pp/2B1Pp2/1P2qP2/P1Pr4/5RPP/1R2Q1K1 b - - 0 30; board_at_go=5b2/1r5k/2b1p1pp/2B1Pp2/1P2qP2/P1Pr4/5RPP/1R2Q1K1 b - - 0 30; latest_board=5b2/1r5k/2b1p1pp/2B1Pp2/1P2qP2/P1Pr4/5RPP/1R2Q1K1 b - - 0 30; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 16
+  2: 15
+  3: 16
+  4: 15
+  5: 1Nf5
+Side to move: white
+FEN: 8/3r3k/2b1p1pp/2P1Pp2/5P2/P1Pr4/5RPP/4R1K1 w - - 1 33
+Transcript length (chars): 219
+Transcript tokens: 40
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "8/3r3k/2b1p1pp/2P1Pp2/5P2/P1Pr4/5RPP/4R1K1 w - - 1 33"]
+
+; Rf3 Rfe2 Rd2 Rc2 Rb2 Ra2 Rff1 Kh1 Kf1 Re4 Re3 Ree2 Ref1 Rd1 Rc1 Rb1 Ra1 c4 a4 h3 g3 h4 g4 ;
+
+ 33.
+========================================
+
+2025-12-28T21:50:19 !!! reason=backend returned bestmove 0000; last_position=position fen 8/3r3k/2b1p1pp/2P1Pp2/5P2/P1Pr4/5RPP/4R1K1 w - - 1 33; board_at_go=8/3r3k/2b1p1pp/2P1Pp2/5P2/P1Pr4/5RPP/4R1K1 w - - 1 33; latest_board=8/3r3k/2b1p1pp/2P1Pp2/5P2/P1Pr4/5RPP/4R1K1 w - - 1 33; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 15
+  2: 15
+  3: 15
+  4: 15
+  5: 15
+Side to move: white
+FEN: 8/3r2k1/2b1p1pp/2P1Pp2/5P2/P1Pr4/2R3PP/4R1K1 w - - 3 34
+Transcript length (chars): 221
+Transcript tokens: 40
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "8/3r2k1/2b1p1pp/2P1Pp2/5P2/P1Pr4/2R3PP/4R1K1 w - - 3 34"]
+
+; Rf2 Rce2 Rd2 Rb2 Ra2 Rcc1 Kf2 Kh1 Kf1 Re4 Re3 Ree2 Rf1 Rd1 Rec1 Rb1 Ra1 c4 a4 h3 g3 h4 g4 ;
+
+ 34.
+========================================
+
+2025-12-28T21:50:30 !!! reason=backend returned bestmove 0000; last_position=position fen 8/3r2k1/2b1p1pp/2P1Pp2/5P2/P1Pr4/2R3PP/4R1K1 w - - 3 34; board_at_go=8/3r2k1/2b1p1pp/2P1Pp2/5P2/P1Pr4/2R3PP/4R1K1 w - - 3 34; latest_board=8/3r2k1/2b1p1pp/2P1Pp2/5P2/P1Pr4/2R3PP/4R1K1 w - - 3 34; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 1
+  2: 1
+  3: 1
+  4: 16
+  5: 16
+Side to move: white
+FEN: 8/3r2k1/2b1p2p/2PrPpp1/P4P2/2P5/2R3PP/R5K1 w - - 0 36
+Transcript length (chars): 220
+Transcript tokens: 40
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "8/3r2k1/2b1p2p/2PrPpp1/P4P2/2P5/2R3PP/R5K1 w - - 0 36"]
+
+; Rf2 Re2 Rd2 Rb2 Rca2 Rcc1 Kf2 Kh1 Kf1 Ra3 Raa2 Rf1 Re1 Rd1 Rac1 Rb1 fxg5 a5 c4 h3 g3 h4 g4 ;
+
+ 36.
+========================================
+
+2025-12-28T21:50:41 !!! reason=backend returned bestmove 0000; last_position=position fen 8/3r2k1/2b1p2p/2PrPpp1/P4P2/2P5/2R3PP/R5K1 w - - 0 36; board_at_go=8/3r2k1/2b1p2p/2PrPpp1/P4P2/2P5/2R3PP/R5K1 w - - 0 36; latest_board=8/3r2k1/2b1p2p/2PrPpp1/P4P2/2P5/2R3PP/R5K1 w - - 0 36; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 14
+  2: 14
+  3: 14
+  4: 13e6
+  5: 14
+Side to move: black
+FEN: 8/r5k1/2b1p2p/P1PrPpp1/5P2/2P3P1/2R4P/R5K1 b - - 0 37
+Transcript length (chars): 259
+Transcript tokens: 48
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "8/r5k1/2b1p2p/P1PrPpp1/5P2/2P3P1/2R4P/R5K1 b - - 0 37"]
+
+; Kh8 Kg8 Kf8 Kh7 Kf7 Kg6 Ra8 Rf7 Re7 Rad7 Rc7 Rb7 Ra6 Rxa5 Be8 Ba8 Bd7 Bb7 Bb5 Ba4 Rd8 Rdd7 Rd6 Rxe5 Rxc5 Rd4 Rd3 Rd2 Rd1+ gxf4 h5 g4 ;
+========================================
+
+2025-12-28T21:50:55 !!! reason=backend returned bestmove 0000; last_position=position fen 8/r5k1/2b1p2p/P1PrPpp1/5P2/2P3P1/2R4P/R5K1 b - - 0 37; board_at_go=8/r5k1/2b1p2p/P1PrPpp1/5P2/2P3P1/2R4P/R5K1 b - - 0 37; latest_board=8/r5k1/2b1p2p/P1PrPpp1/5P2/2P3P1/2R4P/R5K1 b - - 0 37; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 15
+  2: 15
+  3: 15
+  4: 15
+  5: 1
+Side to move: white
+FEN: 8/r5k1/P3p2p/2r1Pp2/4bP2/2P5/2R4P/R5K1 w - - 1 40
+Transcript length (chars): 211
+Transcript tokens: 38
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "8/r5k1/P3p2p/2r1Pp2/4bP2/2P5/2R4P/R5K1 w - - 1 40"]
+
+; Rg2+ Rf2 Re2 Rd2 Rb2 Rca2 Rcc1 Kf2 Kf1 Ra5 Ra4 Ra3 Raa2 Rf1 Re1 Rd1 Rac1 Rb1 c4 h3 h4 ;
+
+ 40.
+========================================
+
+2025-12-28T21:51:06 !!! reason=backend returned bestmove 0000; last_position=position fen 8/r5k1/P3p2p/2r1Pp2/4bP2/2P5/2R4P/R5K1 w - - 1 40; board_at_go=8/r5k1/P3p2p/2r1Pp2/4bP2/2P5/2R4P/R5K1 w - - 1 40; latest_board=8/r5k1/P3p2p/2r1Pp2/4bP2/2P5/2R4P/R5K1 w - - 1 40; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 1
+  2: 1
+  3: 1
+  4: 1e6
+  5: 1
+Side to move: white
+FEN: 2r5/r5k1/P3p2p/4Pp2/4bP2/2P5/1R5P/R5K1 w - - 3 41
+Transcript length (chars): 236
+Transcript tokens: 44
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "2r5/r5k1/P3p2p/4Pp2/4bP2/2P5/1R5P/R5K1 w - - 3 41"]
+
+; Rb8 Rb7+ Rb6 Rb5 Rb4 Rb3 Rg2+ Rf2 Re2 Rd2 Rc2 Rba2 Rbb1 Kf2 Kf1 Ra5 Ra4 Ra3 Raa2 Rf1 Re1 Rd1 Rc1 Rab1 c4 h3 h4 ;
+
+ 41.
+========================================
+
+2025-12-28T21:51:19 !!! reason=Engine reported illegal SAN from backend; last_position=position fen 2r5/r5k1/P3p2p/4Pp2/4bP2/2P5/1R5P/R5K1 w - - 3 41; board_at_go=2r5/r5k1/P3p2p/4Pp2/4bP2/2P5/1R5P/R5K1 w - - 3 41; latest_board=2r5/r5k1/P3p2p/4Pp2/4bP2/2P5/1R5P/R5K1 w - - 3 41; last_go=go infinite
+2025-12-28T21:51:19 !!! reason=backend returned bestmove 0000; last_position=position fen 2r5/r5k1/P3p2p/4Pp2/4bP2/2P5/1R5P/R5K1 w - - 3 41; board_at_go=2r5/r5k1/P3p2p/4Pp2/4bP2/2P5/1R5P/R5K1 w - - 3 41; latest_board=2r5/r5k1/P3p2p/4Pp2/4bP2/2P5/1R5P/R5K1 w - - 3 41; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 16Qa5
+  2: 16Qg5
+  3: 16c5
+  4: e4
+  5: 16e6
+Side to move: black
+FEN: 2r5/r5k1/PR2p2p/4Pp2/4bP2/2P5/7P/R5K1 b - - 4 41
+Transcript length (chars): 270
+Transcript tokens: 52
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "2r5/r5k1/PR2p2p/4Pp2/4bP2/2P5/7P/R5K1 b - - 4 41"]
+
+; Rh8 Rg8 Rf8 Re8 Rd8 Rb8 Rca8 Rcc7 Rc6 Rc5 Rc4 Rxc3 Kh8 Kg8 Kf8 Kh7 Kf7 Kg6 Raa8 Rf7 Re7 Rd7 Rac7 Rb7 Rxa6 Ba8 Bb7 Bc6 Bd5 Bf3 Bd3 Bg2 Bc2 Bh1 Bb1 h5 ;
+========================================
+
+2025-12-28T21:51:38 !!! reason=Engine reported illegal SAN from backend; last_position=position fen 2r5/r5k1/PR2p2p/4Pp2/4bP2/2P5/7P/R5K1 b - - 4 41; board_at_go=2r5/r5k1/PR2p2p/4Pp2/4bP2/2P5/7P/R5K1 b - - 4 41; latest_board=2r5/r5k1/PR2p2p/4Pp2/4bP2/2P5/7P/R5K1 b - - 4 41; last_go=go infinite
+2025-12-28T21:51:38 !!! reason=backend returned bestmove 0000; last_position=position fen 2r5/r5k1/PR2p2p/4Pp2/4bP2/2P5/7P/R5K1 b - - 4 41; board_at_go=2r5/r5k1/PR2p2p/4Pp2/4bP2/2P5/7P/R5K1 b - - 4 41; latest_board=2r5/r5k1/PR2p2p/4Pp2/4bP2/2P5/7P/R5K1 b - - 4 41; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 16Qa5
+  2: 16
+  3: 16d5
+  4: 16e6
+  5: 16Qg5
+Side to move: black
+FEN: 2r5/r5k1/PR2p2p/4Pp2/4bP2/2P5/7P/R5K1 b - - 4 41
+Transcript length (chars): 270
+Transcript tokens: 52
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "2r5/r5k1/PR2p2p/4Pp2/4bP2/2P5/7P/R5K1 b - - 4 41"]
+
+; Rh8 Rg8 Rf8 Re8 Rd8 Rb8 Rca8 Rcc7 Rc6 Rc5 Rc4 Rxc3 Kh8 Kg8 Kf8 Kh7 Kf7 Kg6 Raa8 Rf7 Re7 Rd7 Rac7 Rb7 Rxa6 Ba8 Bb7 Bc6 Bd5 Bf3 Bd3 Bg2 Bc2 Bh1 Bb1 h5 ;
+========================================
+
+2025-12-28T21:51:53 !!! reason=backend returned bestmove 0000; last_position=position fen 2r5/r5k1/PR2p2p/4Pp2/4bP2/2P5/7P/R5K1 b - - 4 41; board_at_go=2r5/r5k1/PR2p2p/4Pp2/4bP2/2P5/7P/R5K1 b - - 4 41; latest_board=2r5/r5k1/PR2p2p/4Pp2/4bP2/2P5/7P/R5K1 b - - 4 41; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 1
+  2: 1
+  3: e4
+  4: 1O-O-O
+  5: 11
+Side to move: white
+FEN: 2r5/2r2k2/PR2p2p/4Pp2/4bP2/2P5/7P/2R3K1 w - - 7 43
+Transcript length (chars): 213
+Transcript tokens: 39
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "2r5/2r2k2/PR2p2p/4Pp2/4bP2/2P5/7P/2R3K1 w - - 7 43"]
+
+; Rb8 Rb7 Rxe6 Rd6 Rc6 Rb5 Rb4 Rb3 Rb2 Rbb1 Kf2 Kf1 Rc2 Rf1 Re1 Rd1 Rcb1 Ra1 a7 c4 h3 h4 ;
+
+ 43.
+========================================
+
+2025-12-28T21:52:04 !!! reason=Engine reported illegal SAN from backend; last_position=position fen 2r5/2r2k2/PR2p2p/4Pp2/4bP2/2P5/7P/2R3K1 w - - 7 43; board_at_go=2r5/2r2k2/PR2p2p/4Pp2/4bP2/2P5/7P/2R3K1 w - - 7 43; latest_board=2r5/2r2k2/PR2p2p/4Pp2/4bP2/2P5/7P/2R3K1 w - - 7 43; last_go=go infinite
+2025-12-28T21:52:04 !!! reason=backend returned bestmove 0000; last_position=position fen 2r5/2r2k2/PR2p2p/4Pp2/4bP2/2P5/7P/2R3K1 w - - 7 43; board_at_go=2r5/2r2k2/PR2p2p/4Pp2/4bP2/2P5/7P/2R3K1 w - - 7 43; latest_board=2r5/2r2k2/PR2p2p/4Pp2/4bP2/2P5/7P/2R3K1 w - - 7 43; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 16Qd5
+  2: 16Qd5
+  3: 16Qg5
+  4: 16Qd6
+  5: e4
+Side to move: black
+FEN: 2r5/2r2k2/P3p2p/4Pp2/4bP2/1RP5/7P/2R3K1 b - - 8 43
+Transcript length (chars): 252
+Transcript tokens: 48
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "2r5/2r2k2/P3p2p/4Pp2/4bP2/1RP5/7P/2R3K1 b - - 8 43"]
+
+; Rh8 Rg8+ Rf8 Re8 Rd8 Rb8 Ra8 Kg8 Kf8 Ke8 Kg7 Ke7 Kg6 Re7 Rd7 Rb7 Ra7 Rc6 Rc5 Rc4 Rxc3 Ba8 Bb7 Bc6 Bd5 Bf3 Bd3 Bg2 Bc2 Bh1 Bb1 h5 ;
+========================================
+
+2025-12-28T21:52:18 !!! reason=Engine reported illegal SAN from backend; last_position=position fen 2r5/2r2k2/P3p2p/4Pp2/4bP2/1RP5/7P/2R3K1 b - - 8 43; board_at_go=2r5/2r2k2/P3p2p/4Pp2/4bP2/1RP5/7P/2R3K1 b - - 8 43; latest_board=2r5/2r2k2/P3p2p/4Pp2/4bP2/1RP5/7P/2R3K1 b - - 8 43; last_go=go infinite
+2025-12-28T21:52:18 !!! reason=backend returned bestmove 0000; last_position=position fen 2r5/2r2k2/P3p2p/4Pp2/4bP2/1RP5/7P/2R3K1 b - - 8 43; board_at_go=2r5/2r2k2/P3p2p/4Pp2/4bP2/1RP5/7P/2R3K1 b - - 8 43; latest_board=2r5/2r2k2/P3p2p/4Pp2/4bP2/1RP5/7P/2R3K1 b - - 8 43; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 15
+  2: 15
+  3: 15
+  4: 15
+  5: 15
+Side to move: white
+FEN: r7/2r2k2/P3p2p/4Pp2/4bP2/1RP5/7P/2R3K1 w - - 9 44
+Transcript length (chars): 203
+Transcript tokens: 37
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "r7/2r2k2/P3p2p/4Pp2/4bP2/1RP5/7P/2R3K1 w - - 9 44"]
+
+; Rb8 Rb7 Rb6 Rb5 Rb4 Ra3 Rb2 Rbb1 Kf2 Kf1 Rc2 Rf1 Re1 Rd1 Rcb1 Ra1 a7 c4 h3 h4 ;
+
+ 44.
+========================================
+
+2025-12-28T21:52:28 !!! reason=backend returned bestmove 0000; last_position=position fen r7/2r2k2/P3p2p/4Pp2/4bP2/1RP5/7P/2R3K1 w - - 9 44; board_at_go=r7/2r2k2/P3p2p/4Pp2/4bP2/1RP5/7P/2R3K1 w - - 9 44; latest_board=r7/2r2k2/P3p2p/4Pp2/4bP2/1RP5/7P/2R3K1 w - - 9 44; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 13Qa6
+  2: 13Qa6
+  3: 13Qa6
+  4: 13Qa6
+  5: 13Qg5
+Side to move: black
+FEN: r7/2r2k2/P3p2p/4Pp2/4bP2/R1P5/7P/2R3K1 b - - 10 44
+Transcript length (chars): 265
+Transcript tokens: 50
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "r7/2r2k2/P3p2p/4Pp2/4bP2/R1P5/7P/2R3K1 b - - 10 44"]
+
+; Rh8 Rg8+ Rf8 Re8 Rd8 Rac8 Rb8 Raa7 Rxa6 Kg8 Kf8 Ke8 Kg7 Ke7 Kg6 Rcc8 Re7 Rd7 Rb7 Rca7 Rc6 Rc5 Rc4 Rxc3 Bb7 Bc6 Bd5 Bf3 Bd3 Bg2 Bc2 Bh1 Bb1 h5 ;
+========================================
+
+2025-12-28T21:53:09 !!! reason=backend returned bestmove 0000; last_position=position fen r7/2r2k2/P3p2p/4Pp2/4bP2/R1P5/7P/2R3K1 b - - 10 44; board_at_go=r7/2r2k2/P3p2p/4Pp2/4bP2/R1P5/7P/2R3K1 b - - 10 44; latest_board=r7/2r2k2/P3p2p/4Pp2/4bP2/R1P5/7P/2R3K1 b - - 10 44; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 13Qa6
+  2: 13Qa6
+  3: 16Qg5
+  4: 13Qg5
+  5: 13Qa6
+Side to move: black
+FEN: r7/2r2k2/P3p2p/4Pp2/4bP2/R1P5/7P/2R3K1 b - - 10 44
+Transcript length (chars): 265
+Transcript tokens: 50
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "r7/2r2k2/P3p2p/4Pp2/4bP2/R1P5/7P/2R3K1 b - - 10 44"]
+
+; Rh8 Rg8+ Rf8 Re8 Rd8 Rac8 Rb8 Raa7 Rxa6 Kg8 Kf8 Ke8 Kg7 Ke7 Kg6 Rcc8 Re7 Rd7 Rb7 Rca7 Rc6 Rc5 Rc4 Rxc3 Bb7 Bc6 Bd5 Bf3 Bd3 Bg2 Bc2 Bh1 Bb1 h5 ;
+========================================
+
+2025-12-28T21:53:25 !!! reason=backend returned bestmove 0000; last_position=position fen r7/2r2k2/P3p2p/4Pp2/4bP2/R1P5/7P/2R3K1 b - - 10 44; board_at_go=r7/2r2k2/P3p2p/4Pp2/4bP2/R1P5/7P/2R3K1 b - - 10 44; latest_board=r7/2r2k2/P3p2p/4Pp2/4bP2/R1P5/7P/2R3K1 b - - 10 44; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: Nc3
+  2: Nf3
+  3: 1
+  4: Nf3
+  5: 1Qb6
+Side to move: white
+FEN: r7/5k2/P1r1p2p/4Pp2/4bP2/R1P5/7P/2R3K1 w - - 11 45
+Transcript length (chars): 192
+Transcript tokens: 34
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "r7/5k2/P1r1p2p/4Pp2/4bP2/R1P5/7P/2R3K1 w - - 11 45"]
+
+; Ra5 Ra4 Rb3 Ra2 Raa1 Kf2 Kf1 Rc2 Rf1 Re1 Rd1 Rb1 Rca1 a7 c4 h3 h4 ;
+
+ 45.
+========================================
+
+2025-12-28T21:53:33 !!! reason=Engine reported illegal SAN from backend; last_position=position fen r7/5k2/P1r1p2p/4Pp2/4bP2/R1P5/7P/2R3K1 w - - 11 45; board_at_go=r7/5k2/P1r1p2p/4Pp2/4bP2/R1P5/7P/2R3K1 w - - 11 45; latest_board=r7/5k2/P1r1p2p/4Pp2/4bP2/R1P5/7P/2R3K1 w - - 11 45; last_go=go infinite
+2025-12-28T21:53:33 !!! reason=backend returned bestmove 0000; last_position=position fen r7/5k2/P1r1p2p/4Pp2/4bP2/R1P5/7P/2R3K1 w - - 11 45; board_at_go=r7/5k2/P1r1p2p/4Pp2/4bP2/R1P5/7P/2R3K1 w - - 11 45; latest_board=r7/5k2/P1r1p2p/4Pp2/4bP2/R1P5/7P/2R3K1 w - - 11 45; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 1
+  2: 1
+  3: 1
+  4: 1
+  5: e4
+Side to move: white
+FEN: r7/P4k2/4p2p/4Pp2/2r1bP2/R1P5/7P/R5K1 w - - 3 47
+Transcript length (chars): 184
+Transcript tokens: 32
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "r7/P4k2/4p2p/4Pp2/2r1bP2/R1P5/7P/R5K1 w - - 3 47"]
+
+; Ra6 Ra5 Ra4 Rb3 R3a2 Kf2 Kf1 R1a2 Rf1 Re1 Rd1 Rc1 Rb1 h3 h4 ;
+
+ 47.
+========================================
+
+2025-12-28T21:53:42 !!! reason=Engine reported illegal SAN from backend; last_position=position fen r7/P4k2/4p2p/4Pp2/2r1bP2/R1P5/7P/R5K1 w - - 3 47; board_at_go=r7/P4k2/4p2p/4Pp2/2r1bP2/R1P5/7P/R5K1 w - - 3 47; latest_board=r7/P4k2/4p2p/4Pp2/2r1bP2/R1P5/7P/R5K1 w - - 3 47; last_go=go infinite
+2025-12-28T21:53:42 !!! reason=backend returned bestmove 0000; last_position=position fen r7/P4k2/4p2p/4Pp2/2r1bP2/R1P5/7P/R5K1 w - - 3 47; board_at_go=r7/P4k2/4p2p/4Pp2/2r1bP2/R1P5/7P/R5K1 w - - 3 47; latest_board=r7/P4k2/4p2p/4Pp2/2r1bP2/R1P5/7P/R5K1 w - - 3 47; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 1
+  2: 1
+  3: 1
+  4: 1
+  5: 1
+Side to move: white
+FEN: r7/P4k2/4p2p/3bPp2/2r2P2/R1P5/5K1P/R7 w - - 5 48
+Transcript length (chars): 208
+Transcript tokens: 38
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "r7/P4k2/4p2p/3bPp2/2r2P2/R1P5/5K1P/R7 w - - 5 48"]
+
+; Ra6 Ra5 Ra4 Rb3 R3a2 Kg3 Ke3 Ke2 Kg1 Kf1 Ke1 R1a2 Rh1 Rg1 Rf1 Re1 Rd1 Rc1 Rb1 h3 h4 ;
+
+ 48.
+========================================
+
+2025-12-28T21:53:51 !!! reason=backend returned bestmove 0000; last_position=position fen r7/P4k2/4p2p/3bPp2/2r2P2/R1P5/5K1P/R7 w - - 5 48; board_at_go=r7/P4k2/4p2p/3bPp2/2r2P2/R1P5/5K1P/R7 w - - 5 48; latest_board=r7/P4k2/4p2p/3bPp2/2r2P2/R1P5/5K1P/R7 w - - 5 48; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: e4
+  2: e4
+  3: e4
+  4: d4
+  5: e4
+Side to move: white
+FEN: 6r1/P4k2/4p2p/3bPp2/2r2P2/R1P3K1/7P/R7 w - - 7 49
+Transcript length (chars): 137
+Transcript tokens: 20
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "6r1/P4k2/4p2p/3bPp2/2r2P2/R1P3K1/7P/R7 w - - 7 49"]
+
+; Kh4 Kh3 Kf2 ;
+
+ 49.
+========================================
+
+2025-12-28T21:53:55 !!! reason=Engine reported illegal SAN from backend; last_position=position fen 6r1/P4k2/4p2p/3bPp2/2r2P2/R1P3K1/7P/R7 w - - 7 49; board_at_go=6r1/P4k2/4p2p/3bPp2/2r2P2/R1P3K1/7P/R7 w - - 7 49; latest_board=6r1/P4k2/4p2p/3bPp2/2r2P2/R1P3K1/7P/R7 w - - 7 49; last_go=go infinite
+2025-12-28T21:53:55 !!! reason=backend returned bestmove 0000; last_position=position fen 6r1/P4k2/4p2p/3bPp2/2r2P2/R1P3K1/7P/R7 w - - 7 49; board_at_go=6r1/P4k2/4p2p/3bPp2/2r2P2/R1P3K1/7P/R7 w - - 7 49; latest_board=6r1/P4k2/4p2p/3bPp2/2r2P2/R1P3K1/7P/R7 w - - 7 49; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: e4
+  2: e4
+  3: e4
+  4: e4
+  5: e4
+Side to move: white
+FEN: 6r1/P4k2/4p2p/3bPp2/5r1K/R1P5/7P/R7 w - - 0 50
+Transcript length (chars): 130
+Transcript tokens: 19
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "6r1/P4k2/4p2p/3bPp2/5r1K/R1P5/7P/R7 w - - 0 50"]
+
+; Kh5 Kh3 ;
+
+ 50.
+========================================
+
+2025-12-28T21:53:59 !!! reason=Engine reported illegal SAN from backend; last_position=position fen 6r1/P4k2/4p2p/3bPp2/5r1K/R1P5/7P/R7 w - - 0 50; board_at_go=6r1/P4k2/4p2p/3bPp2/5r1K/R1P5/7P/R7 w - - 0 50; latest_board=6r1/P4k2/4p2p/3bPp2/5r1K/R1P5/7P/R7 w - - 0 50; last_go=go infinite
+2025-12-28T21:53:59 !!! reason=backend returned bestmove 0000; last_position=position fen 6r1/P4k2/4p2p/3bPp2/5r1K/R1P5/7P/R7 w - - 0 50; board_at_go=6r1/P4k2/4p2p/3bPp2/5r1K/R1P5/7P/R7 w - - 0 50; latest_board=6r1/P4k2/4p2p/3bPp2/5r1K/R1P5/7P/R7 w - - 0 50; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 14c5
+  2: 14c5
+  3: 13Qd6
+  4: 14e6
+  5: 13Qd5
+Side to move: black
+FEN: 6r1/P4k2/4p2p/3bPp1K/5r2/R1P5/7P/R7 b - - 1 50
+Transcript length (chars): 276
+Transcript tokens: 54
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "6r1/P4k2/4p2p/3bPp1K/5r2/R1P5/7P/R7 b - - 1 50"]
+
+; Rh8 Rf8 Re8 Rd8 Rc8 Rb8 Ra8 Rg7 Rg6 Rg5+ Rgg4 Rg3 Rg2 Rg1 Kf8 Ke8 Kg7 Ke7 Ba8 Bb7 Bc6 Be4 Bc4 Bf3+ Bb3 Bg2 Ba2 Bh1 Rh4+ Rfg4 Re4 Rd4 Rc4 Rb4 Ra4 Rf3 Rf2 Rf1 ;
+========================================
+
+2025-12-28T21:54:16 !!! reason=backend returned bestmove 0000; last_position=position fen 6r1/P4k2/4p2p/3bPp1K/5r2/R1P5/7P/R7 b - - 1 50; board_at_go=6r1/P4k2/4p2p/3bPp1K/5r2/R1P5/7P/R7 b - - 1 50; latest_board=6r1/P4k2/4p2p/3bPp1K/5r2/R1P5/7P/R7 b - - 1 50; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 1
+  2: 1
+  3: 1
+  4: 1
+  5: 15
+Side to move: white
+FEN: 8/P4k2/4p2p/3bPp1K/5rr1/R1P5/7P/R7 w - - 2 51
+Transcript length (chars): 209
+Transcript tokens: 38
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "8/P4k2/4p2p/3bPp1K/5rr1/R1P5/7P/R7 w - - 2 51"]
+
+; Kxh6 Ra6 Ra5 Ra4 Rb3 R3a2 R1a2 Rh1 Rg1 Rf1 Re1 Rd1 Rc1 Rb1 a8=Q a8=R a8=B a8=N c4 h3 h4 ;
+
+ 51.
+========================================
+
+2025-12-28T21:54:27 !!! reason=backend returned bestmove 0000; last_position=position fen 8/P4k2/4p2p/3bPp1K/5rr1/R1P5/7P/R7 w - - 2 51; board_at_go=8/P4k2/4p2p/3bPp1K/5rr1/R1P5/7P/R7 w - - 2 51; latest_board=8/P4k2/4p2p/3bPp1K/5rr1/R1P5/7P/R7 w - - 2 51; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 13
+  2: 13
+  3: 13
+  4: 13
+  5: 13
+Side to move: black
+FEN: 8/P4k2/4p2K/3bPp2/5rr1/R1P5/7P/R7 b - - 0 51
+Transcript length (chars): 239
+Transcript tokens: 46
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "8/P4k2/4p2K/3bPp2/5rr1/R1P5/7P/R7 b - - 0 51"]
+
+; Kg8 Kf8 Ke8 Ke7 Ba8 Bb7 Bc6 Be4 Bc4 Bf3 Bb3 Bg2 Ba2 Bh1 Rg8 Rg7 Rg6+ Rg5 Rh4+ Rg3 Rg2 Rg1 Re4 Rd4 Rc4 Rb4 Ra4 Rf3 Rf2 Rf1 ;
+========================================
+
+2025-12-28T21:54:40 !!! reason=backend returned bestmove 0000; last_position=position fen 8/P4k2/4p2K/3bPp2/5rr1/R1P5/7P/R7 b - - 0 51; board_at_go=8/P4k2/4p2K/3bPp2/5rr1/R1P5/7P/R7 b - - 0 51; latest_board=8/P4k2/4p2K/3bPp2/5rr1/R1P5/7P/R7 b - - 0 51; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 13e6
+  2: 13e6
+  3: 13e6
+  4: 1
+  5: 1
+Side to move: black
+FEN: 8/P4k2/4p1r1/3bPp1K/5r2/R1P5/7P/R7 b - - 2 52
+Transcript length (chars): 260
+Transcript tokens: 50
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "8/P4k2/4p1r1/3bPp1K/5r2/R1P5/7P/R7 b - - 2 52"]
+
+; Kg8 Kf8 Ke8 Kg7 Ke7 Rg8 Rg7 Rh6+ Rf6 Rg5+ Rgg4 Rg3 Rg2 Rg1 Ba8 Bb7 Bc6 Be4 Bc4 Bf3# Bb3 Bg2 Ba2 Bh1 Rh4+ Rfg4 Re4 Rd4 Rc4 Rb4 Ra4 Rf3 Rf2 Rf1 ;
+========================================
+
+2025-12-28T21:54:55 !!! reason=backend returned bestmove 0000; last_position=position fen 8/P4k2/4p1r1/3bPp1K/5r2/R1P5/7P/R7 b - - 2 52; board_at_go=8/P4k2/4p1r1/3bPp1K/5r2/R1P5/7P/R7 b - - 2 52; latest_board=8/P4k2/4p1r1/3bPp1K/5r2/R1P5/7P/R7 b - - 2 52; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 1a5
+  2: 1a5
+  3: 1a6
+  4: e4
+  5: 1a5
+Side to move: black
+FEN: rnbqkb1r/ppppp1pp/5n2/5P2/8/8/PPPPBPPP/RNBQK1NR b KQkq - 2 3
+Transcript length (chars): 211
+Transcript tokens: 39
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "rnbqkb1r/ppppp1pp/5n2/5P2/8/8/PPPPBPPP/RNBQK1NR b KQkq - 2 3"]
+
+; Rg8 Kf7 Nc6 Na6 Ng8 Nh5 Nd5 Ng4 Ne4 h6 g6 e6 d6 c6 b6 a6 h5 g5 e5 d5 c5 b5 a5 ;
+========================================
+
+2025-12-28T21:56:26 !!! reason=Engine reported illegal SAN from backend; last_position=position fen rnbqkb1r/ppppp1pp/5n2/5P2/8/8/PPPPBPPP/RNBQK1NR b KQkq - 2 3; board_at_go=rnbqkb1r/ppppp1pp/5n2/5P2/8/8/PPPPBPPP/RNBQK1NR b KQkq - 2 3; latest_board=rnbqkb1r/ppppp1pp/5n2/5P2/8/8/PPPPBPPP/RNBQK1NR b KQkq - 2 3; last_go=go infinite
+2025-12-28T21:56:26 !!! reason=backend returned bestmove 0000; last_position=position fen rnbqkb1r/ppppp1pp/5n2/5P2/8/8/PPPPBPPP/RNBQK1NR b KQkq - 2 3; board_at_go=rnbqkb1r/ppppp1pp/5n2/5P2/8/8/PPPPBPPP/RNBQK1NR b KQkq - 2 3; latest_board=rnbqkb1r/ppppp1pp/5n2/5P2/8/8/PPPPBPPP/RNBQK1NR b KQkq - 2 3; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: exf3
+  2: exf3
+  3: 1a6
+  4: 1a5
+  5: exf3
+Side to move: white
+FEN: rnbqkb1r/ppp1p1pp/5n2/3p1P2/8/8/PPPPBPPP/RNBQK1NR w KQkq - 0 4
+Transcript length (chars): 233
+Transcript tokens: 44
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "rnbqkb1r/ppp1p1pp/5n2/3p1P2/8/8/PPPPBPPP/RNBQK1NR w KQkq - 0 4"]
+
+; Ba6 Bh5+ Bb5+ Bg4 Bc4 Bf3 Bd3 Bf1 Nh3 Nf3 Kf1 Nc3 Na3 h3 g3 f3 d3 c3 b3 a3 h4 g4 f4 d4 c4 b4 a4 ;
+
+ 4.
+========================================
+
+2025-12-28T21:56:38 !!! reason=Engine reported illegal SAN from backend; last_position=position fen rnbqkb1r/ppp1p1pp/5n2/3p1P2/8/8/PPPPBPPP/RNBQK1NR w KQkq - 0 4; board_at_go=rnbqkb1r/ppp1p1pp/5n2/3p1P2/8/8/PPPPBPPP/RNBQK1NR w KQkq - 0 4; latest_board=rnbqkb1r/ppp1p1pp/5n2/3p1P2/8/8/PPPPBPPP/RNBQK1NR w KQkq - 0 4; last_go=go infinite
+2025-12-28T21:56:38 !!! reason=backend returned bestmove 0000; last_position=position fen rnbqkb1r/ppp1p1pp/5n2/3p1P2/8/8/PPPPBPPP/RNBQK1NR w KQkq - 0 4; board_at_go=rnbqkb1r/ppp1p1pp/5n2/3p1P2/8/8/PPPPBPPP/RNBQK1NR w KQkq - 0 4; latest_board=rnbqkb1r/ppp1p1pp/5n2/3p1P2/8/8/PPPPBPPP/RNBQK1NR w KQkq - 0 4; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 16
+  2: 16
+  3: 16
+  4: 16
+  5: 16
+Side to move: black
+FEN: rn1q1b1r/pp2pBpp/1kp2n2/3p1b2/5B2/3P1N2/PPPN1PPP/R2QK2R b KQ - 1 9
+Transcript length (chars): 276
+Transcript tokens: 52
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "rn1q1b1r/pp2pBpp/1kp2n2/3p1b2/5B2/3P1N2/PPPN1PPP/R2QK2R b KQ - 1 9"]
+
+; Rg8 Qe8 Qc8 Qd7 Qc7 Qd6 Nbd7 Na6 Ng8 Ne8 Nfd7 Nh5 Ng4 Ne4 Ka6 Kc5 Kb5 Ka5 Bc8 Bd7 Bg6 Be6 Bg4 Be4 Bh3 Bxd3 h6 g6 e6 a6 c5 d4 h5 g5 e5 a5 ;
+========================================
+
+2025-12-28T21:56:52 !!! reason=backend returned bestmove 0000; last_position=position fen rn1q1b1r/pp2pBpp/1kp2n2/3p1b2/5B2/3P1N2/PPPN1PPP/R2QK2R b KQ - 1 9; board_at_go=rn1q1b1r/pp2pBpp/1kp2n2/3p1b2/5B2/3P1N2/PPPN1PPP/R2QK2R b KQ - 1 9; latest_board=rn1q1b1r/pp2pBpp/1kp2n2/3p1b2/5B2/3P1N2/PPPN1PPP/R2QK2R b KQ - 1 9; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 16
+  2: 16
+  3: 16
+  4: 1Ne5
+  5: 16
+Side to move: black
+FEN: rn1q1b1r/pp2p1pp/1kp1Bn2/3p3b/5B2/3P1N1P/PPPN1PP1/R2QK2R b KQ - 2 11
+Transcript length (chars): 253
+Transcript tokens: 45
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "rn1q1b1r/pp2p1pp/1kp1Bn2/3p3b/5B2/3P1N1P/PPPN1PP1/R2QK2R b KQ - 2 11"]
+
+; Rg8 Qe8 Qc8 Qd7 Qc7 Qd6 Nbd7 Na6 Ng8 Ne8 Nfd7 Ng4 Ne4 Ka6 Kc5 Kb5 Ka5 Be8 Bf7 Bg6 Bg4 Bxf3 h6 g6 a6 c5 d4 g5 a5 ;
+========================================
+
+2025-12-28T21:57:05 !!! reason=backend returned bestmove 0000; last_position=position fen rn1q1b1r/pp2p1pp/1kp1Bn2/3p3b/5B2/3P1N1P/PPPN1PP1/R2QK2R b KQ - 2 11; board_at_go=rn1q1b1r/pp2p1pp/1kp1Bn2/3p3b/5B2/3P1N1P/PPPN1PP1/R2QK2R b KQ - 2 11; latest_board=rn1q1b1r/pp2p1pp/1kp1Bn2/3p3b/5B2/3P1N1P/PPPN1PP1/R2QK2R b KQ - 2 11; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 15a5
+  2: 15a5
+  3: 15
+  4: 15a5
+  5: 15c5
+Side to move: white
+FEN: r2q1b1r/pp1np1pp/1kp1Bn2/3p3b/5B2/3P1N1P/PPPN1PP1/R2QK2R w KQ - 3 12
+Transcript length (chars): 327
+Transcript tokens: 64
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "r2q1b1r/pp1np1pp/1kp1Bn2/3p3b/5B2/3P1N1P/PPPN1PP1/R2QK2R w KQ - 3 12"]
+
+; Bg8 Bf7 Bxd7 Bf5 Bxd5 Bg4 Bb8 Bc7+ Bh6 Bd6 Bg5 Be5 Bg3 Be3+ Bh2 Ng5 Ne5 Nh4 Nd4 Nh2 Ng1 Ne4 Nc4+ Nb3 Nf1 Nb1 Rh2 Rg1 Rf1 Ke2 Kf1 Qe2 Qc1 Qb1 Rc1 Rb1 O-O h4 d4 g3 c3 b3 a3 g4 c4 b4 a4 ;
+
+ 12.
+========================================
+
+2025-12-28T21:57:25 !!! reason=backend returned bestmove 0000; last_position=position fen r2q1b1r/pp1np1pp/1kp1Bn2/3p3b/5B2/3P1N1P/PPPN1PP1/R2QK2R w KQ - 3 12; board_at_go=r2q1b1r/pp1np1pp/1kp1Bn2/3p3b/5B2/3P1N1P/PPPN1PP1/R2QK2R w KQ - 3 12; latest_board=r2q1b1r/pp1np1pp/1kp1Bn2/3p3b/5B2/3P1N1P/PPPN1PP1/R2QK2R w KQ - 3 12; last_go=<none>
+2025-12-28T21:57:27 !!! reason=Engine reported illegal SAN from backend; last_position=position fen r2q1b1r/pp1np1pp/1kp1Bnb1/3p4/6P1/3PBN1P/PPPN1P2/R2QK2R b KQ - 2 13; board_at_go=r2q1b1r/pp1np1pp/1kp1Bnb1/3p4/6P1/3PBN1P/PPPN1P2/R2QK2R b KQ - 2 13; latest_board=r2q1b1r/pp1np1pp/1kp1Bnb1/3p4/6P1/3PBN1P/PPPN1P2/R2QK2R b KQ - 2 13; last_go=go infinite
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 16
+  2: 16
+  3: 16
+  4: 16
+  5: 16
+Side to move: black
+FEN: 2rq1b1r/ppknp1pp/2p1Bnb1/3p4/1P4P1/3PBN1P/P1PN1P2/R2Q1RK1 b - - 0 15
+Transcript length (chars): 251
+Transcript tokens: 45
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "2rq1b1r/ppknp1pp/2p1Bnb1/3p4/1P4P1/3PBN1P/P1PN1P2/R2Q1RK1 b - - 0 15"]
+
+; Rg8 Qe8 Rb8 Ra8 Nb8 Nb6 Ne5 Nc5 Kb8 Kd6 Be8 Bf7 Bh5 Bf5 Be4 Bxd3 Ng8 Ne8 Nh5 Nxg4 Ne4 h6 b6 a6 c5 d4 h5 b5 a5 ;
+========================================
+
+2025-12-28T21:57:40 !!! reason=backend returned bestmove 0000; last_position=position fen 2rq1b1r/ppknp1pp/2p1Bnb1/3p4/1P4P1/3PBN1P/P1PN1P2/R2Q1RK1 b - - 0 15; board_at_go=2rq1b1r/ppknp1pp/2p1Bnb1/3p4/1P4P1/3PBN1P/P1PN1P2/R2Q1RK1 b - - 0 15; latest_board=2rq1b1r/ppknp1pp/2p1Bnb1/3p4/1P4P1/3PBN1P/P1PN1P2/R2Q1RK1 b - - 0 15; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 15
+  2: 15
+  3: 15
+  4: 15
+  5: 15
+Side to move: white
+FEN: 2r1qb1r/ppknp1pp/2p1Bnb1/3p4/1P4P1/3PBN1P/P1PN1P2/R2Q1RK1 w - - 1 16
+Transcript length (chars): 301
+Transcript tokens: 57
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "2r1qb1r/ppknp1pp/2p1Bnb1/3p4/1P4P1/3PBN1P/P1PN1P2/R2Q1RK1 w - - 1 16"]
+
+; Bg8 Bf7 Bxd7 Bf5 Bxd5 Ng5 Ne5 Nh4 Nd4 Nh2 Ne1 Bxa7 Bh6 Bb6+ Bg5 Bc5 Bf4+ Bd4 Ne4 Nc4 Nb3 Nb1 Kh2 Kg2 Kh1 Re1 Qe2 Qe1 Qc1 Qb1 Rc1 Rb1 g5 b5 h4 d4 c3 a3 c4 a4 ;
+
+ 16.
+========================================
+
+2025-12-28T21:58:01 !!! reason=backend returned bestmove 0000; last_position=position fen 2r1qb1r/ppknp1pp/2p1Bnb1/3p4/1P4P1/3PBN1P/P1PN1P2/R2Q1RK1 w - - 1 16; board_at_go=2r1qb1r/ppknp1pp/2p1Bnb1/3p4/1P4P1/3PBN1P/P1PN1P2/R2Q1RK1 w - - 1 16; latest_board=2r1qb1r/ppknp1pp/2p1Bnb1/3p4/1P4P1/3PBN1P/P1PN1P2/R2Q1RK1 w - - 1 16; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 15
+  2: 15
+  3: 15
+  4: 15
+  5: 15
+Side to move: white
+FEN: 2r1qb1r/ppknp1pp/2p1Bnb1/3p4/1P4P1/3PBN1P/P1PN1P2/R2Q1RK1 w - - 1 16
+Transcript length (chars): 301
+Transcript tokens: 57
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "2r1qb1r/ppknp1pp/2p1Bnb1/3p4/1P4P1/3PBN1P/P1PN1P2/R2Q1RK1 w - - 1 16"]
+
+; Bg8 Bf7 Bxd7 Bf5 Bxd5 Ng5 Ne5 Nh4 Nd4 Nh2 Ne1 Bxa7 Bh6 Bb6+ Bg5 Bc5 Bf4+ Bd4 Ne4 Nc4 Nb3 Nb1 Kh2 Kg2 Kh1 Re1 Qe2 Qe1 Qc1 Qb1 Rc1 Rb1 g5 b5 h4 d4 c3 a3 c4 a4 ;
+
+ 16.
+========================================
+
+2025-12-28T21:58:16 !!! reason=backend returned bestmove 0000; last_position=position fen 2r1qb1r/ppknp1pp/2p1Bnb1/3p4/1P4P1/3PBN1P/P1PN1P2/R2Q1RK1 w - - 1 16; board_at_go=2r1qb1r/ppknp1pp/2p1Bnb1/3p4/1P4P1/3PBN1P/P1PN1P2/R2Q1RK1 w - - 1 16; latest_board=2r1qb1r/ppknp1pp/2p1Bnb1/3p4/1P4P1/3PBN1P/P1PN1P2/R2Q1RK1 w - - 1 16; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 16
+  2: 16
+  3: 16
+  4: 16
+  5: 16
+Side to move: black
+FEN: 2r1qb1r/pp1npbpp/1kp1Bn2/3p2N1/1P3BP1/3P3P/P1PN1P2/R2QR1K1 b - - 6 18
+Transcript length (chars): 241
+Transcript tokens: 42
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "2r1qb1r/pp1npbpp/1kp1Bn2/3p2N1/1P3BP1/3P3P/P1PN1P2/R2QR1K1 b - - 6 18"]
+
+; Rg8 Qd8 Rd8 Rb8 Ra8 Rc7 Bg8 Bg6 Bxe6 Bh5 Nb8 Ne5 Nc5 Ng8 Nh5 Nxg4 Ne4 Ka6 Kb5 h6 g6 a6 c5 d4 h5 a5 ;
+========================================
+
+2025-12-28T21:58:28 !!! reason=backend returned bestmove 0000; last_position=position fen 2r1qb1r/pp1npbpp/1kp1Bn2/3p2N1/1P3BP1/3P3P/P1PN1P2/R2QR1K1 b - - 6 18; board_at_go=2r1qb1r/pp1npbpp/1kp1Bn2/3p2N1/1P3BP1/3P3P/P1PN1P2/R2QR1K1 b - - 6 18; latest_board=2r1qb1r/pp1npbpp/1kp1Bn2/3p2N1/1P3BP1/3P3P/P1PN1P2/R2QR1K1 b - - 6 18; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 16
+  2: 16
+  3: 16
+  4: 16
+  5: 1Qa5
+Side to move: black
+FEN: 2r1qb1r/pp1np1pp/1kp1Nn2/3p4/1P3BP1/3P3P/P1PN1P2/R2QR1K1 b - - 0 19
+Transcript length (chars): 237
+Transcript tokens: 42
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "2r1qb1r/pp1np1pp/1kp1Nn2/3p4/1P3BP1/3P3P/P1PN1P2/R2QR1K1 b - - 0 19"]
+
+; Rg8 Qd8 Qf7 Qg6 Qh5 Rd8 Rb8 Ra8 Rc7 Nb8 Ne5 Nc5 Ng8 Nh5 Nxg4 Ne4 Ka6 Kb5 h6 g6 a6 c5 d4 h5 g5 a5 ;
+========================================
+
+2025-12-28T21:58:40 !!! reason=backend returned bestmove 0000; last_position=position fen 2r1qb1r/pp1np1pp/1kp1Nn2/3p4/1P3BP1/3P3P/P1PN1P2/R2QR1K1 b - - 0 19; board_at_go=2r1qb1r/pp1np1pp/1kp1Nn2/3p4/1P3BP1/3P3P/P1PN1P2/R2QR1K1 b - - 0 19; latest_board=2r1qb1r/pp1np1pp/1kp1Nn2/3p4/1P3BP1/3P3P/P1PN1P2/R2QR1K1 b - - 0 19; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 16
+  2: 16
+  3: 16
+  4: 16
+  5: 16
+Side to move: black
+FEN: 2r2b1r/pp1np1pp/1kp1Nnq1/3p4/PP3BP1/3P3P/2PN1P2/R2QR1K1 b - - 0 20
+Transcript length (chars): 257
+Transcript tokens: 46
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "2r2b1r/pp1np1pp/1kp1Nnq1/3p4/PP3BP1/3P3P/2PN1P2/R2QR1K1 b - - 0 20"]
+
+; Rg8 Re8 Rd8 Rb8 Ra8 Rc7 Nb8 Ne5 Nc5 Qe8 Qf7 Qh6 Qh5 Qg5 Qf5 Qxg4+ Qe4 Qxd3 Ng8 Ne8 Nh5 Nxg4 Ne4 Ka6 h6 a6 c5 d4 h5 a5 ;
+========================================
+
+2025-12-28T21:58:53 !!! reason=backend returned bestmove 0000; last_position=position fen 2r2b1r/pp1np1pp/1kp1Nnq1/3p4/PP3BP1/3P3P/2PN1P2/R2QR1K1 b - - 0 20; board_at_go=2r2b1r/pp1np1pp/1kp1Nnq1/3p4/PP3BP1/3P3P/2PN1P2/R2QR1K1 b - - 0 20; latest_board=2r2b1r/pp1np1pp/1kp1Nnq1/3p4/PP3BP1/3P3P/2PN1P2/R2QR1K1 b - - 0 20; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 15
+  2: 15a5
+  3: 15
+  4: 15
+  5: 15
+Side to move: white
+FEN: 2r2b1r/pp1np1pp/1k2Nnq1/2pp4/PP3BP1/3P3P/2PN1P2/R2QR1K1 w - - 0 21
+Transcript length (chars): 334
+Transcript tokens: 65
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "2r2b1r/pp1np1pp/1k2Nnq1/2pp4/PP3BP1/3P3P/2PN1P2/R2QR1K1 w - - 0 21"]
+
+; Nxf8 Nd8 Nxg7 Nc7 Ng5 Nxc5 Nd4 Bb8 Bc7+ Bh6 Bd6 Bg5 Be5 Bg3 Be3 Bh2 Ne4 Nc4+ Nf3 Nb3 Nf1 Nb1 Kh2 Kg2 Kh1 Kf1 Re5 Re4 Re3 Re2 Rf1 Qf3 Qe2 Qc1 Qb1 Ra3 Ra2 Rc1 Rb1 bxc5+ g5 b5 a5+ h4 d4 f3 c3 c4 ;
+
+ 21.
+========================================
+
+2025-12-28T21:59:13 !!! reason=backend returned bestmove 0000; last_position=position fen 2r2b1r/pp1np1pp/1k2Nnq1/2pp4/PP3BP1/3P3P/2PN1P2/R2QR1K1 w - - 0 21; board_at_go=2r2b1r/pp1np1pp/1k2Nnq1/2pp4/PP3BP1/3P3P/2PN1P2/R2QR1K1 w - - 0 21; latest_board=2r2b1r/pp1np1pp/1k2Nnq1/2pp4/PP3BP1/3P3P/2PN1P2/R2QR1K1 w - - 0 21; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 15
+  2: 15
+  3: 15c5
+  4: 15
+  5: exe6
+Side to move: white
+FEN: 2r2b1r/pp1np1pp/1k2Nnq1/2pp4/PP3BP1/3P3P/2PN1P2/R2QR1K1 w - - 0 21
+Transcript length (chars): 334
+Transcript tokens: 65
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "2r2b1r/pp1np1pp/1k2Nnq1/2pp4/PP3BP1/3P3P/2PN1P2/R2QR1K1 w - - 0 21"]
+
+; Nxf8 Nd8 Nxg7 Nc7 Ng5 Nxc5 Nd4 Bb8 Bc7+ Bh6 Bd6 Bg5 Be5 Bg3 Be3 Bh2 Ne4 Nc4+ Nf3 Nb3 Nf1 Nb1 Kh2 Kg2 Kh1 Kf1 Re5 Re4 Re3 Re2 Rf1 Qf3 Qe2 Qc1 Qb1 Ra3 Ra2 Rc1 Rb1 bxc5+ g5 b5 a5+ h4 d4 f3 c3 c4 ;
+
+ 21.
+========================================
+
+2025-12-28T21:59:33 !!! reason=Engine reported illegal SAN from backend; last_position=position fen 2r2b1r/pp1np1pp/1k2Nnq1/2pp4/PP3BP1/3P3P/2PN1P2/R2QR1K1 w - - 0 21; board_at_go=2r2b1r/pp1np1pp/1k2Nnq1/2pp4/PP3BP1/3P3P/2PN1P2/R2QR1K1 w - - 0 21; latest_board=2r2b1r/pp1np1pp/1k2Nnq1/2pp4/PP3BP1/3P3P/2PN1P2/R2QR1K1 w - - 0 21; last_go=go infinite
+2025-12-28T21:59:33 !!! reason=backend returned bestmove 0000; last_position=position fen 2r2b1r/pp1np1pp/1k2Nnq1/2pp4/PP3BP1/3P3P/2PN1P2/R2QR1K1 w - - 0 21; board_at_go=2r2b1r/pp1np1pp/1k2Nnq1/2pp4/PP3BP1/3P3P/2PN1P2/R2QR1K1 w - - 0 21; latest_board=2r2b1r/pp1np1pp/1k2Nnq1/2pp4/PP3BP1/3P3P/2PN1P2/R2QR1K1 w - - 0 21; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 16
+  2: 16
+  3: 16
+  4: 16
+  5: 16
+Side to move: black
+FEN: 2r2b1r/pp2p1pp/2k1Nnq1/P1np4/5BP1/3P1N1P/2P2P2/R2QR1K1 b - - 2 23
+Transcript length (chars): 286
+Transcript tokens: 52
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "2r2b1r/pp2p1pp/2k1Nnq1/P1np4/5BP1/3P1N1P/2P2P2/R2QR1K1 b - - 2 23"]
+
+; Rg8 Re8 Rd8 Rb8 Ra8 Rc7 Qe8 Qf7 Qh6 Qh5 Qg5 Qf5 Qxg4+ Qe4 Qxd3 Ng8 Ne8 Nfd7 Nh5 Nxg4 Nfe4 Kd7 Kb5 Ncd7 Nxe6 Na6 Nce4 Na4 Nxd3 Nb3 h6 b6 a6 d4 h5 b5 ;
+========================================
+
+2025-12-28T21:59:48 !!! reason=backend returned bestmove 0000; last_position=position fen 2r2b1r/pp2p1pp/2k1Nnq1/P1np4/5BP1/3P1N1P/2P2P2/R2QR1K1 b - - 2 23; board_at_go=2r2b1r/pp2p1pp/2k1Nnq1/P1np4/5BP1/3P1N1P/2P2P2/R2QR1K1 b - - 2 23; latest_board=2r2b1r/pp2p1pp/2k1Nnq1/P1np4/5BP1/3P1N1P/2P2P2/R2QR1K1 b - - 2 23; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: e4
+  2: e4
+  3: e4
+  4: e4
+  5: e4
+Side to move: black
+FEN: 2r2b1r/pp2p1p1/2k1Nnq1/P1npN2p/5BP1/3P3P/2P2P2/R2QR1K1 b - - 1 24
+Transcript length (chars): 146
+Transcript tokens: 18
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "2r2b1r/pp2p1p1/2k1Nnq1/P1npN2p/5BP1/3P3P/2P2P2/R2QR1K1 b - - 1 24"]
+
+; Kd6 Kb5 ;
+========================================
+
+2025-12-28T21:59:52 !!! reason=Engine reported illegal SAN from backend; last_position=position fen 2r2b1r/pp2p1p1/2k1Nnq1/P1npN2p/5BP1/3P3P/2P2P2/R2QR1K1 b - - 1 24; board_at_go=2r2b1r/pp2p1p1/2k1Nnq1/P1npN2p/5BP1/3P3P/2P2P2/R2QR1K1 b - - 1 24; latest_board=2r2b1r/pp2p1p1/2k1Nnq1/P1npN2p/5BP1/3P3P/2P2P2/R2QR1K1 b - - 1 24; last_go=go infinite
+2025-12-28T21:59:52 !!! reason=backend returned bestmove 0000; last_position=position fen 2r2b1r/pp2p1p1/2k1Nnq1/P1npN2p/5BP1/3P3P/2P2P2/R2QR1K1 b - - 1 24; board_at_go=2r2b1r/pp2p1p1/2k1Nnq1/P1npN2p/5BP1/3P3P/2P2P2/R2QR1K1 b - - 1 24; latest_board=2r2b1r/pp2p1p1/2k1Nnq1/P1npN2p/5BP1/3P3P/2P2P2/R2QR1K1 b - - 1 24; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: exb3
+  2: exb3
+  3: exb3
+  4: exb3
+  5: exb3
+Side to move: white
+FEN: rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+Transcript length (chars): 117
+Transcript tokens: 28
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+
+; Nh3 Nf3 Nc3 Na3 h3 g3 f3 e3 d3 c3 b3 a3 h4 g4 f4 e4 d4 c4 b4 a4 ;
+
+1.
+========================================
+
+2025-12-28T22:00:18 !!! reason=Engine reported illegal SAN from backend; last_position=position startpos; board_at_go=rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1; latest_board=rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1; last_go=go infinite
+2025-12-28T22:00:18 !!! reason=backend returned bestmove 0000; last_position=position startpos; board_at_go=rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1; latest_board=rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: e4
+  2: e4
+  3: e4
+  4: d4
+  5: e4
+Side to move: black
+FEN: rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1
+Transcript length (chars): 195
+Transcript tokens: 36
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"]
+
+; Nh6 Nf6 Nc6 Na6 h6 g6 f6 e6 d6 c6 b6 a6 h5 g5 f5 e5 d5 c5 b5 a5 ;
+========================================
+
+2025-12-28T22:00:29 !!! reason=Engine reported illegal SAN from backend; last_position=position fen rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1; board_at_go=rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1; latest_board=rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1; last_go=go infinite
+2025-12-28T22:00:29 !!! reason=backend returned bestmove 0000; last_position=position fen rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1; board_at_go=rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1; latest_board=rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 1
+  2: 1
+  3: 1
+  4: 1
+  5: 1
+Side to move: white
+FEN: rnbqkb1r/pp1n1ppp/4p3/2ppP3/3P1P2/2N5/PPP3PP/R1BQKBNR w KQkq - 0 6
+Transcript length (chars): 280
+Transcript tokens: 53
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "rnbqkb1r/pp1n1ppp/4p3/2ppP3/3P1P2/2N5/PPP3PP/R1BQKBNR w KQkq - 0 6"]
+
+; Nxd5 Nb5 Ne4 Na4 Nce2 Nb1 Nh3 Nf3 Nge2 Ba6 Bb5 Bc4 Bd3 Be2 Kf2 Ke2 Kd2 Qh5 Qg4 Qf3 Qd3 Qe2 Qd2 Be3 Bd2 Rb1 dxc5 f5 h3 g3 b3 a3 h4 g4 b4 a4 ;
+
+ 6.
+========================================
+
+2025-12-28T22:02:43 !!! reason=backend returned bestmove 0000; last_position=position fen rnbqkb1r/pp1n1ppp/4p3/2ppP3/3P1P2/2N5/PPP3PP/R1BQKBNR w KQkq - 0 6; board_at_go=rnbqkb1r/pp1n1ppp/4p3/2ppP3/3P1P2/2N5/PPP3PP/R1BQKBNR w KQkq - 0 6; latest_board=rnbqkb1r/pp1n1ppp/4p3/2ppP3/3P1P2/2N5/PPP3PP/R1BQKBNR w KQkq - 0 6; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 14
+  2: 14
+  3: 14
+  4: 14
+  5: 14
+Side to move: white
+FEN: r1b1kb1r/pp1n1ppp/2n1p3/q1ppP3/3P1P2/1PN2N2/P1P3PP/R1BQKB1R w KQkq - 1 8
+Transcript length (chars): 260
+Transcript tokens: 47
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "r1b1kb1r/pp1n1ppp/2n1p3/q1ppP3/3P1P2/1PN2N2/P1P3PP/R1BQKB1R w KQkq - 1 8"]
+
+; Ng5 Nh4 Nd2 Ng1 Rg1 Ba6 Bb5 Bc4 Bd3 Be2 Kf2 Ke2 Kd2 Qd3 Qe2 Qd2 Be3 Ba3 Bd2 Bb2 Rb1 dxc5 f5 b4 h3 g3 a3 h4 g4 a4 ;
+
+ 8.
+========================================
+
+2025-12-28T22:02:57 !!! reason=backend returned bestmove 0000; last_position=position fen r1b1kb1r/pp1n1ppp/2n1p3/q1ppP3/3P1P2/1PN2N2/P1P3PP/R1BQKB1R w KQkq - 1 8; board_at_go=r1b1kb1r/pp1n1ppp/2n1p3/q1ppP3/3P1P2/1PN2N2/P1P3PP/R1BQKB1R w KQkq - 1 8; latest_board=r1b1kb1r/pp1n1ppp/2n1p3/q1ppP3/3P1P2/1PN2N2/P1P3PP/R1BQKB1R w KQkq - 1 8; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 16
+  2: 16
+  3: 16
+  4: 16
+  5: 16
+Side to move: black
+FEN: r1b1kb1r/pp1n1ppp/2n1p3/q1ppP3/3P1P2/1PN2N2/P1PB2PP/R2QKB1R b KQkq - 2 8
+Transcript length (chars): 293
+Transcript tokens: 53
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "r1b1kb1r/pp1n1ppp/2n1p3/q1ppP3/3P1P2/1PN2N2/P1PB2PP/R2QKB1R b KQkq - 2 8"]
+
+; Rg8 Be7 Bd6 Kd8 Ke7 Rb8 Ndb8 Nf6 Nb6 Ndxe5 Nd8 Ncb8 Ne7 Ncxe5 Nxd4 Nb4 Qd8 Qc7 Qb6 Qa6 Qb5 Qb4 Qa4 Qxc3 Qa3 Qxa2 cxd4 h6 g6 f6 b6 a6 c4 h5 g5 f5 b5 ;
+========================================
+
+2025-12-28T22:03:13 !!! reason=backend returned bestmove 0000; last_position=position fen r1b1kb1r/pp1n1ppp/2n1p3/q1ppP3/3P1P2/1PN2N2/P1PB2PP/R2QKB1R b KQkq - 2 8; board_at_go=r1b1kb1r/pp1n1ppp/2n1p3/q1ppP3/3P1P2/1PN2N2/P1PB2PP/R2QKB1R b KQkq - 2 8; latest_board=r1b1kb1r/pp1n1ppp/2n1p3/q1ppP3/3P1P2/1PN2N2/P1PB2PP/R2QKB1R b KQkq - 2 8; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 1
+  2: 1
+  3: 13e6
+  4: 16
+  5: 13
+Side to move: white
+FEN: r1bqkb1r/pp1n1ppp/2n1p3/2ppP3/3P1P2/1PN2N2/P1PB2PP/R2QKB1R w KQkq - 3 9
+Transcript length (chars): 272
+Transcript tokens: 50
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "r1bqkb1r/pp1n1ppp/2n1p3/2ppP3/3P1P2/1PN2N2/P1PB2PP/R2QKB1R w KQkq - 3 9"]
+
+; Ng5 Nh4 Ng1 Nxd5 Nb5 Ne4 Na4 Ne2 Nb1 Be3 Bc1 Rg1 Ba6 Bb5 Bc4 Bd3 Be2 Kf2 Ke2 Qe2 Qc1 Qb1 Rc1 Rb1 dxc5 f5 b4 h3 g3 a3 h4 g4 a4 ;
+
+ 9.
+========================================
+
+2025-12-28T22:03:28 !!! reason=backend returned bestmove 0000; last_position=position fen r1bqkb1r/pp1n1ppp/2n1p3/2ppP3/3P1P2/1PN2N2/P1PB2PP/R2QKB1R w KQkq - 3 9; board_at_go=r1bqkb1r/pp1n1ppp/2n1p3/2ppP3/3P1P2/1PN2N2/P1PB2PP/R2QKB1R w KQkq - 3 9; latest_board=r1bqkb1r/pp1n1ppp/2n1p3/2ppP3/3P1P2/1PN2N2/P1PB2PP/R2QKB1R w KQkq - 3 9; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 16
+  2: 16
+  3: 16
+  4: 1d5
+  5: 16
+Side to move: black
+FEN: r1bqkb1r/pp1n1ppp/2n1p3/2ppP3/3P1P2/1P3N2/P1PBN1PP/R2QKB1R b KQkq - 4 9
+Transcript length (chars): 278
+Transcript tokens: 50
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "r1bqkb1r/pp1n1ppp/2n1p3/2ppP3/3P1P2/1P3N2/P1PBN1PP/R2QKB1R b KQkq - 4 9"]
+
+; Rg8 Be7 Bd6 Ke7 Qe7 Qc7 Qf6 Qb6 Qg5 Qa5 Qh4+ Rb8 Ndb8 Nf6 Nb6 Ndxe5 Ncb8 Ne7 Ncxe5 Na5 Nxd4 Nb4 cxd4 h6 g6 f6 b6 a6 c4 h5 g5 f5 b5 a5 ;
+========================================
+
+2025-12-28T22:04:06 !!! reason=Engine reported illegal SAN from backend; last_position=position fen r1bqkb1r/pp1n1ppp/2n1p3/2ppP3/3P1P2/1P3N2/P1PBN1PP/R2QKB1R b KQkq - 4 9; board_at_go=r1bqkb1r/pp1n1ppp/2n1p3/2ppP3/3P1P2/1P3N2/P1PBN1PP/R2QKB1R b KQkq - 4 9; latest_board=r1bqkb1r/pp1n1ppp/2n1p3/2ppP3/3P1P2/1P3N2/P1PBN1PP/R2QKB1R b KQkq - 4 9; last_go=go infinite
+2025-12-28T22:04:06 !!! reason=backend returned bestmove 0000; last_position=position fen r1bqkb1r/pp1n1ppp/2n1p3/2ppP3/3P1P2/1P3N2/P1PBN1PP/R2QKB1R b KQkq - 4 9; board_at_go=r1bqkb1r/pp1n1ppp/2n1p3/2ppP3/3P1P2/1P3N2/P1PBN1PP/R2QKB1R b KQkq - 4 9; latest_board=r1bqkb1r/pp1n1ppp/2n1p3/2ppP3/3P1P2/1P3N2/P1PBN1PP/R2QKB1R b KQkq - 4 9; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 16
+  2: 16
+  3: 16
+  4: 16
+  5: 16
+Side to move: black
+FEN: r1bqkb1r/pp1n1ppp/2n1p3/2ppP3/3P1P2/1P3N2/P1PBN1PP/R2QKB1R b KQkq - 4 9
+Transcript length (chars): 278
+Transcript tokens: 50
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "r1bqkb1r/pp1n1ppp/2n1p3/2ppP3/3P1P2/1P3N2/P1PBN1PP/R2QKB1R b KQkq - 4 9"]
+
+; Rg8 Be7 Bd6 Ke7 Qe7 Qc7 Qf6 Qb6 Qg5 Qa5 Qh4+ Rb8 Ndb8 Nf6 Nb6 Ndxe5 Ncb8 Ne7 Ncxe5 Na5 Nxd4 Nb4 cxd4 h6 g6 f6 b6 a6 c4 h5 g5 f5 b5 a5 ;
+========================================
+
+2025-12-28T22:04:20 !!! reason=backend returned bestmove 0000; last_position=position fen r1bqkb1r/pp1n1ppp/2n1p3/2ppP3/3P1P2/1P3N2/P1PBN1PP/R2QKB1R b KQkq - 4 9; board_at_go=r1bqkb1r/pp1n1ppp/2n1p3/2ppP3/3P1P2/1P3N2/P1PBN1PP/R2QKB1R b KQkq - 4 9; latest_board=r1bqkb1r/pp1n1ppp/2n1p3/2ppP3/3P1P2/1P3N2/P1PBN1PP/R2QKB1R b KQkq - 4 9; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 1Rh5
+  2: 1Rh5
+  3: 1Rh5
+  4: 1Rb6
+  5: 17
+Side to move: white
+FEN: r1bqkb1r/pp3ppp/2n1p3/2npP3/3N1P2/1P3N2/P1PB2PP/R2QKB1R w KQkq - 1 11
+Transcript length (chars): 281
+Transcript tokens: 53
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "r1bqkb1r/pp3ppp/2n1p3/2npP3/3N1P2/1P3N2/P1PB2PP/R2QKB1R w KQkq - 1 11"]
+
+; Nxe6 Nxc6 Nf5 Nb5 Ne2 Ng5 Nh4 Ng1 Ba5 Bb4 Be3 Bc3 Bc1 Rg1 Ba6 Bb5 Bc4 Bd3 Be2 Kf2 Ke2 Qe2 Qc1 Qb1 Rc1 Rb1 f5 b4 h3 g3 c3 a3 h4 g4 c4 a4 ;
+
+ 11.
+========================================
+
+2025-12-28T22:04:35 !!! reason=backend returned bestmove 0000; last_position=position fen r1bqkb1r/pp3ppp/2n1p3/2npP3/3N1P2/1P3N2/P1PB2PP/R2QKB1R w KQkq - 1 11; board_at_go=r1bqkb1r/pp3ppp/2n1p3/2npP3/3N1P2/1P3N2/P1PB2PP/R2QKB1R w KQkq - 1 11; latest_board=r1bqkb1r/pp3ppp/2n1p3/2npP3/3N1P2/1P3N2/P1PB2PP/R2QKB1R w KQkq - 1 11; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 16
+  2: 16
+  3: 16
+  4: 16
+  5: 16
+Side to move: black
+FEN: r1bqkb1r/pp3ppp/2n1p3/2npP3/3N1P2/1P3N2/P1PBB1PP/R2QK2R b KQkq - 2 11
+Transcript length (chars): 289
+Transcript tokens: 54
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "r1bqkb1r/pp3ppp/2n1p3/2npP3/3N1P2/1P3N2/P1PBB1PP/R2QK2R b KQkq - 2 11"]
+
+; Rg8 Be7 Bd6 Ke7 Kd7 Qe7 Qd7 Qc7 Qf6 Qd6 Qb6 Qg5 Qa5 Qh4+ Bd7 Rb8 Nb8 Ne7 Nxe5 Na5 Nxd4 Nb4 Nd7 Na6 Ne4 Na4 Nd3+ Nxb3 h6 g6 f6 b6 a6 h5 g5 f5 b5 a5 ;
+========================================
+
+2025-12-28T22:04:51 !!! reason=backend returned bestmove 0000; last_position=position fen r1bqkb1r/pp3ppp/2n1p3/2npP3/3N1P2/1P3N2/P1PBB1PP/R2QK2R b KQkq - 2 11; board_at_go=r1bqkb1r/pp3ppp/2n1p3/2npP3/3N1P2/1P3N2/P1PBB1PP/R2QK2R b KQkq - 2 11; latest_board=r1bqkb1r/pp3ppp/2n1p3/2npP3/3N1P2/1P3N2/P1PBB1PP/R2QK2R b KQkq - 2 11; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 16
+  2: 16
+  3: 16
+  4: 16
+  5: 16
+Side to move: black
+FEN: r1bqkb1r/pp3ppp/2n1p3/2npP3/3N1P2/1P3N2/P1PBB1PP/R2QK2R b KQkq - 2 11
+Transcript length (chars): 289
+Transcript tokens: 54
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "r1bqkb1r/pp3ppp/2n1p3/2npP3/3N1P2/1P3N2/P1PBB1PP/R2QK2R b KQkq - 2 11"]
+
+; Rg8 Be7 Bd6 Ke7 Kd7 Qe7 Qd7 Qc7 Qf6 Qd6 Qb6 Qg5 Qa5 Qh4+ Bd7 Rb8 Nb8 Ne7 Nxe5 Na5 Nxd4 Nb4 Nd7 Na6 Ne4 Na4 Nd3+ Nxb3 h6 g6 f6 b6 a6 h5 g5 f5 b5 a5 ;
+========================================
+
+2025-12-28T22:05:07 !!! reason=backend returned bestmove 0000; last_position=position fen r1bqkb1r/pp3ppp/2n1p3/2npP3/3N1P2/1P3N2/P1PBB1PP/R2QK2R b KQkq - 2 11; board_at_go=r1bqkb1r/pp3ppp/2n1p3/2npP3/3N1P2/1P3N2/P1PBB1PP/R2QK2R b KQkq - 2 11; latest_board=r1bqkb1r/pp3ppp/2n1p3/2npP3/3N1P2/1P3N2/P1PBB1PP/R2QK2R b KQkq - 2 11; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 1h5
+  2: 1Ba5
+  3: 1f5
+  4: 1h5
+  5: 1h5
+Side to move: white
+FEN: r1b1kb1r/pp3ppp/1qn1p3/2npP3/3N1P2/1P3N2/P1PBB1PP/R2QK2R w KQkq - 3 12
+Transcript length (chars): 282
+Transcript tokens: 53
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "r1b1kb1r/pp3ppp/1qn1p3/2npP3/3N1P2/1P3N2/P1PBB1PP/R2QK2R w KQkq - 3 12"]
+
+; Nxe6 Nxc6 Nf5 Nb5 Ng5 Nh4 Ng1 Ba6 Bb5 Bc4 Bd3 Bf1 Ba5 Bb4 Be3 Bc3 Bc1 Rg1 Rf1 Kf2 Kf1 Qc1 Qb1 Rc1 Rb1 O-O f5 b4 h3 g3 c3 a3 h4 g4 c4 a4 ;
+
+ 12.
+========================================
+
+2025-12-28T22:05:21 !!! reason=Engine reported illegal SAN from backend; last_position=position fen r1b1kb1r/pp3ppp/1qn1p3/2npP3/3N1P2/1P3N2/P1PBB1PP/R2QK2R w KQkq - 3 12; board_at_go=r1b1kb1r/pp3ppp/1qn1p3/2npP3/3N1P2/1P3N2/P1PBB1PP/R2QK2R w KQkq - 3 12; latest_board=r1b1kb1r/pp3ppp/1qn1p3/2npP3/3N1P2/1P3N2/P1PBB1PP/R2QK2R w KQkq - 3 12; last_go=go infinite
+2025-12-28T22:05:21 !!! reason=backend returned bestmove 0000; last_position=position fen r1b1kb1r/pp3ppp/1qn1p3/2npP3/3N1P2/1P3N2/P1PBB1PP/R2QK2R w KQkq - 3 12; board_at_go=r1b1kb1r/pp3ppp/1qn1p3/2npP3/3N1P2/1P3N2/P1PBB1PP/R2QK2R w KQkq - 3 12; latest_board=r1b1kb1r/pp3ppp/1qn1p3/2npP3/3N1P2/1P3N2/P1PBB1PP/R2QK2R w KQkq - 3 12; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 14
+  2: 14
+  3: 14
+  4: 14
+  5: 14
+Side to move: white
+FEN: r1b1kb1r/pp3ppp/1q2p3/2npP3/3n1P2/1P3N2/P1PBB1PP/R2Q1RK1 w kq - 0 13
+Transcript length (chars): 268
+Transcript tokens: 50
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "r1b1kb1r/pp3ppp/1q2p3/2npP3/3n1P2/1P3N2/P1PBB1PP/R2Q1RK1 w kq - 0 13"]
+
+; Ng5 Nh4 Nxd4 Ne1 Ba6 Bb5+ Bc4 Bd3 Ba5 Bb4 Be3 Bc3 Be1 Bc1 Kf2 Kh1 Rf2 Re1 Qe1 Qc1 Qb1 Rc1 Rb1 f5 b4 h3 g3 c3 a3 h4 g4 c4 a4 ;
+
+ 13.
+========================================
+
+2025-12-28T22:05:35 !!! reason=backend returned bestmove 0000; last_position=position fen r1b1kb1r/pp3ppp/1q2p3/2npP3/3n1P2/1P3N2/P1PBB1PP/R2Q1RK1 w kq - 0 13; board_at_go=r1b1kb1r/pp3ppp/1q2p3/2npP3/3n1P2/1P3N2/P1PBB1PP/R2Q1RK1 w kq - 0 13; latest_board=r1b1kb1r/pp3ppp/1q2p3/2npP3/3n1P2/1P3N2/P1PBB1PP/R2Q1RK1 w kq - 0 13; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 1
+  2: 16
+  3: 1
+  4: 1
+  5: 16
+Side to move: white
+FEN: r1b1kb1r/pp3ppp/1q2p3/3pP3/3N1P2/1n6/P1PBB1PP/R2Q1RK1 w kq - 0 14
+Transcript length (chars): 271
+Transcript tokens: 51
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "r1b1kb1r/pp3ppp/1q2p3/3pP3/3N1P2/1n6/P1PBB1PP/R2Q1RK1 w kq - 0 14"]
+
+; Ba6 Bh5 Bb5+ Bg4 Bc4 Bf3 Bd3 Ba5 Bb4 Be3 Bc3 Be1 Bc1 Kf2 Kh1 Rf3 Rf2 Re1 Qe1 Qc1 Qb1 Rc1 Rb1 cxb3 axb3 f5 h3 g3 c3 a3 h4 g4 c4 a4 ;
+
+ 14.
+========================================
+
+2025-12-28T22:05:48 !!! reason=backend returned bestmove 0000; last_position=position fen r1b1kb1r/pp3ppp/1q2p3/3pP3/3N1P2/1n6/P1PBB1PP/R2Q1RK1 w kq - 0 14; board_at_go=r1b1kb1r/pp3ppp/1q2p3/3pP3/3N1P2/1n6/P1PBB1PP/R2Q1RK1 w kq - 0 14; latest_board=r1b1kb1r/pp3ppp/1q2p3/3pP3/3N1P2/1n6/P1PBB1PP/R2Q1RK1 w kq - 0 14; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 16
+  2: 16
+  3: 16
+  4: 16
+  5: 16
+Side to move: white
+FEN: r1bk1b1r/pp3ppp/1q2p3/1B1pP3/3N1P2/1n6/P1PB2PP/R2Q1RK1 w - - 2 15
+Transcript length (chars): 290
+Transcript tokens: 56
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "r1bk1b1r/pp3ppp/1q2p3/1B1pP3/3N1P2/1n6/P1PB2PP/R2Q1RK1 w - - 2 15"]
+
+; Be8 Bd7 Bc6 Ba6 Bc4 Ba4 Bd3 Be2 Ba5 Bb4 Be3 Bc3 Be1 Bc1 Kf2 Kh1 Rf3 Rf2 Re1 Qh5 Qg4 Qf3 Qe2 Qe1 Qc1 Qb1 Rc1 Rb1 cxb3 axb3 f5 h3 g3 c3 a3 h4 g4 c4 a4 ;
+
+ 15.
+========================================
+
+2025-12-28T22:06:04 !!! reason=backend returned bestmove 0000; last_position=position fen r1bk1b1r/pp3ppp/1q2p3/1B1pP3/3N1P2/1n6/P1PB2PP/R2Q1RK1 w - - 2 15; board_at_go=r1bk1b1r/pp3ppp/1q2p3/1B1pP3/3N1P2/1n6/P1PB2PP/R2Q1RK1 w - - 2 15; latest_board=r1bk1b1r/pp3ppp/1q2p3/1B1pP3/3N1P2/1n6/P1PB2PP/R2Q1RK1 w - - 2 15; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: e4
+  2: e4
+  3: e4
+  4: d4
+  5: d4
+Side to move: black
+FEN: rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1
+Transcript length (chars): 195
+Transcript tokens: 36
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"]
+
+; Nh6 Nf6 Nc6 Na6 h6 g6 f6 e6 d6 c6 b6 a6 h5 g5 f5 e5 d5 c5 b5 a5 ;
+========================================
+
+2025-12-28T22:07:00 !!! reason=Engine reported illegal SAN from backend; last_position=position fen rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1; board_at_go=rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1; latest_board=rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1; last_go=go infinite
+2025-12-28T22:07:00 !!! reason=backend returned bestmove 0000; last_position=position fen rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1; board_at_go=rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1; latest_board=rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 14
+  2: 14
+  3: 14
+  4: 14
+  5: 14
+Side to move: white
+FEN: r1b1kb1r/pp3ppp/1q2p3/2npP3/3n1P2/1P3N2/P1PBB1PP/R2Q1RK1 w kq - 0 13
+Transcript length (chars): 268
+Transcript tokens: 50
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "r1b1kb1r/pp3ppp/1q2p3/2npP3/3n1P2/1P3N2/P1PBB1PP/R2Q1RK1 w kq - 0 13"]
+
+; Ng5 Nh4 Nxd4 Ne1 Ba6 Bb5+ Bc4 Bd3 Ba5 Bb4 Be3 Bc3 Be1 Bc1 Kf2 Kh1 Rf2 Re1 Qe1 Qc1 Qb1 Rc1 Rb1 f5 b4 h3 g3 c3 a3 h4 g4 c4 a4 ;
+
+ 13.
+========================================
+
+2025-12-28T22:07:13 !!! reason=backend returned bestmove 0000; last_position=position fen r1b1kb1r/pp3ppp/1q2p3/2npP3/3n1P2/1P3N2/P1PBB1PP/R2Q1RK1 w kq - 0 13; board_at_go=r1b1kb1r/pp3ppp/1q2p3/2npP3/3n1P2/1P3N2/P1PBB1PP/R2Q1RK1 w kq - 0 13; latest_board=r1b1kb1r/pp3ppp/1q2p3/2npP3/3n1P2/1P3N2/P1PBB1PP/R2Q1RK1 w kq - 0 13; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 14
+  2: 1a5
+  3: 14
+  4: 14
+  5: 14
+Side to move: black
+FEN: r1b1kb1r/pp3ppp/1q2p3/2npP3/3N1P2/1P6/P1PBB1PP/R2Q1RK1 b kq - 0 13
+Transcript length (chars): 257
+Transcript tokens: 47
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "r1b1kb1r/pp3ppp/1q2p3/2npP3/3N1P2/1P6/P1PBB1PP/R2Q1RK1 b kq - 0 13"]
+
+; Rg8 Be7 Bd6 Kd8 Ke7 Kd7 Bd7 Rb8 Qd8 Qc7 Qd6 Qc6 Qa6 Qb5 Qa5 Qb4 Qxb3 Nd7 Na6 Ne4 Na4 Nd3 Nxb3 h6 g6 f6 a6 h5 g5 f5 a5 ;
+========================================
+
+2025-12-28T22:07:26 !!! reason=Engine reported illegal SAN from backend; last_position=position fen r1b1kb1r/pp3ppp/1q2p3/2npP3/3N1P2/1P6/P1PBB1PP/R2Q1RK1 b kq - 0 13; board_at_go=r1b1kb1r/pp3ppp/1q2p3/2npP3/3N1P2/1P6/P1PBB1PP/R2Q1RK1 b kq - 0 13; latest_board=r1b1kb1r/pp3ppp/1q2p3/2npP3/3N1P2/1P6/P1PBB1PP/R2Q1RK1 b kq - 0 13; last_go=go infinite
+2025-12-28T22:07:26 !!! reason=backend returned bestmove 0000; last_position=position fen r1b1kb1r/pp3ppp/1q2p3/2npP3/3N1P2/1P6/P1PBB1PP/R2Q1RK1 b kq - 0 13; board_at_go=r1b1kb1r/pp3ppp/1q2p3/2npP3/3N1P2/1P6/P1PBB1PP/R2Q1RK1 b kq - 0 13; latest_board=r1b1kb1r/pp3ppp/1q2p3/2npP3/3N1P2/1P6/P1PBB1PP/R2Q1RK1 b kq - 0 13; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 1h5
+  2: 1h5
+  3: 1f5
+  4: 1h5
+  5: 1h5
+Side to move: white
+FEN: r1b1kb1r/pp3ppp/1qn1p3/2npP3/3N1P2/1P3N2/P1PBB1PP/R2QK2R w KQkq - 3 12
+Transcript length (chars): 282
+Transcript tokens: 53
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "r1b1kb1r/pp3ppp/1qn1p3/2npP3/3N1P2/1P3N2/P1PBB1PP/R2QK2R w KQkq - 3 12"]
+
+; Nxe6 Nxc6 Nf5 Nb5 Ng5 Nh4 Ng1 Ba6 Bb5 Bc4 Bd3 Bf1 Ba5 Bb4 Be3 Bc3 Bc1 Rg1 Rf1 Kf2 Kf1 Qc1 Qb1 Rc1 Rb1 O-O f5 b4 h3 g3 c3 a3 h4 g4 c4 a4 ;
+
+ 12.
+========================================
+
+2025-12-28T22:07:54 !!! reason=Engine reported illegal SAN from backend; last_position=position fen r1b1kb1r/pp3ppp/1qn1p3/2npP3/3N1P2/1P3N2/P1PBB1PP/R2QK2R w KQkq - 3 12; board_at_go=r1b1kb1r/pp3ppp/1qn1p3/2npP3/3N1P2/1P3N2/P1PBB1PP/R2QK2R w KQkq - 3 12; latest_board=r1b1kb1r/pp3ppp/1qn1p3/2npP3/3N1P2/1P3N2/P1PBB1PP/R2QK2R w KQkq - 3 12; last_go=go infinite
+2025-12-28T22:07:54 !!! reason=backend returned bestmove 0000; last_position=position fen r1b1kb1r/pp3ppp/1qn1p3/2npP3/3N1P2/1P3N2/P1PBB1PP/R2QK2R w KQkq - 3 12; board_at_go=r1b1kb1r/pp3ppp/1qn1p3/2npP3/3N1P2/1P3N2/P1PBB1PP/R2QK2R w KQkq - 3 12; latest_board=r1b1kb1r/pp3ppp/1qn1p3/2npP3/3N1P2/1P3N2/P1PBB1PP/R2QK2R w KQkq - 3 12; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 16
+  2: 16
+  3: e3
+  4: 1a5
+  5: 16
+Side to move: black
+FEN: r1b1kb1r/pp3ppp/1qN1p3/2npP3/5P2/1P3N2/P1PBB1PP/R2QK2R b KQkq - 0 12
+Transcript length (chars): 257
+Transcript tokens: 46
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "r1b1kb1r/pp3ppp/1qN1p3/2npP3/5P2/1P3N2/P1PBB1PP/R2QK2R b KQkq - 0 12"]
+
+; Rg8 Be7 Bd6 Kd7 Bd7 Rb8 Qd8 Qc7 Qxc6 Qa6 Qb5 Qa5 Qb4 Qxb3 Nd7 Na6 Ne4 Na4 Nd3+ Nxb3 bxc6 h6 g6 f6 a6 d4 h5 g5 f5 a5 ;
+========================================
+
+2025-12-28T22:08:06 !!! reason=Engine reported illegal SAN from backend; last_position=position fen r1b1kb1r/pp3ppp/1qN1p3/2npP3/5P2/1P3N2/P1PBB1PP/R2QK2R b KQkq - 0 12; board_at_go=r1b1kb1r/pp3ppp/1qN1p3/2npP3/5P2/1P3N2/P1PBB1PP/R2QK2R b KQkq - 0 12; latest_board=r1b1kb1r/pp3ppp/1qN1p3/2npP3/5P2/1P3N2/P1PBB1PP/R2QK2R b KQkq - 0 12; last_go=go infinite
+2025-12-28T22:08:06 !!! reason=backend returned bestmove 0000; last_position=position fen r1b1kb1r/pp3ppp/1qN1p3/2npP3/5P2/1P3N2/P1PBB1PP/R2QK2R b KQkq - 0 12; board_at_go=r1b1kb1r/pp3ppp/1qN1p3/2npP3/5P2/1P3N2/P1PBB1PP/R2QK2R b KQkq - 0 12; latest_board=r1b1kb1r/pp3ppp/1qN1p3/2npP3/5P2/1P3N2/P1PBB1PP/R2QK2R b KQkq - 0 12; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 14
+  2: 14
+  3: 14
+  4: 14
+  5: 14
+Side to move: white
+FEN: r1b1kb1r/p4ppp/1qp1p3/2npP3/5P2/1P3N2/P1PBB1PP/R2QK2R w KQkq - 0 13
+Transcript length (chars): 265
+Transcript tokens: 50
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "r1b1kb1r/p4ppp/1qp1p3/2npP3/5P2/1P3N2/P1PBB1PP/R2QK2R w KQkq - 0 13"]
+
+; Ng5 Nh4 Nd4 Ng1 Ba6 Bb5 Bc4 Bd3 Bf1 Ba5 Bb4 Be3 Bc3 Bc1 Rg1 Rf1 Kf2 Kf1 Qc1 Qb1 Rc1 Rb1 O-O f5 b4 h3 g3 c3 a3 h4 g4 c4 a4 ;
+
+ 13.
+========================================
+
+2025-12-28T22:08:19 !!! reason=backend returned bestmove 0000; last_position=position fen r1b1kb1r/p4ppp/1qp1p3/2npP3/5P2/1P3N2/P1PBB1PP/R2QK2R w KQkq - 0 13; board_at_go=r1b1kb1r/p4ppp/1qp1p3/2npP3/5P2/1P3N2/P1PBB1PP/R2QK2R w KQkq - 0 13; latest_board=r1b1kb1r/p4ppp/1qp1p3/2npP3/5P2/1P3N2/P1PBB1PP/R2QK2R w KQkq - 0 13; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 1
+  2: 1
+  3: 1
+  4: 15
+  5: e3
+Side to move: white
+FEN: r1b1kb1r/p4ppp/1qp1p3/3pP3/4nP2/1PP2N2/P2BB1PP/R2QK2R w KQkq - 1 14
+Transcript length (chars): 246
+Transcript tokens: 45
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "r1b1kb1r/p4ppp/1qp1p3/3pP3/4nP2/1PP2N2/P2BB1PP/R2QK2R w KQkq - 1 14"]
+
+; Ng5 Nh4 Nd4 Ng1 Ba6 Bb5 Bc4 Bd3 Bf1 Be3 Bc1 Rg1 Rf1 Kf1 Qc2 Qc1 Qb1 Rc1 Rb1 f5 c4 b4 h3 g3 a3 h4 g4 a4 ;
+
+ 14.
+========================================
+
+2025-12-28T22:08:31 !!! reason=Engine reported illegal SAN from backend; last_position=position fen r1b1kb1r/p4ppp/1qp1p3/3pP3/4nP2/1PP2N2/P2BB1PP/R2QK2R w KQkq - 1 14; board_at_go=r1b1kb1r/p4ppp/1qp1p3/3pP3/4nP2/1PP2N2/P2BB1PP/R2QK2R w KQkq - 1 14; latest_board=r1b1kb1r/p4ppp/1qp1p3/3pP3/4nP2/1PP2N2/P2BB1PP/R2QK2R w KQkq - 1 14; last_go=go infinite
+2025-12-28T22:08:31 !!! reason=backend returned bestmove 0000; last_position=position fen r1b1kb1r/p4ppp/1qp1p3/3pP3/4nP2/1PP2N2/P2BB1PP/R2QK2R w KQkq - 1 14; board_at_go=r1b1kb1r/p4ppp/1qp1p3/3pP3/4nP2/1PP2N2/P2BB1PP/R2QK2R w KQkq - 1 14; latest_board=r1b1kb1r/p4ppp/1qp1p3/3pP3/4nP2/1PP2N2/P2BB1PP/R2QK2R w KQkq - 1 14; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 1Kb6
+  2: 1KBb5
+  3: 1Kd5
+  4: 1Kh6
+  5: 1Nc4
+Side to move: white
+FEN: r1b1k2r/p3bppp/1qp1p3/3pP3/3NnP2/1PP5/P2BB1PP/R2QK2R w KQkq - 3 15
+Transcript length (chars): 271
+Transcript tokens: 51
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "r1b1k2r/p3bppp/1qp1p3/3pP3/3NnP2/1PP5/P2BB1PP/R2QK2R w KQkq - 3 15"]
+
+; Nxe6 Nxc6 Nf5 Nb5 Nf3 Nc2 Ba6 Bh5 Bb5 Bg4 Bc4 Bf3 Bd3 Bf1 Be3 Bc1 Rg1 Rf1 Kf1 Qc2 Qc1 Qb1 Rc1 Rb1 O-O f5 c4 b4 h3 g3 a3 h4 g4 a4 ;
+
+ 15.
+========================================
+
+2025-12-28T22:08:45 !!! reason=backend returned bestmove 0000; last_position=position fen r1b1k2r/p3bppp/1qp1p3/3pP3/3NnP2/1PP5/P2BB1PP/R2QK2R w KQkq - 3 15; board_at_go=r1b1k2r/p3bppp/1qp1p3/3pP3/3NnP2/1PP5/P2BB1PP/R2QK2R w KQkq - 3 15; latest_board=r1b1k2r/p3bppp/1qp1p3/3pP3/3NnP2/1PP5/P2BB1PP/R2QK2R w KQkq - 3 15; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 16e6
+  2: 16e6
+  3: 16
+  4: 16
+  5: 16
+Side to move: black
+FEN: r1b1k2r/p3bppp/1qp1p3/3pP3/3NnP2/1PPB4/P2B2PP/R2QK2R b KQkq - 4 15
+Transcript length (chars): 323
+Transcript tokens: 63
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "r1b1k2r/p3bppp/1qp1p3/3pP3/3NnP2/1PPB4/P2B2PP/R2QK2R b KQkq - 4 15"]
+
+; Rg8 Rf8 Kf8 Kd8 Kd7 Bd7 Bb7 Ba6 Rb8 Bf8 Bd8 Bf6 Bd6 Bg5 Bc5 Bh4+ Bb4 Ba3 Qd8 Qb8 Qc7 Qb7 Qa6 Qc5 Qb5 Qa5 Qxd4 Qb4 Qxb3 Nf6 Nd6 Ng5 Nc5 Ng3 Nxc3 Nf2 Nxd2 O-O h6 g6 f6 a6 c5 h5 g5 f5 a5 ;
+========================================
+
+2025-12-28T22:09:04 !!! reason=backend returned bestmove 0000; last_position=position fen r1b1k2r/p3bppp/1qp1p3/3pP3/3NnP2/1PPB4/P2B2PP/R2QK2R b KQkq - 4 15; board_at_go=r1b1k2r/p3bppp/1qp1p3/3pP3/3NnP2/1PPB4/P2B2PP/R2QK2R b KQkq - 4 15; latest_board=r1b1k2r/p3bppp/1qp1p3/3pP3/3NnP2/1PPB4/P2B2PP/R2QK2R b KQkq - 4 15; last_go=<none>
+2025-12-28T22:09:10 !!! reason=Engine reported illegal SAN from backend; last_position=position fen r4rk1/pb2bppp/1qp1p3/3pP3/3NnP2/1PPB4/P1QB2PP/R3K2R w KQ - 7 17; board_at_go=r4rk1/pb2bppp/1qp1p3/3pP3/3NnP2/1PPB4/P1QB2PP/R3K2R w KQ - 7 17; latest_board=r4rk1/pb2bppp/1qp1p3/3pP3/3NnP2/1PPB4/P1QB2PP/R3K2R w KQ - 7 17; last_go=go infinite
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 15
+  2: 15
+  3: 15
+  4: 15
+  5: 15
+Side to move: white
+FEN: r4rk1/pb2bppp/1q2p3/2p1P3/3NQP2/1PP5/P2B2PP/R3K2R w KQ - 0 19
+Transcript length (chars): 298
+Transcript tokens: 58
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "r4rk1/pb2bppp/1q2p3/2p1P3/3NQP2/1PP5/P2B2PP/R3K2R w KQ - 0 19"]
+
+; Qxh7+ Qxb7 Qg6 Qc6 Qf5 Qd5 Qf3 Qe3 Qd3 Qe2 Qc2 Qb1 Nxe6 Nc6 Nf5 Nb5 Nf3 Ne2 Nc2 Be3 Bc1 Rg1 Rf1 Kf2 Ke2 Kf1 Kd1 Rd1 Rc1 Rb1 O-O O-O-O f5 c4 b4 h3 g3 a3 h4 g4 a4 ;
+
+ 19.
+========================================
+
+2025-12-28T22:09:28 !!! reason=backend returned bestmove 0000; last_position=position fen r4rk1/pb2bppp/1q2p3/2p1P3/3NQP2/1PP5/P2B2PP/R3K2R w KQ - 0 19; board_at_go=r4rk1/pb2bppp/1q2p3/2p1P3/3NQP2/1PP5/P2B2PP/R3K2R w KQ - 0 19; latest_board=r4rk1/pb2bppp/1q2p3/2p1P3/3NQP2/1PP5/P2B2PP/R3K2R w KQ - 0 19; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: e4
+  2: e4
+  3: e4
+  4: e4
+  5: e4
+Side to move: black
+FEN: r4rk1/pb2bppQ/1q2p3/2p1P3/3N1P2/1PP5/P2B2PP/R3K2R b KQ - 0 19
+Transcript length (chars): 139
+Transcript tokens: 17
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "r4rk1/pb2bppQ/1q2p3/2p1P3/3N1P2/1PP5/P2B2PP/R3K2R b KQ - 0 19"]
+
+; Kxh7 ;
+========================================
+
+2025-12-28T22:09:37 !!! reason=Engine reported illegal SAN from backend; last_position=position fen r4rk1/pb2bppQ/1q2p3/2p1P3/3N1P2/1PP5/P2B2PP/R3K2R b KQ - 0 19; board_at_go=r4rk1/pb2bppQ/1q2p3/2p1P3/3N1P2/1PP5/P2B2PP/R3K2R b KQ - 0 19; latest_board=r4rk1/pb2bppQ/1q2p3/2p1P3/3N1P2/1PP5/P2B2PP/R3K2R b KQ - 0 19; last_go=go infinite
+2025-12-28T22:09:37 !!! reason=backend returned bestmove 0000; last_position=position fen r4rk1/pb2bppQ/1q2p3/2p1P3/3N1P2/1PP5/P2B2PP/R3K2R b KQ - 0 19; board_at_go=r4rk1/pb2bppQ/1q2p3/2p1P3/3N1P2/1PP5/P2B2PP/R3K2R b KQ - 0 19; latest_board=r4rk1/pb2bppQ/1q2p3/2p1P3/3N1P2/1PP5/P2B2PP/R3K2R b KQ - 0 19; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: e4
+  2: e4
+  3: e4
+  4: e4
+  5: e4
+Side to move: black
+FEN: r4rk1/pb2bppQ/1q2p3/2p1P3/3N1P2/1PP5/P2B2PP/R3K2R b KQ - 0 19
+Transcript length (chars): 139
+Transcript tokens: 17
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "r4rk1/pb2bppQ/1q2p3/2p1P3/3N1P2/1PP5/P2B2PP/R3K2R b KQ - 0 19"]
+
+; Kxh7 ;
+========================================
+
+2025-12-28T22:09:40 !!! reason=Engine reported illegal SAN from backend; last_position=position fen r4rk1/pb2bppQ/1q2p3/2p1P3/3N1P2/1PP5/P2B2PP/R3K2R b KQ - 0 19; board_at_go=r4rk1/pb2bppQ/1q2p3/2p1P3/3N1P2/1PP5/P2B2PP/R3K2R b KQ - 0 19; latest_board=r4rk1/pb2bppQ/1q2p3/2p1P3/3N1P2/1PP5/P2B2PP/R3K2R b KQ - 0 19; last_go=go infinite
+2025-12-28T22:09:40 !!! reason=backend returned bestmove 0000; last_position=position fen r4rk1/pb2bppQ/1q2p3/2p1P3/3N1P2/1PP5/P2B2PP/R3K2R b KQ - 0 19; board_at_go=r4rk1/pb2bppQ/1q2p3/2p1P3/3N1P2/1PP5/P2B2PP/R3K2R b KQ - 0 19; latest_board=r4rk1/pb2bppQ/1q2p3/2p1P3/3N1P2/1PP5/P2B2PP/R3K2R b KQ - 0 19; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 15
+  2: 15
+  3: 15
+  4: 15
+  5: 15
+Side to move: white
+FEN: r4r2/pb2bppk/1q2p3/2p1P3/3N1P2/1PP5/P2B2PP/R3K2R w KQ - 0 20
+Transcript length (chars): 246
+Transcript tokens: 46
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "r4r2/pb2bppk/1q2p3/2p1P3/3N1P2/1PP5/P2B2PP/R3K2R w KQ - 0 20"]
+
+; Nxe6 Nc6 Nf5 Nb5 Nf3 Ne2 Nc2 Be3 Bc1 Rg1 Rf1 Kf2 Ke2 Kf1 Kd1 Rd1 Rc1 Rb1 O-O O-O-O f5 c4 b4 h3 g3 a3 h4 g4 a4 ;
+
+ 20.
+========================================
+
+2025-12-28T22:09:52 !!! reason=backend returned bestmove 0000; last_position=position fen r4r2/pb2bppk/1q2p3/2p1P3/3N1P2/1PP5/P2B2PP/R3K2R w KQ - 0 20; board_at_go=r4r2/pb2bppk/1q2p3/2p1P3/3N1P2/1PP5/P2B2PP/R3K2R w KQ - 0 20; latest_board=r4r2/pb2bppk/1q2p3/2p1P3/3N1P2/1PP5/P2B2PP/R3K2R w KQ - 0 20; last_go=<none>
+2025-12-28T22:09:59 !!! reason=Engine reported illegal SAN from backend; last_position=position fen r4r2/pb2bppk/4q3/2p1P3/5P2/1PP5/P2B2PP/R3K2R w KQ - 0 21; board_at_go=r4r2/pb2bppk/4q3/2p1P3/5P2/1PP5/P2B2PP/R3K2R w KQ - 0 21; latest_board=r4r2/pb2bppk/4q3/2p1P3/5P2/1PP5/P2B2PP/R3K2R w KQ - 0 21; last_go=go infinite
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 1
+  2: 1
+  3: 1
+  4: 1d6
+  5: 1
+Side to move: white
+FEN: rnbqkb1r/ppp2ppp/5n2/3pp3/4PP2/2N5/PPPP2PP/R1BQKBNR w KQkq - 0 4
+Transcript length (chars): 266
+Transcript tokens: 50
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "rnbqkb1r/ppp2ppp/5n2/3pp3/4PP2/2N5/PPPP2PP/R1BQKBNR w KQkq - 0 4"]
+
+; Nxd5 Nb5 Na4 Nce2 Nb1 Nh3 Nf3 Nge2 Ba6 Bb5+ Bc4 Bd3 Be2 Kf2 Ke2 Qh5 Qg4 Qf3 Qe2 Rb1 fxe5 exd5 f5 h3 g3 d3 b3 a3 h4 g4 d4 b4 a4 ;
+
+ 4.
+========================================
+
+2025-12-28T22:11:15 !!! reason=Engine reported illegal SAN from backend; last_position=position fen rnbqkb1r/ppp2ppp/5n2/3pp3/4PP2/2N5/PPPP2PP/R1BQKBNR w KQkq - 0 4; board_at_go=rnbqkb1r/ppp2ppp/5n2/3pp3/4PP2/2N5/PPPP2PP/R1BQKBNR w KQkq - 0 4; latest_board=rnbqkb1r/ppp2ppp/5n2/3pp3/4PP2/2N5/PPPP2PP/R1BQKBNR w KQkq - 0 4; last_go=go infinite
+2025-12-28T22:11:15 !!! reason=backend returned bestmove 0000; last_position=position fen rnbqkb1r/ppp2ppp/5n2/3pp3/4PP2/2N5/PPPP2PP/R1BQKBNR w KQkq - 0 4; board_at_go=rnbqkb1r/ppp2ppp/5n2/3pp3/4PP2/2N5/PPPP2PP/R1BQKBNR w KQkq - 0 4; latest_board=rnbqkb1r/ppp2ppp/5n2/3pp3/4PP2/2N5/PPPP2PP/R1BQKBNR w KQkq - 0 4; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 16
+  2: 16
+  3: 16d5
+  4: 16d6
+  5: 16c5
+Side to move: black
+FEN: rnbqkb1r/ppp2ppp/5n2/3pp3/3PPP2/2N5/PPP3PP/R1BQKBNR b KQkq - 0 4
+Transcript length (chars): 281
+Transcript tokens: 53
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "rnbqkb1r/ppp2ppp/5n2/3pp3/3PPP2/2N5/PPP3PP/R1BQKBNR b KQkq - 0 4"]
+
+; Rg8 Be7 Bd6 Bc5 Bb4 Ba3 Ke7 Kd7 Qe7 Qd7 Qd6 Bd7 Be6 Bf5 Bg4 Bh3 Nbd7 Nc6 Na6 Ng8 Nfd7 Nh5 Ng4 Nxe4 exf4 exd4 dxe4 h6 g6 c6 b6 a6 h5 g5 c5 b5 a5 ;
+========================================
+
+2025-12-28T22:11:31 !!! reason=backend returned bestmove 0000; last_position=position fen rnbqkb1r/ppp2ppp/5n2/3pp3/3PPP2/2N5/PPP3PP/R1BQKBNR b KQkq - 0 4; board_at_go=rnbqkb1r/ppp2ppp/5n2/3pp3/3PPP2/2N5/PPP3PP/R1BQKBNR b KQkq - 0 4; latest_board=rnbqkb1r/ppp2ppp/5n2/3pp3/3PPP2/2N5/PPP3PP/R1BQKBNR b KQkq - 0 4; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 14
+  2: 14
+  3: 14
+  4: 14
+  5: 14
+Side to move: white
+FEN: rnb1k2r/pp2b1pp/2p2P2/7q/3Pp3/6P1/PPPBN2P/R2QKB1R w KQkq - 3 11
+Transcript length (chars): 263
+Transcript tokens: 50
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "rnb1k2r/pp2b1pp/2p2P2/7q/3Pp3/6P1/PPPBN2P/R2QKB1R w KQkq - 3 11"]
+
+; Nf4 Nc3 Ng1 Nc1 Bh6 Bg5 Ba5 Bf4 Bb4 Be3 Bc3 Bc1 Rg1 Bh3 Bg2 Kf2 Qc1 Qb1 Rc1 Rb1 fxg7 fxe7 f7+ d5 g4 h3 c3 b3 a3 h4 c4 b4 a4 ;
+
+ 11.
+========================================
+
+2025-12-28T22:11:44 !!! reason=backend returned bestmove 0000; last_position=position fen rnb1k2r/pp2b1pp/2p2P2/7q/3Pp3/6P1/PPPBN2P/R2QKB1R w KQkq - 3 11; board_at_go=rnb1k2r/pp2b1pp/2p2P2/7q/3Pp3/6P1/PPPBN2P/R2QKB1R w KQkq - 3 11; latest_board=rnb1k2r/pp2b1pp/2p2P2/7q/3Pp3/6P1/PPPBN2P/R2QKB1R w KQkq - 3 11; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 16
+  2: 16
+  3: 14
+  4: 16
+  5: 16
+Side to move: black
+FEN: rnb1k2r/pp2P1pp/2p5/7q/3Pp3/6P1/PPPBN2P/R2QKB1R b KQkq - 0 11
+Transcript length (chars): 277
+Transcript tokens: 53
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "rnb1k2r/pp2P1pp/2p5/7q/3Pp3/6P1/PPPBN2P/R2QKB1R b KQkq - 0 11"]
+
+; Rg8 Rf8 Kf7 Kxe7 Kd7 Bd7 Be6 Bf5 Bg4 Bh3 Nd7 Na6 Qf7 Qh6 Qg6 Qg5 Qf5 Qe5 Qd5 Qc5 Qb5 Qa5 Qh4 Qg4 Qh3 Qf3 Qxh2 Qxe2+ h6 g6 b6 a6 c5 e3 g5 b5 a5 ;
+========================================
+
+2025-12-28T22:12:38 !!! reason=backend returned bestmove 0000; last_position=position fen rnb1k2r/pp2P1pp/2p5/7q/3Pp3/6P1/PPPBN2P/R2QKB1R b KQkq - 0 11; board_at_go=rnb1k2r/pp2P1pp/2p5/7q/3Pp3/6P1/PPPBN2P/R2QKB1R b KQkq - 0 11; latest_board=rnb1k2r/pp2P1pp/2p5/7q/3Pp3/6P1/PPPBN2P/R2QKB1R b KQkq - 0 11; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 16
+  2: 16
+  3: 1Qg6
+  4: 1d6
+  5: gxh3
+Side to move: black
+FEN: rnb1k2r/pp2P1pp/2p5/7q/3Pp3/6P1/PPPBN2P/R2QKB1R b KQkq - 0 11
+Transcript length (chars): 277
+Transcript tokens: 53
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "rnb1k2r/pp2P1pp/2p5/7q/3Pp3/6P1/PPPBN2P/R2QKB1R b KQkq - 0 11"]
+
+; Rg8 Rf8 Kf7 Kxe7 Kd7 Bd7 Be6 Bf5 Bg4 Bh3 Nd7 Na6 Qf7 Qh6 Qg6 Qg5 Qf5 Qe5 Qd5 Qc5 Qb5 Qa5 Qh4 Qg4 Qh3 Qf3 Qxh2 Qxe2+ h6 g6 b6 a6 c5 e3 g5 b5 a5 ;
+========================================
+
+2025-12-28T22:12:54 !!! reason=Engine reported illegal SAN from backend; last_position=position fen rnb1k2r/pp2P1pp/2p5/7q/3Pp3/6P1/PPPBN2P/R2QKB1R b KQkq - 0 11; board_at_go=rnb1k2r/pp2P1pp/2p5/7q/3Pp3/6P1/PPPBN2P/R2QKB1R b KQkq - 0 11; latest_board=rnb1k2r/pp2P1pp/2p5/7q/3Pp3/6P1/PPPBN2P/R2QKB1R b KQkq - 0 11; last_go=go infinite
+2025-12-28T22:12:54 !!! reason=backend returned bestmove 0000; last_position=position fen rnb1k2r/pp2P1pp/2p5/7q/3Pp3/6P1/PPPBN2P/R2QKB1R b KQkq - 0 11; board_at_go=rnb1k2r/pp2P1pp/2p5/7q/3Pp3/6P1/PPPBN2P/R2QKB1R b KQkq - 0 11; latest_board=rnb1k2r/pp2P1pp/2p5/7q/3Pp3/6P1/PPPBN2P/R2QKB1R b KQkq - 0 11; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 14
+  2: 14
+  3: 14
+  4: 14
+  5: 14
+Side to move: white
+FEN: rnb1k2r/pp2P1pp/2p5/8/3Pp3/5qP1/PPPBN2P/R2QKB1R w KQkq - 1 12
+Transcript length (chars): 243
+Transcript tokens: 46
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "rnb1k2r/pp2P1pp/2p5/8/3Pp3/5qP1/PPPBN2P/R2QKB1R w KQkq - 1 12"]
+
+; Nf4 Nc3 Ng1 Nc1 Bh6 Bg5 Ba5 Bf4 Bb4 Be3 Bc3 Bc1 Rg1 Bh3 Bg2 Qc1 Qb1 Rc1 Rb1 d5 g4 h3 c3 b3 a3 h4 c4 b4 a4 ;
+
+ 12.
+========================================
+
+2025-12-28T22:13:06 !!! reason=backend returned bestmove 0000; last_position=position fen rnb1k2r/pp2P1pp/2p5/8/3Pp3/5qP1/PPPBN2P/R2QKB1R w KQkq - 1 12; board_at_go=rnb1k2r/pp2P1pp/2p5/8/3Pp3/5qP1/PPPBN2P/R2QKB1R w KQkq - 1 12; latest_board=rnb1k2r/pp2P1pp/2p5/8/3Pp3/5qP1/PPPBN2P/R2QKB1R w KQkq - 1 12; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 16
+  2: 16
+  3: 16
+  4: 16
+  5: 1Qxh2+
+Side to move: black
+FEN: rnb1k2r/pp2P1pp/2p5/8/3PpN2/5qP1/PPPB3P/R2QKB1R b KQkq - 2 12
+Transcript length (chars): 284
+Transcript tokens: 53
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "rnb1k2r/pp2P1pp/2p5/8/3PpN2/5qP1/PPPB3P/R2QKB1R b KQkq - 2 12"]
+
+; Rg8 Rf8 Kf7 Kxe7 Kd7 Bd7 Be6 Bf5 Bg4 Bh3 Nd7 Na6 Qh5 Qg4 Qxf4 Qxg3+ Qe3+ Qd3 Qc3 Qb3 Qa3 Qg2 Qf2+ Qe2+ Qxh1 Qxf1+ Qxd1+ h6 g6 b6 a6 c5 e3 h5 g5 b5 a5 ;
+========================================
+
+2025-12-28T22:13:21 !!! reason=backend returned bestmove 0000; last_position=position fen rnb1k2r/pp2P1pp/2p5/8/3PpN2/5qP1/PPPB3P/R2QKB1R b KQkq - 2 12; board_at_go=rnb1k2r/pp2P1pp/2p5/8/3PpN2/5qP1/PPPB3P/R2QKB1R b KQkq - 2 12; latest_board=rnb1k2r/pp2P1pp/2p5/8/3PpN2/5qP1/PPPB3P/R2QKB1R b KQkq - 2 12; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 15
+  2: 15
+  3: 15
+  4: 15
+  5: 15a6
+Side to move: white
+FEN: rnb4r/pp1kP1pp/2p5/8/3PpN2/5qP1/PPPB3P/R2QKB1R w KQ - 3 13
+Transcript length (chars): 296
+Transcript tokens: 58
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "rnb4r/pp1kP1pp/2p5/8/3PpN2/5qP1/PPPB3P/R2QKB1R w KQ - 3 13"]
+
+; Ng6 Ne6 Nh5 Nd5 Nh3 Nd3 Ng2 Ne2 Ba5 Bb4 Be3 Bc3 Bc1 Rg1 Ba6 Bb5 Bc4 Bh3+ Bd3 Bg2 Be2 Qxf3 Qe2 Qc1 Qb1 Rc1 Rb1 e8=Q+ e8=R e8=B+ e8=N d5 g4 h3 c3 b3 a3 h4 c4 b4 a4 ;
+
+ 13.
+========================================
+
+2025-12-28T22:13:38 !!! reason=backend returned bestmove 0000; last_position=position fen rnb4r/pp1kP1pp/2p5/8/3PpN2/5qP1/PPPB3P/R2QKB1R w KQ - 3 13; board_at_go=rnb4r/pp1kP1pp/2p5/8/3PpN2/5qP1/PPPB3P/R2QKB1R w KQ - 3 13; latest_board=rnb4r/pp1kP1pp/2p5/8/3PpN2/5qP1/PPPB3P/R2QKB1R w KQ - 3 13; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 15b5
+  2: 15b5
+  3: 15a5
+  4: 155
+  5: 15d6
+Side to move: white
+FEN: rnb4r/pp1kP1pp/2p5/8/3P1N2/5pP1/PPPB3P/R3KB1R w KQ - 0 14
+Transcript length (chars): 296
+Transcript tokens: 58
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "rnb4r/pp1kP1pp/2p5/8/3P1N2/5pP1/PPPB3P/R3KB1R w KQ - 0 14"]
+
+; Ng6 Ne6 Nh5 Nd5 Nh3 Nd3 Ng2 Ne2 Ba5 Bb4 Be3 Bc3 Bc1 Rg1 Ba6 Bb5 Bc4 Bh3+ Bd3 Bg2 Be2 Kf2 Kd1 Rd1 Rc1 Rb1 O-O-O e8=Q+ e8=R e8=B+ e8=N d5 g4 h3 c3 b3 a3 h4 c4 b4 a4 ;
+
+ 14.
+========================================
+
+2025-12-28T22:13:56 !!! reason=backend returned bestmove 0000; last_position=position fen rnb4r/pp1kP1pp/2p5/8/3P1N2/5pP1/PPPB3P/R3KB1R w KQ - 0 14; board_at_go=rnb4r/pp1kP1pp/2p5/8/3P1N2/5pP1/PPPB3P/R3KB1R w KQ - 0 14; latest_board=rnb4r/pp1kP1pp/2p5/8/3P1N2/5pP1/PPPB3P/R3KB1R w KQ - 0 14; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 1a5
+  2: 1a5
+  3: 1a5
+  4: 1a5
+  5: d4
+Side to move: black
+FEN: rnB4r/pp2k1pp/2p5/8/3P1N2/5pP1/PPPB3P/R3K2R b KQ - 0 15
+Transcript length (chars): 212
+Transcript tokens: 39
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "rnB4r/pp2k1pp/2p5/8/3P1N2/5pP1/PPPB3P/R3K2R b KQ - 0 15"]
+
+; Rg8 Rf8 Re8 Rd8 Rxc8 Nd7 Na6 Kf8 Ke8 Kd8 Kf7 Kf6 Kd6 h6 g6 b6 a6 c5 f2+ h5 g5 b5 a5 ;
+========================================
+
+2025-12-28T22:14:06 !!! reason=Engine reported illegal SAN from backend; last_position=position fen rnB4r/pp2k1pp/2p5/8/3P1N2/5pP1/PPPB3P/R3K2R b KQ - 0 15; board_at_go=rnB4r/pp2k1pp/2p5/8/3P1N2/5pP1/PPPB3P/R3K2R b KQ - 0 15; latest_board=rnB4r/pp2k1pp/2p5/8/3P1N2/5pP1/PPPB3P/R3K2R b KQ - 0 15; last_go=go infinite
+2025-12-28T22:14:06 !!! reason=backend returned bestmove 0000; last_position=position fen rnB4r/pp2k1pp/2p5/8/3P1N2/5pP1/PPPB3P/R3K2R b KQ - 0 15; board_at_go=rnB4r/pp2k1pp/2p5/8/3P1N2/5pP1/PPPB3P/R3K2R b KQ - 0 15; latest_board=rnB4r/pp2k1pp/2p5/8/3P1N2/5pP1/PPPB3P/R3K2R b KQ - 0 15; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 13e6
+  2: 13e5
+  3: 13Qf6
+  4: 13e6
+  5: 13e6
+Side to move: white
+FEN: r7/p5pp/2p2k2/8/1B1P1N2/5pP1/PPP4P/R3K2R w KQ - 0 19
+Transcript length (chars): 268
+Transcript tokens: 53
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "r7/p5pp/2p2k2/8/1B1P1N2/5pP1/PPP4P/R3K2R w KQ - 0 19"]
+
+; Ng6 Ne6 Nh5+ Nd5+ Nh3 Nd3 Ng2 Ne2 Bf8 Be7+ Bd6 Bc5 Ba5 Bc3 Ba3 Bd2 Rg1 Rf1 Kf2 Kd2 Kf1 Kd1 Rd1 Rc1 Rb1 O-O O-O-O d5 g4 h3 c3 b3 a3 h4 c4 a4 ;
+
+ 19.
+========================================
+
+2025-12-28T22:14:21 !!! reason=backend returned bestmove 0000; last_position=position fen r7/p5pp/2p2k2/8/1B1P1N2/5pP1/PPP4P/R3K2R w KQ - 0 19; board_at_go=r7/p5pp/2p2k2/8/1B1P1N2/5pP1/PPP4P/R3K2R w KQ - 0 19; latest_board=r7/p5pp/2p2k2/8/1B1P1N2/5pP1/PPP4P/R3K2R w KQ - 0 19; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 16
+  2: 16
+  3: 16
+  4: 16
+  5: 16
+Side to move: white
+FEN: 3r4/p5pp/2p5/5k2/1B1P1N2/5pP1/PPP4P/2KR1R2 w - - 4 21
+Transcript length (chars): 268
+Transcript tokens: 53
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "3r4/p5pp/2p5/5k2/1B1P1N2/5pP1/PPP4P/2KR1R2 w - - 4 21"]
+
+; Ng6 Ne6 Nh5 Nd5 Nh3 Nd3 Ng2 Ne2 Bf8 Be7 Bd6 Bc5 Ba5 Bc3 Ba3 Bd2 Be1 Rxf3 Rf2 Rh1 Rg1 Rfe1 Rd3 Rd2 Rde1 Kd2 Kb1 d5 g4+ h3 c3 b3 a3 h4 c4 a4 ;
+
+ 21.
+========================================
+
+2025-12-28T22:14:36 !!! reason=backend returned bestmove 0000; last_position=position fen 3r4/p5pp/2p5/5k2/1B1P1N2/5pP1/PPP4P/2KR1R2 w - - 4 21; board_at_go=3r4/p5pp/2p5/5k2/1B1P1N2/5pP1/PPP4P/2KR1R2 w - - 4 21; latest_board=3r4/p5pp/2p5/5k2/1B1P1N2/5pP1/PPP4P/2KR1R2 w - - 4 21; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 15a5
+  2: 15a5
+  3: 15c6
+  4: 15c6
+  5: 15bxc6
+Side to move: white
+FEN: 3N4/p5p1/2p5/7p/1B1P2k1/5RP1/PPP4P/2KR4 w - - 0 24
+Transcript length (chars): 289
+Transcript tokens: 58
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "3N4/p5p1/2p5/7p/1B1P2k1/5RP1/PPP4P/2KR4 w - - 0 24"]
+
+; Nf7 Nb7 Ne6 Nxc6 Bf8 Be7 Bd6 Bc5 Ba5 Bc3 Ba3 Bd2 Be1 Rf8 Rf7 Rf6 Rf5 Rf4+ Re3 Rfd3 Rc3 Rb3 Ra3 Rf2 Rff1 Rdd3 Rd2 Rh1 Rg1 Rdf1 Re1 Kd2 Kb1 d5 h3+ c3 b3 a3 h4 c4 a4 ;
+
+ 24.
+========================================
+
+2025-12-28T22:14:53 !!! reason=backend returned bestmove 0000; last_position=position fen 3N4/p5p1/2p5/7p/1B1P2k1/5RP1/PPP4P/2KR4 w - - 0 24; board_at_go=3N4/p5p1/2p5/7p/1B1P2k1/5RP1/PPP4P/2KR4 w - - 0 24; latest_board=3N4/p5p1/2p5/7p/1B1P2k1/5RP1/PPP4P/2KR4 w - - 0 24; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 15c6
+  2: 15c6
+  3: 15c5
+  4: 15c6
+  5: 15
+Side to move: white
+FEN: 3N4/p5p1/2p5/7p/1B1P3R/6P1/PPP3kP/2KR4 w - - 4 26
+Transcript length (chars): 257
+Transcript tokens: 51
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "3N4/p5p1/2p5/7p/1B1P3R/6P1/PPP3kP/2KR4 w - - 4 26"]
+
+; Nf7 Nb7 Ne6 Nxc6 Rxh5 Rg4 Rf4 Re4 Rh3 Bf8 Be7 Bd6 Bc5 Ba5 Bc3 Ba3 Bd2 Be1 Rd3 Rd2+ Rh1 Rg1+ Rf1 Re1 Kd2 Kb1 d5 g4 h3 c3 b3 a3 c4 a4 ;
+
+ 26.
+========================================
+
+2025-12-28T22:15:08 !!! reason=backend returned bestmove 0000; last_position=position fen 3N4/p5p1/2p5/7p/1B1P3R/6P1/PPP3kP/2KR4 w - - 4 26; board_at_go=3N4/p5p1/2p5/7p/1B1P3R/6P1/PPP3kP/2KR4 w - - 4 26; latest_board=3N4/p5p1/2p5/7p/1B1P3R/6P1/PPP3kP/2KR4 w - - 4 26; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 1
+  2: 1
+  3: 16
+  4: 1Nf6
+  5: 1
+Side to move: white
+FEN: 8/6N1/2p5/B6p/3P3R/4k1P1/PPP4P/2KR4 w - - 1 29
+Transcript length (chars): 248
+Transcript tokens: 49
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "8/6N1/2p5/B6p/3P3R/4k1P1/PPP4P/2KR4 w - - 1 29"]
+
+; Ne8 Ne6 Nxh5 Nf5+ Bd8 Bc7 Bb6 Bb4 Bc3 Bd2+ Be1 Rxh5 Rg4 Rf4 Re4+ Rh3 Rd3+ Rd2 Rh1 Rg1 Rf1 Re1+ Kb1 d5 g4 h3 c3 b3 a3 c4 b4 a4 ;
+
+ 29.
+========================================
+
+2025-12-28T22:15:21 !!! reason=backend returned bestmove 0000; last_position=position fen 8/6N1/2p5/B6p/3P3R/4k1P1/PPP4P/2KR4 w - - 1 29; board_at_go=8/6N1/2p5/B6p/3P3R/4k1P1/PPP4P/2KR4 w - - 1 29; latest_board=8/6N1/2p5/B6p/3P3R/4k1P1/PPP4P/2KR4 w - - 1 29; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 15c6
+  2: 15a5
+  3: 15c6
+  4: 15
+  5: 15c6
+Side to move: white
+FEN: 8/8/8/B1P4N/7R/5kP1/PPP4P/2KR4 w - - 1 31
+Transcript length (chars): 273
+Transcript tokens: 57
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "8/8/8/B1P4N/7R/5kP1/PPP4P/2KR4 w - - 1 31"]
+
+; Ng7 Nf6 Nf4 Bd8 Bc7 Bb6 Bb4 Bc3 Bd2 Be1 Rg4 Rf4+ Re4 Rhd4 Rc4 Rb4 Ra4 Rh3 Rd8 Rd7 Rd6 Rd5 Rdd4 Rd3+ Rd2 Rh1 Rg1 Rf1+ Re1 Kd2 Kb1 c6 g4 h3 c3 b3 a3 c4 b4 a4 ;
+
+ 31.
+========================================
+
+2025-12-28T22:15:38 !!! reason=backend returned bestmove 0000; last_position=position fen 8/8/8/B1P4N/7R/5kP1/PPP4P/2KR4 w - - 1 31; board_at_go=8/8/8/B1P4N/7R/5kP1/PPP4P/2KR4 w - - 1 31; latest_board=8/8/8/B1P4N/7R/5kP1/PPP4P/2KR4 w - - 1 31; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 1
+  2: 1
+  3: 1
+  4: 1
+  5: 1
+Side to move: white
+FEN: 8/8/8/B1P4N/7R/3R2P1/PPP2k1P/2K5 w - - 3 32
+Transcript length (chars): 284
+Transcript tokens: 59
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "8/8/8/B1P4N/7R/3R2P1/PPP2k1P/2K5 w - - 3 32"]
+
+; Ng7 Nf6 Nf4 Bd8 Bc7 Bb6 Bb4 Bc3 Bd2 Be1+ Rg4 Rf4+ Re4 Rhd4 Rc4 Rb4 Ra4 Rh3 Rd8 Rd7 Rd6 Rd5 Rdd4 Rf3+ Re3 Rc3 Rb3 Ra3 Rd2+ Rd1 Kd2 Kd1 Kb1 c6 g4 h3 c3 b3 a3 c4 b4 a4 ;
+
+ 32.
+========================================
+
+2025-12-28T22:15:55 !!! reason=backend returned bestmove 0000; last_position=position fen 8/8/8/B1P4N/7R/3R2P1/PPP2k1P/2K5 w - - 3 32; board_at_go=8/8/8/B1P4N/7R/3R2P1/PPP2k1P/2K5 w - - 3 32; latest_board=8/8/8/B1P4N/7R/3R2P1/PPP2k1P/2K5 w - - 3 32; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 1a5
+  2: 1a5
+  3: 16
+  4: 1
+  5: 1a5
+Side to move: white
+FEN: 8/8/8/B1P4N/5R2/6P1/PPPR3P/2K4k w - - 7 34
+Transcript length (chars): 286
+Transcript tokens: 60
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "8/8/8/B1P4N/5R2/6P1/PPPR3P/2K4k w - - 7 34"]
+
+; Ng7 Nf6 Bd8 Bc7 Bb6 Bb4 Bc3 Rf8 Rf7 Rf6 Rf5 Rh4 Rg4 Re4 Rfd4 Rc4 Rb4 Ra4 Rf3 Rff2 Rf1# Rd8 Rd7 Rd6 Rd5 Rdd4 Rd3 Rg2 Rdf2 Re2 Rd1+ Kd1 Kb1 c6 g4 h3 c3 b3 a3 h4 c4 b4 a4 ;
+
+ 34.
+========================================
+
+2025-12-28T22:16:13 !!! reason=Engine reported illegal SAN from backend; last_position=position fen 8/8/8/B1P4N/5R2/6P1/PPPR3P/2K4k w - - 7 34; board_at_go=8/8/8/B1P4N/5R2/6P1/PPPR3P/2K4k w - - 7 34; latest_board=8/8/8/B1P4N/5R2/6P1/PPPR3P/2K4k w - - 7 34; last_go=go infinite
+2025-12-28T22:16:13 !!! reason=backend returned bestmove 0000; last_position=position fen 8/8/8/B1P4N/5R2/6P1/PPPR3P/2K4k w - - 7 34; board_at_go=8/8/8/B1P4N/5R2/6P1/PPPR3P/2K4k w - - 7 34; latest_board=8/8/8/B1P4N/5R2/6P1/PPPR3P/2K4k w - - 7 34; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 1a5
+  2: 1a5
+  3: 1a5
+  4: 15
+  5: 10Qf8
+Side to move: white
+FEN: 8/8/8/B1P4N/5R2/6P1/PPPR3P/2K4k w - - 7 34
+Transcript length (chars): 286
+Transcript tokens: 60
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "8/8/8/B1P4N/5R2/6P1/PPPR3P/2K4k w - - 7 34"]
+
+; Ng7 Nf6 Bd8 Bc7 Bb6 Bb4 Bc3 Rf8 Rf7 Rf6 Rf5 Rh4 Rg4 Re4 Rfd4 Rc4 Rb4 Ra4 Rf3 Rff2 Rf1# Rd8 Rd7 Rd6 Rd5 Rdd4 Rd3 Rg2 Rdf2 Re2 Rd1+ Kd1 Kb1 c6 g4 h3 c3 b3 a3 h4 c4 b4 a4 ;
+
+ 34.
+========================================
+
+2025-12-28T22:17:32 !!! reason=Engine reported illegal SAN from backend; last_position=position fen 8/8/8/B1P4N/5R2/6P1/PPPR3P/2K4k w - - 7 34; board_at_go=8/8/8/B1P4N/5R2/6P1/PPPR3P/2K4k w - - 7 34; latest_board=8/8/8/B1P4N/5R2/6P1/PPPR3P/2K4k w - - 7 34; last_go=go infinite
+2025-12-28T22:17:32 !!! reason=backend returned bestmove 0000; last_position=position fen 8/8/8/B1P4N/5R2/6P1/PPPR3P/2K4k w - - 7 34; board_at_go=8/8/8/B1P4N/5R2/6P1/PPPR3P/2K4k w - - 7 34; latest_board=8/8/8/B1P4N/5R2/6P1/PPPR3P/2K4k w - - 7 34; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: e4
+  2: e4
+  3: e4
+  4: d4
+  5: e4
+Side to move: black
+FEN: 8/8/8/B1P4N/5R2/6P1/PPPR2kP/2K5 b - - 6 33
+Transcript length (chars): 127
+Transcript tokens: 19
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "8/8/8/B1P4N/5R2/6P1/PPPR2kP/2K5 b - - 6 33"]
+
+; Kh3 Kh1 Kg1 ;
+========================================
+
+2025-12-28T22:17:55 !!! reason=Engine reported illegal SAN from backend; last_position=position fen 8/8/8/B1P4N/5R2/6P1/PPPR2kP/2K5 b - - 6 33; board_at_go=8/8/8/B1P4N/5R2/6P1/PPPR2kP/2K5 b - - 6 33; latest_board=8/8/8/B1P4N/5R2/6P1/PPPR2kP/2K5 b - - 6 33; last_go=go infinite
+2025-12-28T22:17:55 !!! reason=backend returned bestmove 0000; last_position=position fen 8/8/8/B1P4N/5R2/6P1/PPPR2kP/2K5 b - - 6 33; board_at_go=8/8/8/B1P4N/5R2/6P1/PPPR2kP/2K5 b - - 6 33; latest_board=8/8/8/B1P4N/5R2/6P1/PPPR2kP/2K5 b - - 6 33; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 14
+  2: 14
+  3: 14
+  4: 14
+  5: 14
+Side to move: white
+FEN: rnbqk2r/pp2b1pp/2p2p2/4P3/3Pp3/6P1/PPP1N2P/R1BQKB1R w KQkq - 0 9
+Transcript length (chars): 241
+Transcript tokens: 45
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "rnbqk2r/pp2b1pp/2p2p2/4P3/3Pp3/6P1/PPP1N2P/R1BQKB1R w KQkq - 0 9"]
+
+; Nf4 Nc3 Ng1 Rg1 Bh3 Bg2 Kf2 Kd2 Qd3 Qd2 Bh6 Bg5 Bf4 Be3 Bd2 Rb1 exf6 e6 d5 g4 h3 c3 b3 a3 h4 c4 b4 a4 ;
+
+ 9.
+========================================
+
+2025-12-28T22:18:10 !!! reason=backend returned bestmove 0000; last_position=position fen rnbqk2r/pp2b1pp/2p2p2/4P3/3Pp3/6P1/PPP1N2P/R1BQKB1R w KQkq - 0 9; board_at_go=rnbqk2r/pp2b1pp/2p2p2/4P3/3Pp3/6P1/PPP1N2P/R1BQKB1R w KQkq - 0 9; latest_board=rnbqk2r/pp2b1pp/2p2p2/4P3/3Pp3/6P1/PPP1N2P/R1BQKB1R w KQkq - 0 9; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 16
+  2: d4
+  3: e4
+  4: 1a5
+  5: 1Qe5
+Side to move: black
+FEN: rnbqk2r/pp2b1pp/2p2P2/8/3Pp3/6P1/PPP1N2P/R1BQKB1R b KQkq - 0 9
+Transcript length (chars): 278
+Transcript tokens: 53
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "rnbqk2r/pp2b1pp/2p2P2/8/3Pp3/6P1/PPP1N2P/R1BQKB1R b KQkq - 0 9"]
+
+; Rg8 Rf8 Kf8 Kf7 Kd7 Qd7 Qc7 Qd6 Qb6 Qd5 Qa5+ Qxd4 Bd7 Be6 Bf5 Bg4 Bh3 Nd7 Na6 Bf8 Bxf6 Bd6 Bc5 Bb4+ Ba3 O-O gxf6 h6 g6 b6 a6 c5 e3 h5 g5 b5 a5 ;
+========================================
+
+2025-12-28T22:18:25 !!! reason=Engine reported illegal SAN from backend; last_position=position fen rnbqk2r/pp2b1pp/2p2P2/8/3Pp3/6P1/PPP1N2P/R1BQKB1R b KQkq - 0 9; board_at_go=rnbqk2r/pp2b1pp/2p2P2/8/3Pp3/6P1/PPP1N2P/R1BQKB1R b KQkq - 0 9; latest_board=rnbqk2r/pp2b1pp/2p2P2/8/3Pp3/6P1/PPP1N2P/R1BQKB1R b KQkq - 0 9; last_go=go infinite
+2025-12-28T22:18:25 !!! reason=backend returned bestmove 0000; last_position=position fen rnbqk2r/pp2b1pp/2p2P2/8/3Pp3/6P1/PPP1N2P/R1BQKB1R b KQkq - 0 9; board_at_go=rnbqk2r/pp2b1pp/2p2P2/8/3Pp3/6P1/PPP1N2P/R1BQKB1R b KQkq - 0 9; latest_board=rnbqk2r/pp2b1pp/2p2P2/8/3Pp3/6P1/PPP1N2P/R1BQKB1R b KQkq - 0 9; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 16
+  2: 16
+  3: 16
+  4: 16
+  5: Nc4
+Side to move: black
+FEN: rnb1k2r/pp2P1pp/2p5/7q/3Pp3/6P1/PPPBN2P/R2QKB1R b KQkq - 0 11
+Transcript length (chars): 277
+Transcript tokens: 53
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "rnb1k2r/pp2P1pp/2p5/7q/3Pp3/6P1/PPPBN2P/R2QKB1R b KQkq - 0 11"]
+
+; Rg8 Rf8 Kf7 Kxe7 Kd7 Bd7 Be6 Bf5 Bg4 Bh3 Nd7 Na6 Qf7 Qh6 Qg6 Qg5 Qf5 Qe5 Qd5 Qc5 Qb5 Qa5 Qh4 Qg4 Qh3 Qf3 Qxh2 Qxe2+ h6 g6 b6 a6 c5 e3 g5 b5 a5 ;
+========================================
+
+2025-12-28T22:18:41 !!! reason=Engine reported illegal SAN from backend; last_position=position fen rnb1k2r/pp2P1pp/2p5/7q/3Pp3/6P1/PPPBN2P/R2QKB1R b KQkq - 0 11; board_at_go=rnb1k2r/pp2P1pp/2p5/7q/3Pp3/6P1/PPPBN2P/R2QKB1R b KQkq - 0 11; latest_board=rnb1k2r/pp2P1pp/2p5/7q/3Pp3/6P1/PPPBN2P/R2QKB1R b KQkq - 0 11; last_go=go infinite
+2025-12-28T22:18:41 !!! reason=backend returned bestmove 0000; last_position=position fen rnb1k2r/pp2P1pp/2p5/7q/3Pp3/6P1/PPPBN2P/R2QKB1R b KQkq - 0 11; board_at_go=rnb1k2r/pp2P1pp/2p5/7q/3Pp3/6P1/PPPBN2P/R2QKB1R b KQkq - 0 11; latest_board=rnb1k2r/pp2P1pp/2p5/7q/3Pp3/6P1/PPPBN2P/R2QKB1R b KQkq - 0 11; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: 16
+  2: 16
+  3: 16
+  4: 16
+  5: 16
+Side to move: black
+FEN: rnb1k2r/pp2b1pp/2p2P2/q7/3Pp3/6P1/PPPBN2P/R2QKB1R b KQkq - 2 10
+Transcript length (chars): 324
+Transcript tokens: 64
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "rnb1k2r/pp2b1pp/2p2P2/q7/3Pp3/6P1/PPPBN2P/R2QKB1R b KQkq - 2 10"]
+
+; Rg8 Rf8 Kf8 Kd8 Kf7 Kd7 Bd7 Be6 Bf5 Bg4 Bh3 Nd7 Na6 Bf8 Bd8 Bxf6 Bd6 Bc5 Bb4 Ba3 Qd8 Qc7 Qb6 Qa6 Qh5 Qg5 Qf5 Qe5 Qd5 Qc5 Qb5 Qb4 Qa4 Qc3 Qa3 Qxd2+ Qxa2 O-O gxf6 h6 g6 b6 a6 c5 e3 h5 g5 b5 ;
+========================================
+
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: [EMPTY]
+  2: [EMPTY]
+  3: [EMPTY]
+  4: [EMPTY]
+  5: [EMPTY]
+Side to move: black
+FEN: 8/8/8/B1P4N/8/6P1/PPPR3P/2K2R1k b - - 8 34
+Transcript length (chars): 464
+Transcript tokens: 106
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+
+ 1. e4 e5 2. Nc3 Nf6 3. f4 d5 4. d4 Nxe4 5. Nxe4 dxe4 6. fxe5 Be7 7. g3 c6 8. Ne2 f6 9. exf6 Qa5+ 10. Bd2 Qh5 11. fxe7 Qf3 12. Nf4 Kd7 13. Qxf3 exf3 14. Bh3+ Kxe7 15. Bxc8 Na6 16. Bxb7 Nb4 17. Bxb4+ Kf6 18. Bxa8 Rxa8 19. O-O-O Kf5 20. Rhf1 Rd8 21. Rxf3 Kg5 22. Ne6+ Kg4 23. Nxd8 h5 24. Rf4+ Kh3 25. Rh4+ Kg2 26. Ne6 a5 27. Bxa5 Kf3 28. Nxg7 Ke3 29. Nxh5 c5 30. dxc5 Kf3 31. Rd3+ Kf2 32. Rf4+ Kg2 33. Rd2+ Kh1 34. Rf1#
+========================================
+
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: Ra4
+  2: Ra4
+  3: Ra4
+  4: a8=Q
+  5: Rd1
+Side to move: white
+FEN: 8/P4k2/4p1r1/4Pp1K/5r2/R1P2b2/7P/R7 w - - 3 53
+Transcript length (chars): 674
+Transcript tokens: 162
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+
+ 1. e4 c5 2. Nc3 Nc6 3. f4 d6 4. Nf3 g6 5. Bc4 Bg7 6. O-O e6 7. d3 Nge7 8. Bd2 h6 9. a3 Bd7 10. Rb1 Rb8 11. Qe1 O-O 12. Be3 Kh8 13. Nb5 Be8 14. d4 a6 15. d5 axb5 16. dxc6 bxc4 17. cxb7 Rxb7 18. Nd2 Qc7 19. Nxc4 Kh7 20. Qh4 f5 21. e5 Nc8 22. Rfd1 Qc6 23. Nxd6 Nxd6 24. Rxd6 Qa4 25. c3 Qe4 26. Qe1 Bc6 27. Rd2 Rd8 28. Rf2 Bf8 29. b4 Rd3 30. Bxc5 Bxc5 31. bxc5 Qxe1+ 32. Rxe1 Rbd7 33. Rc2 Kg7 34. Ra1 R3d5 35. a4 g5 36. g3 Ra7 37. a5 Rxc5 38. a6 gxf4 39. gxf4 Be4 40. Rb2 Rc8 41. Rb6 Kf7 42. Rc1 Rac7 43. Rb3 Ra8 44. Ra3 Rc6 45. a7 Rc7 46. Rca1 Rc4 47. Kf2 Bd5 48. Kg3 Rg8+ 49. Kh4 Rxf4+ 50. Kh5 Rgg4 51. Kxh6 Rg6+ 52. Kh5 Bf3# 53.
+========================================
+
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: e4
+  2: e4
+  3: e4
+  4: e4
+  5: e4
+Side to move: black
+FEN: rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1
+Transcript length (chars): 195
+Transcript tokens: 36
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"]
+
+; Nh6 Nf6 Nc6 Na6 h6 g6 f6 e6 d6 c6 b6 a6 h5 g5 f5 e5 d5 c5 b5 a5 ;
+========================================
+
+2025-12-30T21:55:14 !!! reason=Engine reported illegal SAN from backend; last_position=position fen rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1; board_at_go=rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1; latest_board=rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1; last_go=go infinite
+2025-12-30T21:55:14 !!! reason=backend returned bestmove 0000; last_position=position fen rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1; board_at_go=rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1; latest_board=rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: e4
+  2: e4
+  3: e4
+  4: Nf3
+  5: e4
+Side to move: black
+FEN: rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1
+Transcript length (chars): 195
+Transcript tokens: 36
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"]
+
+; Nh6 Nf6 Nc6 Na6 h6 g6 f6 e6 d6 c6 b6 a6 h5 g5 f5 e5 d5 c5 b5 a5 ;
+========================================
+
+2025-12-30T21:55:16 !!! reason=Engine reported illegal SAN from backend; last_position=position fen rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1; board_at_go=rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1; latest_board=rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1; last_go=go infinite
+2025-12-30T21:55:16 !!! reason=backend returned bestmove 0000; last_position=position fen rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1; board_at_go=rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1; latest_board=rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: e4
+  2: e4
+  3: e4
+  4: d4
+  5: d4
+Side to move: black
+FEN: rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1
+Transcript length (chars): 195
+Transcript tokens: 36
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"]
+
+; Nh6 Nf6 Nc6 Na6 h6 g6 f6 e6 d6 c6 b6 a6 h5 g5 f5 e5 d5 c5 b5 a5 ;
+========================================
+
+2025-12-30T21:55:55 !!! reason=Engine reported illegal SAN from backend; last_position=position fen rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1; board_at_go=rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1; latest_board=rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1; last_go=go infinite
+2025-12-30T21:55:55 !!! reason=backend returned bestmove 0000; last_position=position fen rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1; board_at_go=rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1; latest_board=rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1; last_go=<none>
+========================================
+Reason: model produced illegal moves for 5 attempts
+Attempts: 5
+Attempt history:
+  1: e4
+  2: e4
+  3: e4
+  4: d4
+  5: e4
+Side to move: black
+FEN: rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1
+Transcript length (chars): 195
+Transcript tokens: 36
+Transcript:
+[White "Magnus Carlsen"]
+[Black "Stockfish"]
+[SetUp "1"]
+[FEN "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1"]
+
+; Nh6 Nf6 Nc6 Na6 h6 g6 f6 e6 d6 c6 b6 a6 h5 g5 f5 e5 d5 c5 b5 a5 ;
+========================================
+
+2025-12-30T21:56:00 !!! reason=Engine reported illegal SAN from backend; last_position=position fen rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1; board_at_go=rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1; latest_board=rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1; last_go=go infinite
+2025-12-30T21:56:00 !!! reason=backend returned bestmove 0000; last_position=position fen rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1; board_at_go=rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1; latest_board=rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1; last_go=<none>
+2025-12-30T21:56:02 !!! reason=Engine reported illegal SAN from backend; last_position=position startpos; board_at_go=rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1; latest_board=rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1; last_go=go infinite

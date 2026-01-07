@@ -1,4 +1,0 @@
-[White "ChessGPT (lichess_200k_bins_16layers_ckpt_with_optimizer)"]
-[Black "Stockfish level 3"]
-
-1. e4 e6 2. d4 a6 3. Nf3 b5 4. Bd3 Be7 5. O-O Nf6 6. e5 Ng4 7. h3 h5 8. hxg4 hxg4 9. Nh2 f5 10. exf6 Rxh2 11. Kxh2 Kf7 12. fxe7 Nc6 13. exd8=Q e5 14. Qxc7 b4 15. dxe5 Ra7 16. Qxa7 Nd4 17. Qxd4 d5 18. Qxd5+ Kf8 19. Qdd8+ Kf7 20. Qxc8 a5 21. Qc6 g5 22. e6+ Kg8 23. e7 Kg7 24. e8=Q+ a4 25. Qe7+ Kh8 26. Qc8+
